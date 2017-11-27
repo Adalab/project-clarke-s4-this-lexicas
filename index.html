@@ -46,8 +46,22 @@
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="col1">
         <legend>Estudios</legend>
+        <label for="titulo" class="hidden">Titulo</label>
+        <input type="text" name="title" id="titulo" value="" placeholder="Titulo">
+
+        <label for="instituto" class="hidden">Escuela o Universidad</label>
+        <input type="text" name="institute" id="instituto" value="" placeholder="Escuela o Universidad">
+
+        <label for="fecha inicio" class="">Fecha inicio</label>
+        <input type="date" name="date" id="fecha inicio" inicio" value="">
+
+        <label for="fecha fin" class="">Fecha fin</label>
+        <input type="date" name="date" id="fecha fin" inicio" value="">
+
+        <label for="descripcion" class="">Descripción</label>
+        <textarea id="descripcion" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea>
       </fieldset>
 
       <fieldset class="col1">
@@ -93,8 +107,19 @@
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="col1">
+
         <legend>Skills</legend>
+
+        <label for="skills" class="hidden">Skill</label>
+        <input type="text" name="skill" id="skills" value="" placeholder="skill">
+
+        <select name="nivel" class="">
+          <option value="Beginner">Beginner</option>
+          <option value="Conversational">Conversational</option>
+          <option value="Fluent">Fluent</option>
+          <option value="Native">Native</option>
+        </select>
       </fieldset>
 
     </form>
