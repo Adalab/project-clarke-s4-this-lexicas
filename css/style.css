@@ -12,17 +12,40 @@ img{
 
 body{
     margin: 0;
+    background-color: #515d6b;
 }
 
 a{
     text-decoration: none;
 }
 
+.margin {
+  margin: 60px 0;
+}
 
-.title-big{}
-.title-medium{}
-.title-small{}
-.content-text{}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+}
+.title-big{
+  text-align: center;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.title-medium{
+  text-align: center;
+  font-size: 20px;
+}
+.title-small{
+  text-align: center;
+  font-size: 18px;
+}
+
+.content-text{
+  text-align: justify;
+}
 
 
 
@@ -64,33 +87,19 @@ fieldset {
   border: none;
 }
 
-/* -- Estilos formulario -- */
-
-.col2{
-  display: flex;
-}
-
-.resume {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1PX solid #ccc;
-}
-.aside-cv {
-  width: 35%;
-  padding: 10px;
-}
-
-.body-cv {
-  width: 65%;
-  padding: 10px;
-}
-
 /* -- Estilos cv mobile -- */
+.resume {
+  margin: 0 35px;
+  background-color: #fff;
+}
+
 
 .profile-picture{
   width: 200px;
   height: 200px;
   border-radius: 100px;
   background-color: red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
