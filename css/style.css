@@ -18,6 +18,14 @@ a{
     text-decoration: none;
 }
 
+
+.title-big{}
+.title-medium{}
+.title-small{}
+.content-text{}
+
+
+
 /* -- Estilos formulario -- */
 .hidden{
   display: none;
@@ -53,6 +61,7 @@ input[type=submit]{
 
 fieldset {
   margin: 50px 0;
+  border: none;
 }
 
 /* -- Estilos formulario -- */
@@ -75,4 +84,13 @@ fieldset {
 .body-cv {
   width: 65%;
   padding: 10px;
+}
+
+/* -- Estilos cv mobile -- */
+
+.profile-picture{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: red;
 }
