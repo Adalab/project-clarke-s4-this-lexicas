@@ -47,6 +47,25 @@ a{
   text-align: justify;
 }
 
+/* -- Estilos cabecera -- */
+
+.cabecera {
+  position: relative;
+}
+
+.img-cabecera {
+  width: 100%;
+}
+
+.boton-start {
+  position: absolute;
+  top: 48%;
+  right: 25%;
+  padding: 25px 50px;
+  background-color: #e66760;
+  border-radius: 5px;
+  color: #fff;
+}
 
 
 /* -- Estilos formulario -- */
