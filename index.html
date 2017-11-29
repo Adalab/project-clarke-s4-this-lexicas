@@ -8,6 +8,7 @@
   <title>Document</title>
 </head>
 <body>
+
   <!-- Navegador -->
   <header>
     <img class="logo" src="" alt="">
@@ -26,7 +27,7 @@
   </section>
 
   <!-- Formulario -->
-  <section class="form">
+  <section>
 
     <form action="" method="post">
       <fieldset class="col1">
@@ -57,11 +58,22 @@
         <label for="instituto" class="hidden">Escuela o Universidad</label>
         <input type="text" name="institute" id="instituto" value="" placeholder="Escuela o Universidad">
 
-        <label for="fecha inicio" class="">Fecha inicio</label>
-        <input type="date" name="date" id="fecha inicio" inicio" value="">
+<!--fechas inicio y fin-->
+        <div class="form-container">
 
-        <label for="fecha fin" class="">Fecha fin</label>
-        <input type="date" name="date" id="fecha fin" inicio" value="">
+          <div class="form-container-items">
+        <label for="start" class="">Fecha inicio</label> <br>
+        <input type="date" name="date" id="start" value="">
+      </div>
+
+      <div class="form-container-items">
+        <label for="end" class="">Fecha fin</label> <br>
+        <input type="date" name="date" id="end" value="">
+        </div>
+
+  </div>
+  <!--fechas inicio y fin-->
+
 
         <label for="descripcion" class="">Descripción</label>
         <textarea id="descripcion" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea>
@@ -82,12 +94,23 @@
         <label for="city" class="hidden">Ciudad</label>
         <input type="text" name="city" id="city" value="" placeholder="Ciudad">
 
+<!--fechas inicio y fin-->
         <div>
-          <label for="start" class="hidden">Inicio</label>
+          <div class="form-container">
+
+            <div class="form-container-items">
+          <label for="start" class="hidden">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
           <input type="date" name="start" id="start" value="" placeholder="Inicio">
-          <label for="end" class="hidden">Fin</label>
+        </div>
+
+            <div class="form-container-items">
+          <label for="end" class="hidden">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
           <input type="date" name="end" id="end" value="" placeholder="Fin">
         </div>
+
+      </div>
+        </div>
+        <!--fechas inicio y fin-->
 
         <textarea name="name" rows="8" cols="80"></textarea>
 
@@ -99,15 +122,24 @@
 
         <legend>Idiomas</legend>
 
+        <div class="form-container">
+
+          <div class="form-container-items">
         <label for="language" class="hidden">Idioma</label>
         <input type="text" name="language" id="language" value="" placeholder="Idioma">
+        </div>
 
-        <select name="nivel" class="">
+
+<div class="form-container-items">
+        <select name="nivel" class="" id="nivel">
           <option value="Beginner">Beginner</option>
           <option value="Conversational">Conversational</option>
           <option value="Fluent">Fluent</option>
           <option value="Native">Native</option>
         </select>
+          </div>
+
+        </div>
 
         <input type="submit" name="" value="Añadir">
 
@@ -117,15 +149,23 @@
 
         <legend>Skills</legend>
 
+          <div class="form-container">
+
+            <div class="form-container-items">
         <label for="skills" class="hidden">Skill</label>
         <input type="text" name="skill" id="skills" value="" placeholder="skill">
+        </div>
 
-        <select name="nivel" class="">
+        <div class="form-container-items">
+        <select name="nivel" class="" id="nivel">
           <option value="Beginner">Beginner</option>
           <option value="Conversational">Conversational</option>
           <option value="Fluent">Fluent</option>
           <option value="Native">Native</option>
         </select>
+      </div>
+        </div>
+
 
         <input type="submit" name="" value="Añadir">
 
@@ -266,6 +306,14 @@
     </div>
 
   </section>
+
+<div class="button"><a href="#top"><img src="flecha.jpg" alt="back to the top"></a></div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-items">VarWomen 	&copy; 2017  (AÑADIR LOGO)</div>
+      <div class="footer-items"><a href="http://politicadecookies.com/" target="_blank">Politica de cookies</a></div>
+    </div>
+  </footer>
 
 
   <!-- Resume -->
