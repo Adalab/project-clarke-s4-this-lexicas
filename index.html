@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Resume Builder</title>
 </head>
 <body>
 
@@ -26,9 +27,9 @@
     <a href="" class="boton-start">Crea tu CV</a>
   </section>
 
-  <!-- Formulario -->
-  <section>
 
+  <!-- Formulario -->
+  <section class="form">
     <form action="" method="post">
       <fieldset class="col1">
         <legend>Datos personales</legend>
@@ -47,137 +48,99 @@
         <label for="postalcode" class="hidden">Código Postal</label>
         <input id="postalcode" type="text" name="postalcode" value="" placeholder="Código Postal">
         <input type="submit" name="" value="Añadir">
-
       </fieldset>
 
       <fieldset class="col1">
         <legend>Estudios</legend>
         <label for="titulo" class="hidden">Titulo</label>
         <input type="text" name="title" id="titulo" value="" placeholder="Titulo">
-
         <label for="instituto" class="hidden">Escuela o Universidad</label>
         <input type="text" name="institute" id="instituto" value="" placeholder="Escuela o Universidad">
-
-<!--fechas inicio y fin-->
+        <!--fechas inicio y fin-->
         <div class="form-container">
-
           <div class="form-container-items">
-        <label for="start" class="">Fecha inicio</label> <br>
-        <input type="date" name="date" id="start" value="">
-      </div>
-
-      <div class="form-container-items">
-        <label for="end" class="">Fecha fin</label> <br>
-        <input type="date" name="date" id="end" value="">
+            <label for="start" class="">Fecha inicio</label> <br>
+            <input type="date" name="date" id="start" value="">
+          </div>
+          <div class="form-container-items">
+            <label for="end" class="">Fecha fin</label> <br>
+            <input type="date" name="date" id="end" value="">
+          </div>
         </div>
 
-  </div>
-  <!--fechas inicio y fin-->
-
-
-        <label for="descripcion" class="">Descripción</label>
+        <label for="descripcion" class="hidden">Descripción</label>
         <textarea id="descripcion" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea>
-
         <input type="submit" name="" value="Añadir">
-
       </fieldset>
 
       <fieldset class="col1">
-
         <legend>Experiencia Laboral</legend>
         <label for="cargo" class="hidden">Cargo</label>
         <input type="text" name="cargo" id="cargo" value="" placeholder="Cargo">
-
         <label for="company" class="hidden">Compañía</label>
         <input type="text" name="company" id="company" value="" placeholder="Compañía">
-
         <label for="city" class="hidden">Ciudad</label>
         <input type="text" name="city" id="city" value="" placeholder="Ciudad">
-
-<!--fechas inicio y fin-->
-        <div>
-          <div class="form-container">
-
-            <div class="form-container-items">
-          <label for="start" class="hidden">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
-          <input type="date" name="start" id="start" value="" placeholder="Inicio">
-        </div>
-
-            <div class="form-container-items">
-          <label for="end" class="hidden">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
-          <input type="date" name="end" id="end" value="" placeholder="Fin">
-        </div>
-
-      </div>
-        </div>
         <!--fechas inicio y fin-->
+        <div class="form-container">
+          <div class="form-container-items">
+            <label for="start" class="hidden">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
+            <input type="date" name="start" id="start" value="" placeholder="Inicio">
+          </div>
+          <div class="form-container-items">
+            <label for="end" class="hidden">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
+            <input type="date" name="end" id="end" value="" placeholder="Fin">
+          </div>
+        </div>
 
         <textarea name="name" rows="8" cols="80"></textarea>
-
         <input type="submit" name="" value="Añadir">
-
       </fieldset>
 
       <fieldset class="col1">
-
         <legend>Idiomas</legend>
-
         <div class="form-container">
-
-          <div class="form-container-items">
-        <label for="language" class="hidden">Idioma</label>
-        <input type="text" name="language" id="language" value="" placeholder="Idioma">
+            <div class="form-container-items">
+              <label for="language" class="hidden">Idioma</label>
+              <input type="text" name="language" id="language" value="" placeholder="Idioma">
+            </div>
+            <div class="form-container-items">
+              <select name="nivel" class="" id="nivel">
+                <option value="Beginner">Beginner</option>
+                <option value="Conversational">Conversational</option>
+                <option value="Fluent">Fluent</option>
+                <option value="Native">Native</option>
+              </select>
+            </div>
         </div>
-
-
-<div class="form-container-items">
-        <select name="nivel" class="" id="nivel">
-          <option value="Beginner">Beginner</option>
-          <option value="Conversational">Conversational</option>
-          <option value="Fluent">Fluent</option>
-          <option value="Native">Native</option>
-        </select>
-          </div>
-
-        </div>
-
         <input type="submit" name="" value="Añadir">
-
       </fieldset>
 
       <fieldset class="col1">
-
         <legend>Skills</legend>
-
           <div class="form-container">
-
             <div class="form-container-items">
-        <label for="skills" class="hidden">Skill</label>
-        <input type="text" name="skill" id="skills" value="" placeholder="skill">
+            <label for="skills" class="hidden">Skill</label>
+            <input type="text" name="skill" id="skills" value="" placeholder="skill">
+          </div>
+          <div class="form-container-items">
+            <select name="nivel" class="" id="nivel">
+              <option value="Beginner">Beginner</option>
+              <option value="Conversational">Conversational</option>
+              <option value="Fluent">Fluent</option>
+              <option value="Native">Native</option>
+            </select>
+          </div>
         </div>
-
-        <div class="form-container-items">
-        <select name="nivel" class="" id="nivel">
-          <option value="Beginner">Beginner</option>
-          <option value="Conversational">Conversational</option>
-          <option value="Fluent">Fluent</option>
-          <option value="Native">Native</option>
-        </select>
-      </div>
-        </div>
-
-
         <input type="submit" name="" value="Añadir">
-
       </fieldset>
-
     </form>
-
   </section>
+
+
 
   <!-- Resume -->
   <section class="resume">
-
     <div class="profile-picture margin"></div>
 
     <div class="extract-info margin">
@@ -208,9 +171,6 @@
       <p>GitHub: @ejemplopersongit</p>
     </div>
 
-
-
-
     <div class="personal-info margin">
       <h2 class="title">Federica Estevez García</h2>
       <h3 class="title-medium">Front-End Developer</h3>
@@ -218,7 +178,6 @@
 
     <div class="work-info margin">
       <h3 class="title-big">Experiencia laboral</h3>
-
       <div class="option">
         <div class="titulo-option">
           <h3 class="title-medium">Puesto o Cargo</h3>
@@ -227,7 +186,6 @@
         <p class="title-small">Nombre de la Empresa</p>
         <p>Descripcion del puesto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus, veritatis praesentium minima voluptatem dignissimos autem libero, expedita facere. Incidunt, animi, debitis.</p>
       </div>
-
       <div class="option">
         <div class="titulo-option">
           <h3 class="title-medium">Puesto o Cargo</h3>
@@ -236,13 +194,11 @@
         <p class="title-small">Nombre de la Empresa</p>
         <p>Descripcion del puesto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus, veritatis praesentium minima voluptatem dignissimos autem libero, expedita facere. Incidunt, animi, debitis.</p>
       </div>
-
     </div>
 
 
     <div class="background-info margin">
       <h3 class="title-big">Estudios</h3>
-
       <div class="option">
         <div class="titulo-option">
           <h3 class="title-medium">Estudios realizados</h3>
@@ -260,7 +216,6 @@
         <p class="title-small">Nombre de la escuela</p>
         <p>Descripcion breve. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus.</p>
       </div>
-
     </div>
 
     <div class="language-info margin">
@@ -304,78 +259,23 @@
         <img src="" alt="">
       </div>
     </div>
-
   </section>
 
-<div class="button"><a href="#top"><img src="flecha.jpg" alt="back to the top"></a></div>
-  <footer>
+  <div class="button"><a href="#top"><img src="flecha.jpg" alt="back to the top"></a></div>
+
+</main>
+
+<footer>
     <div class="footer-container">
       <div class="footer-items">VarWomen 	&copy; 2017  (AÑADIR LOGO)</div>
       <div class="footer-items"><a href="http://politicadecookies.com/" target="_blank">Politica de cookies</a></div>
     </div>
-  </footer>
+</footer>
 
 
-  <!-- Resume -->
-  <!--
-  <section>
-    <div class="col2 resume">
-      <section class="aside-cv">
-        <div class="foto-perfil"></div>
-        <div class="extracto">
-          <h3>SOBRE MÍ</h3>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nesciunt. Odio ad eius ipsa facere optio error debitis suscipit sequi aut officiis, laboriosam ipsam aliquid alias, iusto adipisci consequuntur explicabo.
-          </p>
-        </div>
-        <div class="contacto">
-          <h3>CONTACTO</h3>
-          <hr>
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="social-media">
-          <h3>SOCIAL</h3>
-          <hr>
-          <p>Linkedin</p>
-          <p>GitHub</p>
-        </div>
-      </section>
-      <section class="body-cv">
-        <div class="datos-personales">
-          <h2>Federica Estevez García</h2>
-          <h3>Front-End Developer</h3>
-        </div>
-        <div class="experiencia">
-          <h3>EXPERIENCIA LABORAL</h3>
-        </div>
-        <div class="estudios">
-          <h3>ESTUDIOS</h3>
-        </div>
-        <div class="col2">
-          <div class="idiomas">
-            <h3>IDIOMAS</h3>
-          </div>
-          <div class="skils">
-            <h3>SKILLS</h3>
-          </div>
-        </div>
-        <div class="hobbies">
-          <h3>HOBBIES</h3>
-          <div class="">
 
-          </div>
-        </div>
-      </section>
 
-    </div>
-  </section>
-  -->
-
-</main>
   <!-- Footer -->
-  <footer></footer>
 
   <script src="" charset="utf-8"></script>
 
