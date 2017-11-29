@@ -19,6 +19,13 @@ a{
     text-decoration: none;
 }
 
+header{
+  position: fixed;
+  background: #e66760;
+  width: 100%;
+  z-index: 1;
+}
+
 .margin {
   margin: 60px 0;
 }
