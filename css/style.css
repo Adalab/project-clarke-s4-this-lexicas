@@ -349,25 +349,18 @@ footer {
 
 /*Footer*/
 
-/*button*/
+/* -- Button to the top -- */
 
-.button {
+.button-up {
   position: fixed;
   left: 95%;
-  top: 85%;
-  color: green;
+  top: 75%;
   display: block;
-  text-align: center;
 }
-
-
-.button img {
-  width: 50%;
-  border: 1px solid #e66760;
-  opacity: 0.3;
+.button-up img {
+  width: 50px;
+  opacity: 0.5;
 }
-
-.button img:hover {
-    opacity: 1;
+.button-up img:hover {
+  opacity: 1;
 }
-/*button*/
