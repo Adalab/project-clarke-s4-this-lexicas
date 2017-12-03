@@ -84,7 +84,7 @@ header{
 
 input, textarea, select {
   padding: 10px;
-  margin: 10px 5px;
+  margin: 10px 0;
   background-color: #fff;
   border-width: 0;
   border: 1px solid #ccc;
@@ -102,44 +102,30 @@ input[type=submit]{
   color: #fff;
 }
 
-#start, #end, #skills, #language, #skills, #nivel {
-  width: 80%;
-}  /*--Modifica Sara: dates, languages, nivel and skills width reduced*/
-
-
-
 fieldset {
   margin: 50px 0;
-  border: none;
 }
 
 legend {
-  display: block;
-  width: 80%;
+  width: 90%;
   height: 2.5em;
-  margin-left: auto;
-  margin-right: auto;
   background: #e66760;
   color: #fff;
-  margin-bottom: -1.2%;
   font-size: 18px;
   line-height: 2.5em;
   text-align: center;
   font-weight: bold;
-} /*Modifica Sara*/
+}
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
- .form-container {
-   width: 100%;
-   display: flex;
-   flex-direction: row;
-   border: 1px solid red;
- }  /*Modifica Sara: class added for start and end dates, skills and language*/
+.form-container-items {
+   width: 45%;
+ }
 
- .form-container-items {
-   width: 100%;
-   border: 1px solid green;
-   text-align: center;
- }  /*Modifica Sara: class added for start and end dates, skills and language*/
 
 
 
