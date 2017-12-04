@@ -116,7 +116,10 @@ input, textarea, select {
   -moz-appearance: none;
   appearance: none;
 }
-
+label {
+  font-size: 13px;
+  color: #fff;
+}
 input[type=submit]{
   background-color: #09f;
   border-radius: 5px;
