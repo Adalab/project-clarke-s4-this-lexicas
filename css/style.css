@@ -24,9 +24,9 @@ header{
   position: fixed;
   background: #e66760;
   width: 100%;
-height: 12%;
+  height: 12%;
   z-index: 1;
- position: fixed;
+  position: fixed;
  display: flex;
  justify-content: space-between;
  padding: 0 20px;
@@ -89,6 +89,7 @@ header ul li {
   color: #fff;
 
 }
+
 
 
 /* -- Estilos formulario -- */
@@ -234,7 +235,7 @@ legend {
  .options-content-items {
    font-size: 13px;
    margin: 0;
-   margin-right: 30px;
+   margin-right: 15px;
  }
 
  .personal-info-desktop {
@@ -378,7 +379,7 @@ footer {
 
 .button-up {
   position: fixed;
-  left: 95%;
+  left: 80%;
   top: 75%;
   display: block;
 }
@@ -388,4 +389,18 @@ footer {
 }
 .button-up img:hover {
   opacity: 1;
+}
+
+@media all and (min-width: 724px){
+  .button-up {
+    top: 85%;
+    left: 85%;
+  }
+}
+
+@media all and (min-width: 1024px){
+  .button-up {
+    top: 83%;
+    left: 92%;
+  }
 }
