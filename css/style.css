@@ -29,6 +29,7 @@ height: 12%;
  position: fixed;
  display: flex;
  justify-content: space-between;
+ align-items: center;
  padding: 0 20px;
  color: #fff;
 }
@@ -88,14 +89,28 @@ header ul li {
 
 .boton-start {
   position: absolute;
+  display: flex;
   top: 52%;
   right: 29%;
   padding: 10px 30px;
   background-color: #e66760;
   border-radius: 5px;
   color: #fff;
-
 }
+
+@media all and (max-width: 300px) {
+  header {
+    padding-top: 10px;
+  }
+  }
+
+@media all and (max-width: 900px:) {
+
+
+  }
+}
+
+
 
 
 /* -- Estilos formulario -- */
