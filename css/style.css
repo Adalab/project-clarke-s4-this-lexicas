@@ -90,6 +90,74 @@ header ul li {
 
 }
 
+/* -- Estilos steps section -- */
+.steps-section{
+  background: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 60px 0 90px 0;
+}
+
+.steps-section h2 {
+  padding-top: 40px;
+  margin: 0;
+}
+
+.step {
+  padding: 40px 24px;
+}
+
+.steps img {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boton-start-second {
+  padding: 10px 80px;
+  margin-top: 40px;
+  background-color: #e66760;
+  border-radius: 5px;
+  color: #fff;
+}
+
+@media all and (min-width: 830px){
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .step{
+    width: 50%;
+    padding: 0 50px;
+    margin: 70px 0;
+  }
+  .steps-section {
+    padding: 50px 40px;
+  }
+}
+
+@media all and (min-width: 1200px){
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .step{
+    width: 25%;
+    margin: 70px 0;
+    padding: 0 50px;
+  }
+  .steps-section {
+    padding: 50px 40px;
+  }
+  .boton-start-second{
+    display: none;
+  }
+}
+
 
 
 /* -- Estilos formulario -- */
