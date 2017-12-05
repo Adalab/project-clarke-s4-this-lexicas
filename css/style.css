@@ -20,34 +20,6 @@ a{
     text-decoration: none;
 }
 
-header{
-  position: fixed;
-  background: #e66760;
-  width: 100%;
-  height: 12%;
-  z-index: 1;
-  position: fixed;
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 0 20px;
- color: #fff;
-}
-
-header ul {
-  width: 100%;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-header ul li {
-  display: inline;
-  text-decoration: none;
-  margin-left: 30px;
-}
-
-
 .margin {
   margin: 60px 0;
 }
@@ -67,6 +39,36 @@ header ul li {
   text-align: justify;
 }
 
+/* estilos header */
+
+header{
+  position: fixed;
+  background: #e66760;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  color: #fff;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li {
+  display: inline;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
 
 
 /* -- Estilos cabecera -- */
@@ -76,30 +78,36 @@ header ul li {
 }
 
 .img-cabecera {
+  display: block;
   width: 100%;
-  padding-top: 30px;
+}
+
+.img-cabecera-desktop{
+  display: none;
+  width: 100%;
 }
 
 .boton-start {
   position: absolute;
-  display: flex;
-  top: 52%;
-  right: 29%;
+  top: 57%;
+  left: 30%;
   padding: 10px 30px;
   background-color: #e66760;
   border-radius: 5px;
   color: #fff;
 }
 
-@media all and (max-width: 300px) {
-  header {
-    padding-top: 10px;
+
+@media all and (min-width: 724px) {
+  .img-cabecera{
+    display: none;
   }
+  .img-cabecera-desktop{
+    display: block;
   }
-
-@media all and (max-width: 900px:) {
-
-
+  .boton-start{
+    top: 57%;
+    left: 43%;
   }
 }
 
