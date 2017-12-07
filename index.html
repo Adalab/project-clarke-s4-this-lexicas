@@ -84,10 +84,13 @@
         <input id="tel" type="tel" name="tel" value="" placeholder="Teléfono Móvil">
         <label for="mail" class="hidden">Email</label>
         <input id="mail" type="mail" name="mail" value="" placeholder="Email">
-        <label for="city" class="hidden">Ciudad</label>
-        <input id="city" type="text" name="city" value="" placeholder="Ciudad">
         <label for="postalcode" class="hidden">Código Postal</label>
         <input id="postalcode" type="text" name="postalcode" value="" placeholder="Código Postal">
+        <label for="city" class="hidden">Ciudad</label>
+        <input id="city" type="text" name="city" value="" placeholder="Ciudad">
+        <label for="pais" class="hidden">Ciudad</label>
+        <input id="pais" type="text" name="country" value="" placeholder="país">
+
         </div>
         <!--<input type="submit" name="" value="Añadir"> -->
         <button type="button" name="button" id="button1">Añadir</button>
@@ -211,31 +214,34 @@
       <aside class="resume-left">
               <div class="profile-picture margin"></div>
               <div class="personal-info-mvl margin">
-                <h2 class="title">Federica Estevez García</h2>
-                <h2 class="title-medium">Front-End Developer</h3>
+                <h2 class="title" id="CV0">Federica Estevez García</h2>
+                <h2 class="title-medium" id="CV0">Front-End Developer</h3>
               </div>
               <div class="extract-info">
                 <h3>Sobre mí</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nesciunt. Odio ad eius ipsa facere optio error debitis suscipit sequi aut officiis, laboriosam ipsam aliquid alias, iusto adipisci consequuntur explicabo.
                 </p>
+                <p id="fecha-nacimiento">Fecha nacimiento</p>
               </div>
 
               <div class="contact-section">
                   <div class="contact-info">
                     <h4>Contacto</h4>
-                    <div class="location-info">
+                    <div class="phone-info">
                       <img src="" alt="">
-                      <p>Madrid, España</p>
+                      <p id="CV2">+34 620367998</p>
                     </div>
                     <div class="email-info">
                       <img src="" alt="">
-                      <p>ejemplo@mail.com</p>
+                      <p id="CV2">ejemplo@mail.com</p>
                     </div>
-                    <div class="phone-info">
+                    <div class="location-info">
                       <img src="" alt="">
-                      <p>+34 620367998</p>
+                      <p id="CV2">Madrid (España)</p>
                     </div>
+
+
                   </div>
 
                   <div class="social-media">
@@ -248,8 +254,8 @@
 
       <div class="resume-right">
               <div class="personal-info-desktop margin">
-                <h2 class="title" id="CV">Federica Estevez García</h2>
-                <h2 class="title-medium" id="CV">Front-End Developer</h3>
+                <h2 class="title" id="CV1">Federica Estevez García</h2>
+                <h3 class="title-medium" id="CV1">Front-End Developer</h3>
               </div>
 
               <div class="work-info margin">
