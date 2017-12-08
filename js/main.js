@@ -35,7 +35,7 @@ function showIntoCV1() {
 var button1 = document.querySelector('#button1');
 button1.addEventListener('click',showIntoCV1);
 
-// 2 inpunts, 4 select, 1 text area
+
 //ESTUDIOS:
 var userInputStudy = document.querySelectorAll('.estudios input');
 var studyDates = document.querySelectorAll('.estudios select');
@@ -83,6 +83,53 @@ function showIntoCV2() {
     studyEndingDate.innerHTML = meses[mesesSelect[1].selectedIndex] + ' ' + (añosSelect[1].selectedIndex + startingYear); //en mesesSelect esta el array. con mesesSelect.selectedIntex yo voy a determinar el elemento a traves de su numero de order en array
   }
 
+
+  //EXPERIENCIA LABORAL:
+  var userInputWork = document.querySelectorAll('.experiencia-laboral input');
+  var workDates = document.querySelectorAll('.experiencia-laboral select');
+  var descriptionWork = document.querySelector('.experiencia-laboral textarea');
+  var workType = document.querySelector('#work-type-CV');
+  var companyName = document.querySelector('#company-name-CV');
+  var workStartingDate = document.querySelector('#start-work-date');  //parrafo donde va escrita la fecha de inicio de estudios
+  var workEndingDate = document.querySelector('#end-work-date');  //parrafo donde va escrita la fecha de fin de estudios
+  var workDescription = document.querySelector('#work-description');
+
+  //Variables fechas - meses
+  var mesesSelectWork = document.querySelectorAll('.months-work'); //es el select, que son 2 porque ho 2 select con class months, por esto tengo que tratarlos como si fueran un array
+  var mesesWork = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+  var optionsMonthWork = ""; //puesto por dentro del array, el bucle procesaba todo dandome solo diciembre
+
+  for (var i = 0; i < mesesWork.length; i = i+1) {
+    optionsMonthWork = optionsMonthWork + '<option>' + mesesWork[i] + '\n' + '</option>'; //en mesesSelect yo pongo el intero array
+  }
+  for(var i = 0 ; i < mesesSelectWork.length ; i = i+1) {
+    mesesSelectWork[i].innerHTML = optionsMonthWork;   //voy a extender a los 2 select con class monthsStudy
+  }
+  //Variables fechas - años
+  var añosSelectWork = document.querySelectorAll('.years-work'); //es el select, que son 2 porque ho 2 select con class months, por esto tengo que tratarlos como si fueran un array
+  var startingYearWork = 1950;
+  var endingYearWork = 2017;
+  var optionsYearWork = "";
+  for(var i = startingYearWork; i<=endingYearWork; i = i+1){
+    optionsYearWork = optionsYearWork + "<option>"+ i +"</option>";
+  }
+  añosSelectWork.innerHTML = optionsYearWork;  //en añosSelect yo pongo el intero array
+  for(var i = 0 ; i < añosSelectWork.length ; i = i+1) {
+    añosSelectWork[i].innerHTML = optionsYearWork;   //voy a extender a los 2 select con class years
+  }
+
+
+  //Evento
+  var button3 = document.querySelector('#button3');
+  button3.addEventListener('click',showIntoCV3);
+
+  function showIntoCV3() {
+    workType.innerHTML = userInputWork[0].value;
+    companyName.innerHTML = userInputWork[1].value + ', ' + userInputWork[2].value + ' (' + userInputWork[3].value + ')';
+    workDescription.innerHTML = descriptionWork.value;
+      workStartingDate.innerHTML = mesesWork[mesesSelectWork[0].selectedIndex] + ' ' + (añosSelectWork[0].selectedIndex + startingYearWork) + ' - ';
+      workEndingDate.innerHTML = mesesWork[mesesSelectWork[1].selectedIndex] + ' ' + (añosSelectWork[1].selectedIndex + startingYearWork); //en mesesSelect esta el array. con mesesSelect.selectedIntex yo voy a determinar el elemento a traves de su numero de order en array
+    }
 
 
 //Notas:
