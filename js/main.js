@@ -13,6 +13,8 @@ var dataSocial = document.querySelectorAll('#social-enlace');
 function showIntoCV1() {
   dataCV1[0].innerHTML = userInputPersonales1[0].value;
   dataCV1[1].innerHTML = userInputPersonales1[1].value;
+  dataCV0[0].innerHTML = userInputPersonales1[0].value;
+  dataCV0[1].innerHTML = userInputPersonales1[1].value;
   dataFecha.innerHTML = userInputPersonales1[2].value;
   dataCV2[0].innerHTML = userInputPersonales1[3].value;
   dataCV2[1].innerHTML = userInputPersonales1[4].value;
