@@ -36,16 +36,42 @@ var button1 = document.querySelector('#button1');
 button1.addEventListener('click',showIntoCV1);
 
 // 2 inpunts, 4 select, 1 text area
-//Estudios:
+//ESTUDIOS:
 var userInputStudy = document.querySelectorAll('.estudios input');
 var studyDates = document.querySelectorAll('.estudios select');
 var description = document.querySelector('.estudios textarea');
 var studyTitle = document.querySelector('#study-title');
 var instituteName = document.querySelector('#school');
-var startingStudyDate = document.querySelector('#start-date');
-var endingStudyDate = document.querySelector('#end-date');
+var studyStartingDate = document.querySelector('#start-study-date');  //parrafo donde va escrita la fecha de inicio de estudios
+var studyEndingDate = document.querySelector('#end-study-date');  //parrafo donde va escrita la fecha de fin de estudios
 var studyDescription = document.querySelector('#study-description');
 
+//Variables fechas - meses
+var mesesSelect = document.querySelectorAll('.monthsStudy'); //es el select, que son 2 porque ho 2 select con class months, por esto tengo que tratarlos como si fueran un array
+var meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+var optionsMonth = ""; //puesto por dentro del array, el bucle procesaba todo dandome solo diciembre
+
+for (var i = 0; i < meses.length; i = i+1) {
+  optionsMonth = optionsMonth + '<option>' + meses[i] + '\n' + '</option>'; //en mesesSelect yo pongo el intero array
+}
+for(var i = 0 ; i < mesesSelect.length ; i = i+1) {
+  mesesSelect[i].innerHTML = optionsMonth;   //voy a extender a los 2 select con class monthsStudy
+}
+//Variables fechas - años
+var añosSelect = document.querySelectorAll('.yearsStudy'); //es el select, que son 2 porque ho 2 select con class months, por esto tengo que tratarlos como si fueran un array
+var startingYear = 1950;
+var endingYear = 2017;
+var optionsYear = "";
+for(var i = startingYear; i<=endingYear; i = i+1){
+  optionsYear = optionsYear + "<option>"+ i +"</option>";
+}
+añosSelect.innerHTML = optionsYear;  //en añosSelect yo pongo el intero array
+for(var i = 0 ; i < añosSelect.length ; i = i+1) {
+  añosSelect[i].innerHTML = optionsYear;   //voy a extender a los 2 select con class years
+}
+
+
+//Evento
 var button2 = document.querySelector('#button2');
 button2.addEventListener('click',showIntoCV2);
 
@@ -53,10 +79,14 @@ function showIntoCV2() {
   studyTitle.innerHTML = userInputStudy[0].value;
   instituteName.innerHTML = userInputStudy[1].value + ', ' + userInputStudy[2].value + ' (' + userInputStudy[3].value + ')';
   studyDescription.innerHTML = description.value;
-}
+    studyStartingDate.innerHTML = meses[mesesSelect[0].selectedIndex] + ' ' + (añosSelect[0].selectedIndex + startingYear) + ' - ';
+    studyEndingDate.innerHTML = meses[mesesSelect[1].selectedIndex] + ' ' + (añosSelect[1].selectedIndex + startingYear); //en mesesSelect esta el array. con mesesSelect.selectedIntex yo voy a determinar el elemento a traves de su numero de order en array
+  }
+
 
 
 //Notas:
 // 1. poner en dataSOcial0-2 los iconos de los social;
 //2. poner obligatorios todos los campos
-//3.meter social a parte
+//3.poner 1 sola experiencia laaboral y estudio en occulto
+//
