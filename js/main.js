@@ -6,19 +6,9 @@ var dataCV1 = document.querySelectorAll('#CV1'); //CV, nombre y profesion
 var dataCV0 = document.querySelectorAll('#CV0'); //CV, nombre y profesion in movil
 var dataFecha = document.querySelector('#fecha-nacimiento');  //CV, fecha de nacimiento
 var dataCV2 = document.querySelectorAll('#CV2');
+var dataSocial = document.querySelectorAll('#social-enlace');
 
-/*function showIntoCV1() {
-  for (var i = 0; i < 2; i++) {
-    dataCV1[i].innerHTML = userInputPersonales1[i].value;
-  }
-  //dataCV1[i].innerHTML = dataCV0[i].innerHTML;
-  for (var i = 2; i < 3; i++) {
-    dataFecha.innerHTML = userInputPersonales1[i].value;
-  }
-  for (var i = 3; i < 5; i++) {
-    dataCV2[i].innerHTML = userInputPersonales1[i].value;
-  }
-} */
+
 
 function showIntoCV1() {
   dataCV1[0].innerHTML = userInputPersonales1[0].value;
@@ -27,11 +17,18 @@ function showIntoCV1() {
   dataCV2[0].innerHTML = userInputPersonales1[3].value;
   dataCV2[1].innerHTML = userInputPersonales1[4].value;
   dataCV2[2].innerHTML = userInputPersonales1[5].value + ' ' + userInputPersonales1[6].value + ', ' + userInputPersonales1[7].value;
+  dataSocial[0].innerHTML =  'Linkedin: ' + userInputPersonales1[8].value;
+  dataSocial[1].innerHTML = 'Twitter: ' + userInputPersonales1[9].value;
+  dataSocial[2].innerHTML = 'GitHub: ' +userInputPersonales1[10].value;
 }
-
 
 var button1 = document.querySelector('#button1');
 button1.addEventListener('click',showIntoCV1);
+
+//Notas:
+// 1. poner en dataSOcial0-2 los iconos de los social;
+//2. poner obligatorios todos los campos
+//3.meter social a parte
 
 
 //Datos personales - nombre y profesion para movil
