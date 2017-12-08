@@ -95,22 +95,26 @@
         <input id="gh" type="text" name="enlaceGitHub" value="" placeholder="Tu cuenta GitHub, ej. @Belen23">
         <label for="tw" class="hidden">Enlace Twitter</label>
         <input id="tw" type="text" name="enlaceTwitter" value="" placeholder="Tu cuenta Twitter, ej. @SaraPeir">
-
         </div>
         <!--<input type="submit" name="" value="Añadir"> -->
         <button type="button" name="button" id="button1">Añadir</button>
       </fieldset>
 
       <fieldset class="col1">
+        <div class="estudios">
         <legend>Estudios</legend>
         <label for="titulo" class="hidden">Titulo</label>
         <input type="text" name="title" id="titulo" value="" placeholder="Titulo">
         <label for="instituto" class="hidden">Escuela o Universidad</label>
         <input type="text" name="institute" id="instituto" value="" placeholder="Escuela o Universidad">
+        <label for="instituto-ciudad" class="hidden">Ciudad</label>
+        <input type="text" name="city" id="instituto-ciudad" value="" placeholder="Ciudad">
+        <label for="institudo-pais" class="hidden">Ciudad</label>
+        <input type="text" name="pais" id="instituto-pais" value="" placeholder="País">
         <!--fechas inicio y fin-->
         <div class="form-container">
             <div class="form-container-items">
-              <label for="start">Inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
+              <label for="start">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
               <select class="" name="">
 
               </select>
@@ -119,7 +123,7 @@
               </select>
             </div>
             <div class="form-container-items">
-              <label for="end">Fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
+              <label for="end">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
               <select class="" name="">
 
               </select>
@@ -129,10 +133,11 @@
             </div>
           </div>
 
-        <label for="descripcion" class="hidden">Descripción</label>
-        <label for="descripcion" class="hidden">Descripción</label>
+        <label for="descripcion" class="">Descripción</label> <!--He quitado la class hidden porque el placeholder in textarea no arranca -->
         <textarea id="descripcion" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea>
-        <input type="submit" name="" value="Añadir">
+        </div>
+        <!--<input type="submit" name="" value="Añadir">-->
+        <button type="button" name="button" id="button2">Añadir</button>
       </fieldset>
 
       <fieldset class="col1">
@@ -302,7 +307,7 @@
               <div class="background-info margin">
                 <h3>Estudios</h3>
 
-                <div class="option">
+                <!--<div class="option">
                   <h4>Estudios realizados</h4>
                   <div class="where-info">
                     <h5>Nombre de la escuela</h5>
@@ -314,18 +319,18 @@
                   <p>
                     Descripcion breve. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus.
                   </p>
-                </div>
+                </div> -->
 
                 <div class="option">
-                    <h4>Estudios realizados</h4>
+                    <h4 id="study-title">Estudios realizados</h4>
                     <div class="where-info">
-                      <h5>Nombre de la escuela</h5>
+                      <h5 id="school">Nombre de la escuela</h5>
                       <div class="date-info">
-                        <p>March 16</p>
-                        <p>Sept 16</p>
+                        <p id="start-date">March 16</p>
+                        <p id="end-date">Sept 16</p>
                       </div>
                     </div>
-                  <p>
+                  <p id="study-description">
                     Descripcion breve. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus.
                   </p>
               </div>

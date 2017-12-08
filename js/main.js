@@ -1,14 +1,12 @@
 'use strict';
 
-//Datos personales - nombre y profesion pantalla grande
+//Datos personales
 var userInputPersonales1 = document.querySelectorAll('.datos-personales input'); //formulario
 var dataCV1 = document.querySelectorAll('#CV1'); //CV, nombre y profesion
 var dataCV0 = document.querySelectorAll('#CV0'); //CV, nombre y profesion in movil
 var dataFecha = document.querySelector('#fecha-nacimiento');  //CV, fecha de nacimiento
 var dataCV2 = document.querySelectorAll('#CV2');
 var dataSocial = document.querySelectorAll('#social-enlace');
-
-
 
 function showIntoCV1() {
   dataCV1[0].innerHTML = userInputPersonales1[0].value;
@@ -37,46 +35,28 @@ function showIntoCV1() {
 var button1 = document.querySelector('#button1');
 button1.addEventListener('click',showIntoCV1);
 
+// 2 inpunts, 4 select, 1 text area
+//Estudios:
+var userInputStudy = document.querySelectorAll('.estudios input');
+var studyDates = document.querySelectorAll('.estudios select');
+var description = document.querySelector('.estudios textarea');
+var studyTitle = document.querySelector('#study-title');
+var instituteName = document.querySelector('#school');
+var startingStudyDate = document.querySelector('#start-date');
+var endingStudyDate = document.querySelector('#end-date');
+var studyDescription = document.querySelector('#study-description');
+
+var button2 = document.querySelector('#button2');
+button2.addEventListener('click',showIntoCV2);
+
+function showIntoCV2() {
+  studyTitle.innerHTML = userInputStudy[0].value;
+  instituteName.innerHTML = userInputStudy[1].value + ', ' + userInputStudy[2].value + ' (' + userInputStudy[3].value + ')';
+  studyDescription.innerHTML = description.value;
+}
+
+
 //Notas:
 // 1. poner en dataSOcial0-2 los iconos de los social;
 //2. poner obligatorios todos los campos
 //3.meter social a parte
-
-
-//Datos personales - nombre y profesion para movil
-/*var userInputPersonales0 = document.querySelectorAll('.personal-info-mvl margin h2');
-var dataCV0 = document.querySelectorAll('#CV0');
-
-function showIntoCV0() {
-  for (var i = 0; i < 2; i++) {
-    dataCV0[i].innerHTML = userInputPersonales0[i].value;
-}
-}
-
-var button1 = document.querySelector('#button1');
-button1.addEventListener('click',showIntoCV0); */
-
-
-//var datosPersonale = document.querySelector('.datos-personales');
-//var inputDatosPersonales = document.querySelectorAll('input');
-
-
-//var userName = event.currentTarget.getAttribute('#firstname');
-
-
-
-/*var userName = document.querySelector('#firstname');
-var resultNameCV = document.querySelector('#firstnameCV');
-function fillText() {
-  resultNameCV.innerHTML = userName.value;
-}
-
-var userJob = document.querySelector('#job');
-var resultjobCV = document.querySelector('#jobCV');
-function fillText() {
-  resultjobCV.innerHTML = userJob.value;
-}
-
-var button1 = document.querySelector('#button1');
-button1.addEventListener('click', fillText);
-*/
