@@ -110,24 +110,21 @@ for(var i = 0 ; i < añosSelectExtra.length ; i = i+1) {
 //Evento para añadir o quitar en formulario el estudio Extra
 var extraStudy = document.querySelector ('.estudio-extra'); //div con la cosas que tienen que aparecer/desaparecer
 var extraStudyCV = document.querySelector ('.estudio-extra-cv');
-var masButton = document.querySelector('#paragraph-button');
-masButton.addEventListener('click', toAddStudy);
+var masButtonStudy = document.querySelector('#paragraph-button-study');
+masButtonStudy.addEventListener('click', toAddStudy);
 
 function toAddStudy () {
   extraStudy.classList.toggle('hidden');
   extraStudyCV.classList.toggle('hidden');
     if(extraStudy.classList.contains('hidden')){
-      masButton.innerHTML = 'Más +';
+      masButtonStudy.innerHTML = 'Más +';
     } else {
-      masButton.innerHTML = 'Menos -';
+      masButtonStudy.innerHTML = 'Menos -';
     }
     //if(extraStudy.classList.contains('hidden')) {
       //extraStudyCV.classList.contains('hidden');
     //}
 }
-
-
-
 
 //Evento per inviare al CV
 var button2 = document.querySelector('#button2');
@@ -152,7 +149,7 @@ function showIntoCV2() {
   //EXPERIENCIA LABORAL:
   var userInputWork = document.querySelectorAll('.experiencia-laboral input');
   var workDates = document.querySelectorAll('.experiencia-laboral select');
-  var descriptionWork = document.querySelector('.experiencia-laboral textarea');
+  var descriptionWork = document.querySelectorAll('.experiencia-laboral textarea');
   var workType = document.querySelector('#work-type-CV');
   var companyName = document.querySelector('#company-name-CV');
   var workStartingDate = document.querySelector('#start-work-date');  //parrafo donde va escrita la fecha de inicio de estudios
@@ -184,6 +181,45 @@ function showIntoCV2() {
   }
 
 
+
+  //EXPERIENCIA LABORAL EXTRA
+
+  var userInputWorkExtra = document.querySelectorAll('.experiencia-laboral input');
+  var workDatesExtra = document.querySelectorAll('.experiencia-laboral select');
+  //var descriptionExtra = document.querySelector('#description-extra');
+  var workTypeExtra = document.querySelector('#work-type-CV-extra'); //ritona al cv
+  var companyNameExtra = document.querySelector('#company-name-CV-extra'); //ritorna al cv
+  var workStartingDateExtra = document.querySelector('#start-work-date-extra');  //parrafo donde va escrita la fecha de inicio de estudios
+  var workEndingDateExtra = document.querySelector('#end-work-date-extra');  //parrafo donde va escrita la fecha de fin de estudios
+  var workDescriptionExtra = document.querySelector('#work-description-extra');
+
+  //Variables fechas - meses
+  var mesesSelectWorkExtra = document.querySelectorAll('.months-work-extra'); //es el select, que son 2 porque ho 2 select con class months, por esto tengo que tratarlos como si fueran un array
+  var mesesWorkExtra = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+  var optionsMonthWorkExtra = ""; //puesto por dentro del array, el bucle procesaba todo dandome solo diciembre
+
+  for (var i = 0; i < mesesWorkExtra.length; i = i+1) {
+    optionsMonthWorkExtra = optionsMonthWorkExtra + '<option>' + mesesWorkExtra[i] + '\n' + '</option>'; //en mesesSelect yo pongo el intero array
+  }
+  for(var i = 0 ; i < mesesSelectWorkExtra.length ; i = i+1) {
+    mesesSelectWorkExtra[i].innerHTML = optionsMonthWorkExtra;   //voy a extender a los 2 select con class monthsStudy
+  }
+  //Variables fechas - años
+  var añosSelectWorkExtra = document.querySelectorAll('.years-work-extra'); //es el select, que son 2 porque ho 2 select con class months, por esto tengo que tratarlos como si fueran un array
+  var startingYearWorkExtra = 1950;
+  var endingYearWorkExtra = 2017;
+  var optionsYearWorkExtra = "";
+  for(var i = startingYearWorkExtra; i<=endingYearWorkExtra; i = i+1){
+    optionsYearWorkExtra = optionsYearWorkExtra + "<option>"+ i +"</option>";
+  }
+  añosSelectWorkExtra.innerHTML = optionsYearWorkExtra;  //en añosSelect yo pongo el intero array
+  for(var i = 0 ; i < añosSelectWorkExtra.length ; i = i+1) {
+    añosSelectWorkExtra[i].innerHTML = optionsYearWorkExtra;   //voy a extender a los 2 select con class years
+  }
+
+
+
+
   //Evento
   var button3 = document.querySelector('#button3');
   button3.addEventListener('click',showIntoCV3);
@@ -191,9 +227,15 @@ function showIntoCV2() {
   function showIntoCV3() {
     workType.innerHTML = userInputWork[0].value;
     companyName.innerHTML = userInputWork[1].value + ', ' + userInputWork[2].value + ' (' + userInputWork[3].value + ')';
-    workDescription.innerHTML = descriptionWork.value;
+    workDescription.innerHTML = descriptionWork[0].value;
       workStartingDate.innerHTML = mesesWork[mesesSelectWork[0].selectedIndex] + ' ' + (añosSelectWork[0].selectedIndex + startingYearWork) + ' - ';
       workEndingDate.innerHTML = mesesWork[mesesSelectWork[1].selectedIndex] + ' ' + (añosSelectWork[1].selectedIndex + startingYearWork); //en mesesSelect esta el array. con mesesSelect.selectedIntex yo voy a determinar el elemento a traves de su numero de order en array
+
+      workTypeExtra.innerHTML = userInputWork[4].value;
+      companyNameExtra.innerHTML = userInputWork[5].value + ', ' + userInputWork[6].value + ' (' + userInputWork[7].value + ')';
+      workDescriptionExtra.innerHTML = descriptionWork[1].value;
+        workStartingDateExtra.innerHTML = mesesWorkExtra[mesesSelectWorkExtra[0].selectedIndex] + ' ' + (añosSelectWorkExtra[0].selectedIndex + startingYearWorkExtra) + ' - ';
+        workEndingDateExtra.innerHTML = mesesWorkExtra[mesesSelectWorkExtra[1].selectedIndex] + ' ' + (añosSelectWorkExtra[1].selectedIndex + startingYearWorkExtra);
     }
 
 
