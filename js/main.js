@@ -219,8 +219,26 @@ function showIntoCV2() {
 
 
 
+  //Evento para añadir o quitar en formulario el estudio Extra
+  var extraWork = document.querySelector ('.work-extra'); //div con la cosas que tienen que aparecer/desaparecer
+  var extraWorkCV = document.querySelector ('.work-extra-cv');
+  var masButtonWork = document.querySelector('#paragraph-button-work');
+  masButtonWork.addEventListener('click', toAddWork);
 
-  //Evento
+  function toAddWork () {
+    extraWork.classList.toggle('hidden');
+    extraWorkCV.classList.toggle('hidden');
+      if(extraWork.classList.contains('hidden')){
+        masButtonWork.innerHTML = 'Más +';
+      } else {
+        masButtonWork.innerHTML = 'Menos -';
+      }
+      //if(extraStudy.classList.contains('hidden')) {
+        //extraStudyCV.classList.contains('hidden');
+      //}
+  }
+
+  //Evento per inviare al CV
   var button3 = document.querySelector('#button3');
   button3.addEventListener('click',showIntoCV3);
 
