@@ -72,6 +72,8 @@
     <form action="" method="post">
       <fieldset class="col1">
         <legend>Datos personales</legend>
+        <button type="button" name="button" id="button-accordion1">Más +</button>
+        <div class="accordion1 hidden">
         <div class="datos-personales">
         <label for="firstname" class="hidden">Nombre</label>
         <input id="firstname"type="text" name="firstname" value="" placeholder="Nombre">
@@ -95,16 +97,19 @@
         <input id="gh" type="text" name="enlaceGitHub" value="" placeholder="Tu cuenta GitHub, ej. @Belen23">
         <label for="tw" class="hidden">Enlace Twitter</label>
         <input id="tw" type="text" name="enlaceTwitter" value="" placeholder="Tu cuenta Twitter, ej. @SaraPeir">
-        <label for="descripcion" class="hidden" >Descripción</label>
+        <label for="descripcion" class="" >Personal descripción</label>
         <textarea name="name" rows="8" cols="80" id="description-personal"></textarea>
         </div>
         <!--<input type="submit" name="" value="Añadir"> -->
         <button type="button" name="button" id="button1">Añadir</button>
+        </div>
       </fieldset>
 
       <fieldset class="col1">
         <div class="estudios">
         <legend>Estudios</legend>
+        <button type="button" name="button" id="button-accordion2">Más +</button>
+        <div class="accordion2 hidden">
           <p>Estudio I</p>
         <label for="titulo" class="hidden">Titulo</label>
         <input type="text" name="title" id="titulo" value="" placeholder="Titulo">
@@ -179,14 +184,18 @@
         <textarea id="description-extra" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea>
         <!--fine estudio extra-->
         </div>
-        </div>
+
         <!--<input type="submit" name="" value="Añadir">-->
         <button type="button" name="button" id="button2">Añadir</button>
+        </div>
+        </div>
       </fieldset>
 
       <fieldset class="col1">
         <div class="experiencia-laboral">
         <legend>Experiencia Laboral</legend>
+        <button type="button" name="button" id="button-accordion3">Más +</button>
+          <div class="accordion3 hidden">
         <label for="work-type" class="hidden">Cargo</label>
         <input type="text" name="cargo" id="work-type" value="" placeholder="Cargo">
         <label for="company" class="hidden">Compañía</label>
@@ -261,12 +270,16 @@
         </div>
 
         <!--<input type="submit" name="" value="Añadir"> -->
-        </div>
+
         <button type="button" name="button" id="button3">Añadir</button>
+        </div>
+      </div>
       </fieldset>
 
       <fieldset class="col1">
         <legend>Idiomas</legend>
+        <button type="button" name="button" id="button-accordion4">Más +</button>
+          <div class="accordion4 hidden">
         <div class="form-container">
             <div class="form-container-items">
               <label for="language" class="hidden">Idioma</label>
@@ -329,16 +342,15 @@
         </div>
 
 
-<div class="idioma-extra1">
-
-</div>
-
         <!--<input type="submit" name="" value="Añadir"> -->
         <button type="button" name="button" id="button4">Añadir</button>
+      </div>
       </fieldset>
 
       <fieldset class="col1">
         <legend>Skills</legend>
+        <button type="button" name="button" id="button-accordion5">Más +</button>
+          <div class="accordion5 hidden">
           <div class="form-container">
             <div class="form-container-items">
             <label for="skills" class="hidden">Skill</label>
@@ -362,9 +374,9 @@
         <div class="form-container-items">
           <select name="nivel" class="" id="nivel-skill2">
             <option value="Beginner">Beginner</option>
-            <option value="Conversational">Conversational</option>
-            <option value="Fluent">Fluent</option>
-            <option value="Native">Native</option>
+            <option value="Conversational">Elementary</option>
+            <option value="Fluent">Intermediate</option>
+            <option value="Native">Advanced</option>
           </select>
         </div>
       </div>
@@ -377,9 +389,9 @@
       <div class="form-container-items">
         <select name="nivel" class="" id="nivel-skill3">
           <option value="Beginner">Beginner</option>
-          <option value="Conversational">Conversational</option>
-          <option value="Fluent">Fluent</option>
-          <option value="Native">Native</option>
+          <option value="Conversational">Elementary</option>
+          <option value="Fluent">Intermediate</option>
+          <option value="Native">Advanced</option>
         </select>
       </div>
     </div>
@@ -392,15 +404,16 @@
     <div class="form-container-items">
       <select name="nivel" class="" id="nivel-skill4">
         <option value="Beginner">Beginner</option>
-        <option value="Conversational">Conversational</option>
-        <option value="Fluent">Fluent</option>
-        <option value="Native">Native</option>
+        <option value="Conversational">Elementary</option>
+        <option value="Fluent">Intermediate</option>
+        <option value="Native">Advanced</option>
       </select>
     </div>
     </div>
 
         <!--<input type="submit" name="" value="Añadir"> -->
         <button type="button" name="button" id="button5">Añadir</button>
+      </div>
       </fieldset>
     </form>
   </section>
