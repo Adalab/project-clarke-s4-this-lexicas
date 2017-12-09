@@ -260,5 +260,3 @@ function showIntoCV2() {
 //Notas:
 // 1. poner en dataSOcial0-2 los iconos de los social;
 //2. poner obligatorios todos los campos
-//3.poner 1 sola experiencia laaboral y estudio en occulto
-//
