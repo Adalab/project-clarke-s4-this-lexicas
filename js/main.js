@@ -36,10 +36,12 @@ var button1 = document.querySelector('#button1');
 button1.addEventListener('click',showIntoCV1);
 
 
+
+
 //ESTUDIOS:
 var userInputStudy = document.querySelectorAll('.estudios input');
 var studyDates = document.querySelectorAll('.estudios select');
-var description = document.querySelector('.estudios textarea');
+var description = document.querySelectorAll('.estudios textarea');
 var studyTitle = document.querySelector('#study-title');
 var instituteName = document.querySelector('#school');
 var studyStartingDate = document.querySelector('#start-study-date');  //parrafo donde va escrita la fecha de inicio de estudios
@@ -74,7 +76,7 @@ for(var i = 0 ; i < añosSelect.length ; i = i+1) {
 
 var userInputStudyExtra = document.querySelectorAll('.estudios input');
 var studyDatesExtra = document.querySelectorAll('.estudios select');
-var descriptionExtra = document.querySelector('.estudios textarea');
+//var descriptionExtra = document.querySelector('#description-extra');
 var studyTitleExtra = document.querySelector('#study-title-extra'); //ritona al cv
 var instituteNameExtra = document.querySelector('#school-extra'); //ritorna al cv
 var studyStartingDateExtra = document.querySelector('#start-study-date-extra');  //parrafo donde va escrita la fecha de inicio de estudios
@@ -105,6 +107,25 @@ for(var i = 0 ; i < añosSelectExtra.length ; i = i+1) {
   añosSelectExtra[i].innerHTML = optionsYearExtra;   //voy a extender a los 2 select con class years
 }
 
+//Evento para añadir o quitar en formulario el estudio Extra
+var extraStudy = document.querySelector ('.estudio-extra'); //div con la cosas que tienen que aparecer/desaparecer
+var extraStudyCV = document.querySelector ('.estudio-extra-cv');
+var masButton = document.querySelector('#paragraph-button');
+masButton.addEventListener('click', toAddStudy);
+
+function toAddStudy () {
+  extraStudy.classList.toggle('hidden');
+  extraStudyCV.classList.toggle('hidden');
+    if(extraStudy.classList.contains('hidden')){
+      masButton.innerHTML = 'Más +';
+    } else {
+      masButton.innerHTML = 'Menos -';
+    }
+    //if(extraStudy.classList.contains('hidden')) {
+      //extraStudyCV.classList.contains('hidden');
+    //}
+}
+
 
 
 
@@ -115,13 +136,14 @@ button2.addEventListener('click',showIntoCV2);
 function showIntoCV2() {
   studyTitle.innerHTML = userInputStudy[0].value;
   instituteName.innerHTML = userInputStudy[1].value + ', ' + userInputStudy[2].value + ' (' + userInputStudy[3].value + ')';
-  studyDescription.innerHTML = description.value;
+  studyDescription.innerHTML = description[0].value;
     studyStartingDate.innerHTML = meses[mesesSelect[0].selectedIndex] + ' ' + (añosSelect[0].selectedIndex + startingYear) + ' - ';
     studyEndingDate.innerHTML = meses[mesesSelect[1].selectedIndex] + ' ' + (añosSelect[1].selectedIndex + startingYear); //en mesesSelect esta el array. con mesesSelect.selectedIntex yo voy a determinar el elemento a traves de su numero de order en array
 
     studyTitleExtra.innerHTML = userInputStudy[4].value;
     instituteNameExtra.innerHTML = userInputStudy[5].value + ', ' + userInputStudy[6].value + ' (' + userInputStudy[7].value + ')';
-    studyDescriptionExtra.innerHTML = descriptionExtra.value;
+    //studyDescriptionExtra.innerHTML = descriptionExtra.value;
+    studyDescriptionExtra.innerHTML = description[1].value;
       studyStartingDateExtra.innerHTML = mesesExtra[mesesSelectExtra[0].selectedIndex] + ' ' + (añosSelectExtra[0].selectedIndex + startingYearExtra) + ' - ';
       studyEndingDateExtra.innerHTML = mesesExtra[mesesSelectExtra[1].selectedIndex] + ' ' + (añosSelectExtra[1].selectedIndex + startingYearExtra);
   }
