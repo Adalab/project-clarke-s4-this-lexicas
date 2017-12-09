@@ -268,10 +268,10 @@
         <div class="form-container">
             <div class="form-container-items">
               <label for="language" class="hidden">Idioma</label>
-              <input type="text" name="language" id="language" value="" placeholder="Idioma">
+              <input type="text" name="language" id="first-language" value="" placeholder="Idioma">
             </div>
             <div class="form-container-items">
-              <select name="nivel" class="" id="nivel">
+              <select name="nivel" class="" id="nivel-first-language">
                 <option value="Beginner">Beginner</option>
                 <option value="Conversational">Conversational</option>
                 <option value="Fluent">Fluent</option>
@@ -279,7 +279,60 @@
               </select>
             </div>
         </div>
-        <input type="submit" name="" value="Añadir">
+        <!--<p id="paragraph-button-languages">Más + </p> -->
+        <br>
+        <div class="form-container">
+            <div class="form-container-items">
+              <label for="language" class="hidden">Idioma</label>
+              <input type="text" name="language" id="extra1-language" value="" placeholder="Idioma">
+            </div>
+            <div class="form-container-items">
+              <select name="nivel" class="" id="nivel-extra1-language">
+                <option value="Beginner">Beginner</option>
+                <option value="Conversational">Conversational</option>
+                <option value="Fluent">Fluent</option>
+                <option value="Native">Native</option>
+              </select>
+            </div>
+        </div>
+        <br>
+        <div class="form-container">
+            <div class="form-container-items">
+              <label for="language" class="hidden">Idioma</label>
+              <input type="text" name="language" id="extra2-language" value="" placeholder="Idioma">
+            </div>
+            <div class="form-container-items">
+              <select name="nivel" class="" id="nivel-extra2-language">
+                <option value="Beginner">Beginner</option>
+                <option value="Conversational">Conversational</option>
+                <option value="Fluent">Fluent</option>
+                <option value="Native">Native</option>
+              </select>
+            </div>
+        </div>
+        <br>
+        <div class="form-container">
+            <div class="form-container-items">
+              <label for="language" class="hidden">Idioma</label>
+              <input type="text" name="language" id="extra3-language" value="" placeholder="Idioma">
+            </div>
+            <div class="form-container-items">
+              <select name="nivel" class="" id="nivel-extra3-language">
+                <option value="Beginner">Beginner</option>
+                <option value="Conversational">Conversational</option>
+                <option value="Fluent">Fluent</option>
+                <option value="Native">Native</option>
+              </select>
+            </div>
+        </div>
+
+
+<div class="idioma-extra1">
+
+</div>
+
+        <!--<input type="submit" name="" value="Añadir"> -->
+        <button type="button" name="button" id="button4">Añadir</button>
       </fieldset>
 
       <fieldset class="col1">
@@ -287,10 +340,10 @@
           <div class="form-container">
             <div class="form-container-items">
             <label for="skills" class="hidden">Skill</label>
-            <input type="text" name="skill" id="skills" value="" placeholder="skill">
+            <input type="text" name="skill" id="skill1" value="" placeholder="Skill">
           </div>
           <div class="form-container-items">
-            <select name="nivel" class="" id="nivel">
+            <select name="nivel" class="" id="nivel-skill1">
               <option value="Beginner">Beginner</option>
               <option value="Conversational">Conversational</option>
               <option value="Fluent">Fluent</option>
@@ -298,7 +351,54 @@
             </select>
           </div>
         </div>
-        <input type="submit" name="" value="Añadir">
+
+        <div class="form-container">
+          <div class="form-container-items">
+          <label for="skills" class="hidden">Skill</label>
+          <input type="text" name="skill" id="skill2" value="" placeholder="Skill">
+        </div>
+        <div class="form-container-items">
+          <select name="nivel" class="" id="nivel-skill2">
+            <option value="Beginner">Beginner</option>
+            <option value="Conversational">Conversational</option>
+            <option value="Fluent">Fluent</option>
+            <option value="Native">Native</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="form-container-items">
+        <label for="skills" class="hidden">Skill</label>
+        <input type="text" name="skill" id="skill3" value="" placeholder="Skill">
+      </div>
+      <div class="form-container-items">
+        <select name="nivel" class="" id="nivel-skill3">
+          <option value="Beginner">Beginner</option>
+          <option value="Conversational">Conversational</option>
+          <option value="Fluent">Fluent</option>
+          <option value="Native">Native</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <div class="form-container-items">
+      <label for="skills" class="hidden">Skill</label>
+      <input type="text" name="skill" id="skill4" value="" placeholder="Skill">
+    </div>
+    <div class="form-container-items">
+      <select name="nivel" class="" id="nivel-skill4">
+        <option value="Beginner">Beginner</option>
+        <option value="Conversational">Conversational</option>
+        <option value="Fluent">Fluent</option>
+        <option value="Native">Native</option>
+      </select>
+    </div>
+    </div>
+
+        <!--<input type="submit" name="" value="Añadir"> -->
+        <button type="button" name="button" id="button5">Añadir</button>
       </fieldset>
     </form>
   </section>
@@ -458,32 +558,40 @@
                     <h4>Idiomas</h4>
                     <div class="options-content">
                       <div class="options-content-items">
-                        <p>Inglés</p>
-                        <p>Italiano</p>
-                        <p>Ruso</p>
+                        <p id="primero-idioma-into-CV">Inglés</p>
+                        <p id="idioma-extra1-into-CV">Italiano</p>
+                        <p id="idioma-extra2-into-CV">Italiano</p>
+                        <p id="idioma-extra3-into-CV">Italiano</p>
+                      <!--  <p>Italiano</p> -->
+                        <!--<p>Ruso</p> -->
                       </div>
                       <div class="options-content-items">
-                        <p>Fluent</p>
-                        <p>Fluent</p>
-                        <p>Beginner</p>
+                        <p id="nivel-primero-idioma-into-CV">Fluent</p>
+                        <p id="nivel-idioma-extra1-into-CV">bssico</p>
+                        <p id="nivel-idioma-extra2-into-CV">bssico</p>
+                        <p id="nivel-idioma-extra3-into-CV">bssico</p>
+                        <!--<p>Fluent</p>-->
+                        <!--<p>Beginner</p> -->
                       </div>
                     </div>
+
+
                   </div>
 
                   <div class="options-content-items">
                     <h4>Skills</h4>
                     <div class="options-content">
                       <div class="options-content-items">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript</p>
-                        <p>PHP</p>
+                        <p id="skill1-cv">HTML5</p>
+                        <p id="skill2-cv">CSS3</p>
+                        <p id="skill3-cv">JavaScript</p>
+                        <p id="skill4-cv">PHP</p>
                       </div>
                       <div class="options-content-items">
-                        <p>Advance</p>
-                        <p>Advance</p>
-                        <p>Advance</p>
-                        <P>Beginner</P>
+                        <p id="skill1-level-cv">Advance</p>
+                        <p id="skill2-level-cv">Advance</p>
+                        <p id="skill3-level-cv">Advance</p>
+                        <P id="skill4-level-cv">Beginner</P>
                       </div>
                     </div>
                   </div>

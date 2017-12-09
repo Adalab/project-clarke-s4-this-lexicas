@@ -256,7 +256,95 @@ function showIntoCV2() {
         workEndingDateExtra.innerHTML = mesesWorkExtra[mesesSelectWorkExtra[1].selectedIndex] + ' ' + (añosSelectWorkExtra[1].selectedIndex + startingYearWorkExtra);
     }
 
+    //IDIOMAS
+    //Primero idioma
+var userInputLanguage = document.querySelector('#first-language');
+var userInputLanguageLevel = document.querySelector('#nivel-first-language');
+var firstLanguageCV = document.querySelector('#primero-idioma-into-CV');
+var firstLanguageCVLevel = document.querySelector('#nivel-primero-idioma-into-CV');
+
+//idioma extra1
+var userInputLanguageExtra1 = document.querySelector('#extra1-language');
+var userInputLanguageExtra1Level = document.querySelector('#nivel-extra1-language');
+var extra1LanguageCV = document.querySelector('#idioma-extra1-into-CV');
+var extra1LanguageCVLevel = document.querySelector('#nivel-idioma-extra1-into-CV');
+
+//idioma extra2
+var userInputLanguageExtra2 = document.querySelector('#extra2-language');
+var userInputLanguageExtra2Level = document.querySelector('#nivel-extra2-language');
+var extra2LanguageCV = document.querySelector('#idioma-extra2-into-CV');
+var extra2LanguageCVLevel = document.querySelector('#nivel-idioma-extra2-into-CV');
+
+//idioma extra3
+var userInputLanguageExtra3 = document.querySelector('#extra3-language');
+var userInputLanguageExtra3Level = document.querySelector('#nivel-extra3-language');
+var extra3LanguageCV = document.querySelector('#idioma-extra3-into-CV');
+var extra3LanguageCVLevel = document.querySelector('#nivel-idioma-extra3-into-CV');
+
+
+
+//Evento para añadir el idioma a el CV
+var button4 = document.querySelector('#button4');
+button4.addEventListener('click',showIntoCV4);
+
+function showIntoCV4() {
+  firstLanguageCV.innerHTML = userInputLanguage.value;
+  firstLanguageCVLevel.innerHTML = userInputLanguageLevel.options[userInputLanguageLevel.selectedIndex].text; //desde Internet
+
+  extra1LanguageCV.innerHTML = userInputLanguageExtra1.value;
+  extra1LanguageCVLevel.innerHTML = userInputLanguageExtra1Level.options[userInputLanguageExtra1Level.selectedIndex].text;  //desde Internet
+
+  extra2LanguageCV.innerHTML = userInputLanguageExtra2.value;
+  extra2LanguageCVLevel.innerHTML = userInputLanguageExtra2Level.options[userInputLanguageExtra2Level.selectedIndex].text;  //desde Internet
+
+  extra3LanguageCV.innerHTML = userInputLanguageExtra3.value;
+  extra3LanguageCVLevel.innerHTML = userInputLanguageExtra3Level.options[userInputLanguageExtra3Level.selectedIndex].text;  //desde Internet
+}
+
+
+//SKILLS
+//skill 1
+var userInputSkill1 = document.querySelector('#skill1');
+var userInputSkill1Level = document.querySelector('#nivel-skill1');
+var Skill1CV = document.querySelector('#skill1-cv');
+var Skill1CVLevel = document.querySelector('#skill1-level-cv');
+
+//skill 2
+var userInputSkill2 = document.querySelector('#skill2');
+var userInputSkill2Level = document.querySelector('#nivel-skill2');
+var Skill2CV = document.querySelector('#skill2-cv');
+var Skill2CVLevel = document.querySelector('#skill2-level-cv');
+
+//skill 3
+var userInputSkill3 = document.querySelector('#skill3');
+var userInputSkill3Level = document.querySelector('#nivel-skill3');
+var Skill3CV = document.querySelector('#skill3-cv');
+var Skill3CVLevel = document.querySelector('#skill3-level-cv');
+
+//skill 4
+var userInputSkill4 = document.querySelector('#skill4');
+var userInputSkill4Level = document.querySelector('#nivel-skill4');
+var Skill4CV = document.querySelector('#skill4-cv');
+var Skill4CVLevel = document.querySelector('#skill4-level-cv');
+
+var button5 = document.querySelector('#button5');
+button5.addEventListener('click',showIntoCV5);
+
+function showIntoCV5() {
+  Skill1CV.innerHTML = userInputSkill1.value;
+  Skill1CVLevel.innerHTML = userInputSkill1Level.options[userInputSkill1Level.selectedIndex].text;  //desde Internet
+
+  Skill2CV.innerHTML = userInputSkill2.value;
+  Skill2CVLevel.innerHTML = userInputSkill2Level.options[userInputSkill2Level.selectedIndex].text;  //desde Internet
+
+  Skill3CV.innerHTML = userInputSkill3.value;
+  Skill3CVLevel.innerHTML = userInputSkill3Level.options[userInputSkill3Level.selectedIndex].text;  //desde Internet
+
+  Skill4CV.innerHTML = userInputSkill4.value;
+  Skill4CVLevel.innerHTML = userInputSkill4Level.options[userInputSkill4Level.selectedIndex].text;  //desde Internet
+}
 
 //Notas:
 // 1. poner en dataSOcial0-2 los iconos de los social;
 //2. poner obligatorios todos los campos
+//3. Hobby? Iconos o parrafos?
