@@ -95,6 +95,8 @@
         <input id="gh" type="text" name="enlaceGitHub" value="" placeholder="Tu cuenta GitHub, ej. @Belen23">
         <label for="tw" class="hidden">Enlace Twitter</label>
         <input id="tw" type="text" name="enlaceTwitter" value="" placeholder="Tu cuenta Twitter, ej. @SaraPeir">
+        <label for="descripcion" class="hidden" >Descripción</label>
+        <textarea name="name" rows="8" cols="80" id="description-personal"></textarea>
         </div>
         <!--<input type="submit" name="" value="Añadir"> -->
         <button type="button" name="button" id="button1">Añadir</button>
@@ -345,9 +347,9 @@
           <div class="form-container-items">
             <select name="nivel" class="" id="nivel-skill1">
               <option value="Beginner">Beginner</option>
-              <option value="Conversational">Conversational</option>
-              <option value="Fluent">Fluent</option>
-              <option value="Native">Native</option>
+              <option value="Conversational">Elementary</option>
+              <option value="Fluent">Intermediate</option>
+              <option value="Native">Advanced</option>
             </select>
           </div>
         </div>
@@ -417,7 +419,7 @@
               </div>
               <div class="extract-info">
                 <h3>Sobre mí</h3>
-                <p>
+                <p id="description-personal-cv">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nesciunt. Odio ad eius ipsa facere optio error debitis suscipit sequi aut officiis, laboriosam ipsam aliquid alias, iusto adipisci consequuntur explicabo.
                 </p>
                 <p id="fecha-nacimiento">Fecha nacimiento</p>

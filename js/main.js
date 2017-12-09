@@ -7,6 +7,8 @@ var dataCV0 = document.querySelectorAll('#CV0'); //CV, nombre y profesion in mov
 var dataFecha = document.querySelector('#fecha-nacimiento');  //CV, fecha de nacimiento
 var dataCV2 = document.querySelectorAll('#CV2');
 var dataSocial = document.querySelectorAll('#social-enlace');
+var descriptionPersonal = document.querySelector('#description-personal');
+var descriptionPersonalCV = document.querySelector('#description-personal-cv');
 
 function showIntoCV1() {
   dataCV1[0].innerHTML = userInputPersonales1[0].value;
@@ -17,6 +19,7 @@ function showIntoCV1() {
   dataCV2[0].innerHTML = userInputPersonales1[3].value;
   dataCV2[1].innerHTML = userInputPersonales1[4].value;
   dataCV2[2].innerHTML = userInputPersonales1[5].value + ' ' + userInputPersonales1[6].value + ', ' + userInputPersonales1[7].value;
+  descriptionPersonalCV.innerHTML = descriptionPersonal.value;
   if(userInputPersonales1[8].value !== '') {
     dataSocial[0].innerHTML =  'Linkedin: ' + userInputPersonales1[8].value;
   } else {
