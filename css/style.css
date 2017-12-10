@@ -69,6 +69,35 @@ header ul li {
   margin-left: 30px;
 }
 
+.logo{
+  width: 150px;
+}
+
+.icon {
+  display: none;
+}
+
+.icon-hamburguer {
+  display: inline;
+  width: 54px;
+}
+
+@media all and (min-width: 724px){
+  header {
+      padding: 20px 40px;
+  }
+  .logo{
+    width: 200px;
+  }
+
+  .icon {
+    display: inline;
+    width: 54px;
+  }
+
+  .icon-hamburguer {
+    display: none;
+  }
 
 
 /* -- Estilos cabecera -- */
@@ -97,7 +126,6 @@ header ul li {
   color: #fff;
 }
 
-
 @media all and (min-width: 724px) {
   .img-cabecera{
     display: none;
@@ -109,7 +137,10 @@ header ul li {
     top: 57%;
     left: 43%;
   }
+
 }
+
+
 
 /* -- Estilos steps section -- */
 .steps-section{
