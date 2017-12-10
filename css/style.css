@@ -98,7 +98,7 @@ header ul li {
   .icon-hamburguer {
     display: none;
   }
-
+}
 
 /* -- Estilos cabecera -- */
 
@@ -137,10 +137,7 @@ header ul li {
     top: 57%;
     left: 43%;
   }
-
 }
-
-
 
 /* -- Estilos steps section -- */
 .steps-section{
