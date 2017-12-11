@@ -73,6 +73,17 @@ header ul li {
   width: 150px;
 }
 
+
+@media all and (min-width: 724px){
+  header {
+      padding: 20px 40px;
+  }
+  .logo{
+    width: 200px;
+  }
+}
+
+
 .icon {
   display: none;
 }
