@@ -79,7 +79,7 @@ header ul li {
 
 .icon-hamburguer {
   display: inline;
-  width: 54px;
+  width: 44px;
 }
 
 @media all and (min-width: 724px){
@@ -92,7 +92,7 @@ header ul li {
 
   .icon {
     display: inline;
-    width: 54px;
+    width: 49px;
   }
 
   .icon-hamburguer {
