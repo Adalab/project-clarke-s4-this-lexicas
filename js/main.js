@@ -284,75 +284,60 @@ function showIntoCV5() {
 }
 
 //ACCORDIONES
-//Accordion 1
-var accordionNum1 = document.querySelector ('.accordion1'); //div con la cosas que tienen que aparecer/desaparecer
-var accordionNum1Button = document.querySelector('#button-accordion1');
-accordionNum1Button.addEventListener('click', showPersonalData);
+var accordion = document.querySelectorAll('.accordion');
+var accordionButton = document.querySelectorAll('#button-accordion');
 
-function showPersonalData () {
-  accordionNum1.classList.toggle('hidden');
-    if(accordionNum1.classList.contains('hidden')){
-      accordionNum1Button.innerHTML = 'Más +';
-    } else {
-      accordionNum1Button.innerHTML = 'Menos -';
-    }
+function showPersonalData(){
+  accordion[0].classList.toggle('hidden');
+  if(accordion[0].classList.contains('hidden')){
+    accordionButton[0].innerHTML = 'Más +';
+  } else{
+    accordionButton[0].innerHTML = 'Menos -';
   }
+}
 
-  //Accordion 2
-  var accordionNum2 = document.querySelector ('.accordion2'); //div con la cosas que tienen que aparecer/desaparecer
-  var accordionNum2Button = document.querySelector('#button-accordion2');
-  accordionNum2Button.addEventListener('click', showStudyData);
+function showStudyData(){
+  accordion[1].classList.toggle('hidden');
+  if(accordion[1].classList.contains('hidden')){
+    accordionButton[1].innerHTML = 'Más +';
+  } else{
+    accordionButton[1].innerHTML = 'Menos -';
+  }
+}
 
-  function showStudyData () {
-    accordionNum2.classList.toggle('hidden');
-      if(accordionNum2.classList.contains('hidden')){
-        accordionNum2Button.innerHTML = 'Más +';
-      } else {
-        accordionNum2Button.innerHTML = 'Menos -';
-      }
-    }
+function showWorkData(){
+  accordion[2].classList.toggle('hidden');
+  if(accordion[2].classList.contains('hidden')){
+    accordionButton[2].innerHTML = 'Más +';
+  } else{
+    accordionButton[2].innerHTML = 'Menos -';
+  }
+}
 
-    //Accordion 3
-    var accordionNum3 = document.querySelector ('.accordion3'); //div con la cosas que tienen que aparecer/desaparecer
-    var accordionNum3Button = document.querySelector('#button-accordion3');
-    accordionNum3Button.addEventListener('click', showWorkData);
+function showLanguages(){
+  accordion[3].classList.toggle('hidden');
+  if(accordion[3].classList.contains('hidden')){
+    accordionButton[3].innerHTML = 'Más +';
+  } else{
+    accordionButton[3].innerHTML = 'Menos -';
+  }
+}
 
-    function showWorkData () {
-      accordionNum3.classList.toggle('hidden');
-        if(accordionNum3.classList.contains('hidden')){
-          accordionNum3Button.innerHTML = 'Más +';
-        } else {
-          accordionNum3Button.innerHTML = 'Menos -';
-        }
-      }
+function showSkills(){
+  accordion[4].classList.toggle('hidden');
+  if(accordion[4].classList.contains('hidden')){
+    accordionButton[4].innerHTML = 'Más +';
+  } else{
+    accordionButton[4].innerHTML = 'Menos -';
+  }
+}
 
-      //Accordion 4
-      var accordionNum4 = document.querySelector ('.accordion4'); //div con la cosas que tienen que aparecer/desaparecer
-      var accordionNum4Button = document.querySelector('#button-accordion4');
-      accordionNum4Button.addEventListener('click', showIdiomaData);
+accordionButton[0].addEventListener('click',showPersonalData);
+accordionButton[1].addEventListener('click',showStudyData);
+accordionButton[2].addEventListener('click',showWorkData);
+accordionButton[3].addEventListener('click',showLanguages);
+accordionButton[4].addEventListener('click',showSkills);
 
-      function showIdiomaData() {
-        accordionNum4.classList.toggle('hidden');
-          if(accordionNum4.classList.contains('hidden')){
-            accordionNum4Button.innerHTML = 'Más +';
-          } else {
-            accordionNum4Button.innerHTML = 'Menos -';
-          }
-        }
-
-        //Accordion 5
-        var accordionNum5 = document.querySelector ('.accordion5'); //div con la cosas que tienen que aparecer/desaparecer
-        var accordionNum5Button = document.querySelector('#button-accordion5');
-        accordionNum5Button.addEventListener('click', showSkillsData);
-
-        function showSkillsData() {
-          accordionNum5.classList.toggle('hidden');
-            if(accordionNum5.classList.contains('hidden')){
-              accordionNum5Button.innerHTML = 'Más +';
-            } else {
-              accordionNum5Button.innerHTML = 'Menos -';
-            }
-          }
 
 //Notas:
 // 1. poner en dataSOcial0-2 los iconos de los social;
