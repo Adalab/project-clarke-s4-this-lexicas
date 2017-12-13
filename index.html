@@ -110,7 +110,7 @@
         <legend>Estudios</legend>
         <button type="button" name="button" id="button-accordion">Más +</button>
         <div class="accordion hidden">
-          <p>Estudio I</p>
+          <p id="form-field">Estudio I</p>
         <label for="titulo" class="hidden">Titulo</label>
         <input type="text" name="title" id="titulo" value="" placeholder="Titulo">
         <label for="instituto" class="hidden">Escuela o Universidad</label>
@@ -123,19 +123,19 @@
         <div class="form-container">
             <div class="form-container-items">
               <label for="start">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
-              <select class="months" name="">
+              <select class="months" name="" id="select-1">
 
               </select>
-              <select class="years" name="">
+              <select class="years" name="" id="select-años-1">
 
               </select>
             </div>
             <div class="form-container-items">
               <label for="end">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
-              <select class="months" name="">
+              <select class="months" name="" id="select-2">
 
               </select>
-              <select class="years" name="">
+              <select class="years" name="" id="select-años-2">
 
               </select>
             </div>
@@ -143,13 +143,14 @@
 
         <label for="descripcion" class="">Descripción</label> <!--He quitado la class hidden porque el placeholder in textarea no arranca -->
         <textarea id="descripcion" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea>
-        <p id="paragraph-button-study">Más + </p>
+        <!--<p id="paragraph-button-study">Más + </p> -->
+
 
 
         <!--estudio extra-->
         <div class="estudio-extra hidden">
         <hr>
-        <p>Estudio II</p>
+        <p id="form-field">Estudio II</p>
         <label for="titulo" class="hidden">Titulo</label>
         <input type="text" name="title" id="titulo" value="" placeholder="Titulo">
         <label for="instituto" class="hidden">Escuela o Universidad</label>
@@ -162,19 +163,19 @@
         <div class="form-container">
             <div class="form-container-items">
               <label for="start">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
-             <select class="months" name="">
+             <select class="months" name="" id="select-3">
 
               </select>
-              <select class="years" name="">
+              <select class="years" name="" id="select-años-3">
 
               </select>
             </div>
             <div class="form-container-items">
               <label for="end">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
-             <select class="months" name="">
+             <select class="months" name="" id="select-4">
 
               </select>
-              <select class="years" name="">
+              <select class="years" name="" id="select-años-4">
 
               </select>
             </div>
@@ -184,6 +185,8 @@
         <textarea id="description-extra" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea>
         <!--fine estudio extra-->
         </div>
+
+        <button type="button" name="button" id="paragraph-button-study">Añadir nuevo estudio</button><br><br>
 
         <!--<input type="submit" name="" value="Añadir">-->
         <button type="button" name="button" id="button2">Añadir</button>
@@ -196,6 +199,7 @@
         <legend>Experiencia Laboral</legend>
         <button type="button" name="button" id="button-accordion">Más +</button>
           <div class="accordion hidden">
+            <p id="form-field">Experiencia laboral I</p>
         <label for="work-type" class="hidden">Cargo</label>
         <input type="text" name="cargo" id="work-type" value="" placeholder="Cargo">
         <label for="company" class="hidden">Compañía</label>
@@ -208,19 +212,19 @@
         <div class="form-container">
             <div class="form-container-items">
               <label for="start">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
-              <select class="months" name="">
+              <select class="months" name="" id="select-5">
 
               </select>
-              <select class="years" name="">
+              <select class="years" name="" id="select-años-5">
 
               </select>
             </div>
             <div class="form-container-items">
               <label for="end">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
-              <select class="months" name="">
+              <select class="months" name="" id="select-6">
 
               </select>
-              <select class="years" name="">
+              <select class="years" name="" id="select-años-6">
 
               </select>
             </div>
@@ -228,12 +232,13 @@
 
         <label for="descripcion" class="hidden">Descripción</label>
         <textarea name="name" rows="8" cols="80"></textarea>
-        <p id="paragraph-button-work">Más + </p>
+
+        <!--<p id="paragraph-button-work">Más + </p> -->
 
         <!--experiencia laboral extra-->
         <div class="work-extra hidden">
         <hr>
-        <p>Experiencia laboral II</p>
+        <p id="form-field">Experiencia laboral II</p>
         <label for="work-type" class="hidden">Cargo</label>
         <input type="text" name="cargo" id="work-type" value="" placeholder="Cargo">
         <label for="company" class="hidden">Compañía</label>
@@ -246,19 +251,19 @@
         <div class="form-container">
             <div class="form-container-items">
               <label for="start">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
-              <select class="months" name="">
+              <select class="months" name="" id="select-7">
 
               </select>
-              <select class="years" name="">
+              <select class="years" name="" id="select-años-7">
 
               </select>
             </div>
             <div class="form-container-items">
               <label for="end">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
-              <select class="months" name="">
+              <select class="months" name="" id="select-8">
 
               </select>
-              <select class="years" name="">
+              <select class="years" name="" id="select-años-8">
 
               </select>
             </div>
@@ -270,6 +275,7 @@
         </div>
 
         <!--<input type="submit" name="" value="Añadir"> -->
+        <button type="button" name="button" id="paragraph-button-work">Añadir nueva experiencia laboral</button><br><br>
 
         <button type="button" name="button" id="button3">Añadir</button>
         </div>
