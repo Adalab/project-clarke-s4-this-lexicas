@@ -12,6 +12,19 @@ for (var i = 0; i < meses.length; i = i+1) {
 for(var i = 0 ; i < mesesSelect.length ; i = i+1) {
   mesesSelect[i].innerHTML = optionsMeses;   //voy a extender a los 2 select con class monthsStudy
 }
+
+var select3 = document.querySelector('#select-3');
+var select4 = document.querySelector('#select-4');
+var select7 = document.querySelector('#select-7');
+var select8 = document.querySelector('#select-8');
+
+var selectYears3 = document.querySelector('#select-años-3');
+var selectYears4 = document.querySelector('#select-años-4');
+var selectYears7 = document.querySelector('#select-años-7');
+var selectYears8 = document.querySelector('#select-años-8');
+
+//select3.value = meses[0];
+
 //Variables fechas - años
 var añosSelect = document.querySelectorAll('.years'); //es el select, que son 2 porque ho 2 select con class months, por esto tengo que tratarlos como si fueran un array
 var startingYear = 1950;
@@ -110,9 +123,23 @@ function toAddStudy () {
   extraStudy.classList.toggle('hidden');
   extraStudyCV.classList.toggle('hidden');
     if(extraStudy.classList.contains('hidden')){
-      masButtonStudy.innerHTML = 'Más +';
+      masButtonStudy.innerHTML = 'Añadir nuevo estudio';
     } else {
-      masButtonStudy.innerHTML = 'Menos -';
+      masButtonStudy.innerHTML = 'Borrar';
+
+      studyTitleExtra.innerHTML = '';
+      instituteNameExtra.innerHTML = '';
+      studyDescriptionExtra.innerHTML = '';
+      userInputStudy[4].value = '';
+       userInputStudy[5].value = '';
+       userInputStudy[6].value = '';
+      userInputStudy[7].value = '';
+      //studyDescriptionExtra.innerHTML = descriptionExtra.value;
+       description[1].value = ''
+      select3.selectedIndex = meses[0];
+      select4.selectedIndex = meses[0];
+      selectYears3.selectedIndex = startingYear;
+      selectYears4.selectedIndex = startingYear;
     }
 }
 
@@ -171,11 +198,27 @@ function showIntoCV2() {
     extraWork.classList.toggle('hidden');
     extraWorkCV.classList.toggle('hidden');
       if(extraWork.classList.contains('hidden')){
-        masButtonWork.innerHTML = 'Más +';
+        masButtonWork.innerHTML = 'Añadir nueva experiencia laboral';
       } else {
-        masButtonWork.innerHTML = 'Menos -';
+        masButtonWork.innerHTML = 'Borrar';
+
+        workTypeExtra.innerHTML = '';
+        companyNameExtra.innerHTML = '';
+        workDescriptionExtra.innerHTML ='';
+          workStartingDateExtra.innerHTML = '';
+          workEndingDateExtra.innerHTML = '';
+          userInputWork[4].value = '';
+          userInputWork[5].value = '';
+          userInputWork[6].value = '';
+          userInputWork[7].value = '';
+          select7.selectedIndex = meses[0];
+          select8.selectedIndex = meses[0];
+          descriptionWork[1].value = '';
+          selectYears7.selectedIndex = startingYear;
+          selectYears8.selectedIndex = startingYear;
       }
-  }
+      }
+
 
   //Evento per inviare al CV
   var button3 = document.querySelector('#button3');

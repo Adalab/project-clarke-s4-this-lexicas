@@ -372,6 +372,23 @@ legend {
   margin: 70px 0;
 }
 
+#form-field{
+  color: #fff;
+  font-weight: bold;
+}
+
+#button1, #button2, #button3, #button4, #button5 {
+  background: #0099ff;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#button-accordion{
+  width: 100%;
+}
+
 
  @media all and (min-width: 1024px){
   .principal-content{
