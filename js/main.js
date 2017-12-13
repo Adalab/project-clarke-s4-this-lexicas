@@ -1,5 +1,15 @@
 'use strict';
 
+//Imprimir CV
+
+function printDiv(printCv) {
+     var contenido= document.getElementById(printCv).innerHTML;
+     var contenidoOriginal= document.body.innerHTML;
+     document.body.innerHTML = contenido;
+       window.print('<link rel="stylesheet" href="css/style.css" media="all">');
+     document.body.innerHTML = contenidoOriginal;
+}
+
 
 //Variables fechas - meses
 var mesesSelect = document.querySelectorAll('.months'); //es el select, que son 2 porque ho 2 select con class months, por esto tengo que tratarlos como si fueran un array

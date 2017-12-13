@@ -286,6 +286,99 @@ legend {
 
  /* -- Estilos cv mobile -- */
 
+
+ @media print { /* Using for the screen as well */
+   .resume-container {
+     width: 90%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   .resume {
+     padding: 20px;
+     background-color: #fff;
+   }
+
+   .resume h3 {
+     background: #e66760;
+     color: #fff;
+     padding: 10px;
+   }
+
+   .profile-picture{
+     width: 200px;
+     height: 200px;
+     border-radius: 100px;
+     background-color: #e66760;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   .contact-section {
+     display: flex;
+   }
+
+   .contact-section p {
+     font-size: 13px;
+     margin: 5px 0;
+     margin-right: 10px;
+   }
+
+   .contact-info, .social-media {
+     width: 50%;
+   }
+
+   .option {
+     margin: 50px 0;
+   }
+
+   .where-info {
+     display: flex;
+     justify-content: space-between;
+   }
+
+   .date-info {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+   }
+
+   .date-info p {
+     font-size: 13px;
+     margin: 0;
+     margin-right: 10px;
+   }
+
+   h5 {
+     font-size: 13px;
+     margin: 0;
+   }
+
+   .options-content {
+     display: flex;
+   }
+
+   .options-content-items {
+     font-size: 13px;
+     margin: 0;
+     margin-right: 15px;
+   }
+
+   .personal-info-desktop {
+    display: none;
+  }
+
+  .extract-info p{
+    margin: 70px 0;
+  }
+
+  .button-print {
+    display: none;
+  }
+ }
+
  .resume-container {
    width: 90%;
    display: block;

@@ -421,9 +421,8 @@
 
 
   <!-- Resume -->
-  <div class="resume-container">
+  <div id="printCv" class="resume-container" onload="window.print();window.close()">
     <section class="resume">
-
       <aside class="resume-left">
               <div class="profile-picture margin"></div>
               <div class="personal-info-mvl margin">
@@ -622,7 +621,10 @@
                 </div>
             </div>
       </div>
+    </div>
+      </div>
     </section>
+    <input class="button-print" type="button" onclick="printDiv('printCv')" value="Imprimir"/>
 </section>
 
 <div class="button-up"><a href="#top"><img src="images/arrow.png" alt="Back to the top"></a></div>
