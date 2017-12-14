@@ -10,6 +10,24 @@ function printDiv(printCv) {
      document.body.innerHTML = contenidoOriginal;
 }
 
+//Foto
+
+var input = document.querySelector('input[type="file"]');
+var img = document.querySelector('.profile-picture');
+input.onchange = function (event) {
+  var files = input.files;
+  if (files && files.length > 0) {
+      showImage(files[0], img);
+  }
+
+  function showImage(image, imgTag) {
+    var fr = new FileReader();
+    fr.onload = function () {
+      imgTag.src = fr.result;
+    }
+    fr.readAsDataURL(image);
+  }
+}
 
 //Variables fechas - meses
 var mesesSelect = document.querySelectorAll('.months'); //es el select, que son 2 porque ho 2 select con class months, por esto tengo que tratarlos como si fueran un array

@@ -306,7 +306,7 @@ legend {
      padding: 10px;
    }
 
-   .profile-picture{
+   .profile-picture {
      width: 200px;
      height: 200px;
      border-radius: 100px;
@@ -397,7 +397,7 @@ legend {
    padding: 10px;
  }
 
- .profile-picture{
+ .profile-picture {
    width: 200px;
    height: 200px;
    border-radius: 100px;
@@ -526,12 +526,14 @@ legend {
     padding: 0 24px;
     width: 70%;
   }
-  .profile-picture{
+
+  .profile-picture {
     width: 140px;
     height: 140px;
     border-radius: 70px;
     margin: 30px auto;
   }
+
   .personal-info-desktop {
     display: block;
     padding: 10px 0;
