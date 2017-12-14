@@ -3,10 +3,10 @@
 //Imprimir CV
 
 function printDiv(printCv) {
-     var contenido= document.getElementById(printCv).innerHTML;
-     var contenidoOriginal= document.body.innerHTML;
+     var contenido = document.getElementById(printCv).innerHTML;
+     var contenidoOriginal = document.body.innerHTML;
      document.body.innerHTML = contenido;
-       window.print('<link rel="stylesheet" href="css/style.css" media="all">');
+     window.print();
      document.body.innerHTML = contenidoOriginal;
 }
 
