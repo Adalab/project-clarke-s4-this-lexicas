@@ -479,7 +479,22 @@ legend {
 }
 
 #button-accordion{
-  width: 100%;
+  width: 40%;
+  margin-left: 30%;
+}
+
+#paragraph-button-work{
+  float: right;
+}
+
+#paragraph-button-study{
+  float: right;
+}
+
+#reset{
+  float: right;
+  width: 30%;
+  background: #e66760;
 }
 
 

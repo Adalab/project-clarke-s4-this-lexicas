@@ -69,7 +69,7 @@
   <section class="principal-content">
   <!-- Formulario -->
   <section class="form">
-    <form action="" method="post">
+    <form action="" method="post" id="form1">
       <fieldset class="col1">
         <legend>Datos personales</legend>
         <button type="button" name="button" id="button-accordion">Más +</button>
@@ -79,7 +79,7 @@
         <input id="firstname"type="text" name="firstname" value="" placeholder="Nombre">
         <label for="job" class="hidden">Apellido</label>
         <input id="job" type="text" name="lastname" value="" placeholder="Profesión">
-        <label for="date" class="hidden">Fecha de nacimiento</label>
+        <label for="date" class="">Fecha de nacimiento</label>
         <input id="date" type="date" name="date" value="" placeholder="Fecha de nacimiento">
         <label for="tel" class="hidden">Teléfono Móvil</label>
         <input id="tel" type="tel" name="tel" value="" placeholder="Teléfono Móvil">
@@ -93,21 +93,24 @@
         <input id="pais" type="text" name="country" value="" placeholder="País">
         <label for="ln" class="hidden">Enlace Linkedin</label>
         <input id="ln" type="text" name="enlaceLinkedin" value="" placeholder="Tu cuenta Linkedin, ej. @AnaG">
-        <label for="gh" class="hidden">Enlace GitHub</label>
-        <input id="gh" type="text" name="enlaceGitHub" value="" placeholder="Tu cuenta GitHub, ej. @Belen23">
-        <label for="tw" class="hidden">Enlace Twitter</label>
-        <input id="tw" type="text" name="enlaceTwitter" value="" placeholder="Tu cuenta Twitter, ej. @SaraPeir">
+        <label for="gh" class="hidden">Enlace Twitter</label>
+        <input id="gh" type="text" name="enlaceGitHub" value="" placeholder="Tu cuenta Twitter, ej. @Belen23">
+        <label for="tw" class="hidden">Enlace GitHub</label>
+        <input id="tw" type="text" name="enlaceTwitter" value="" placeholder="Tu cuenta GitHub, ej. @SaraPeir">
         <label for="descripcion" class="" >Personal descripción</label>
         <textarea name="name" rows="8" cols="80" id="description-personal"></textarea>
         </div>
         <!--<input type="submit" name="" value="Añadir"> -->
+        <button type="reset" name="button" id="reset">Reset</button> <br><br>
         <button type="button" name="button" id="button1">Añadir</button>
         </div>
       </fieldset>
+    </form>
 
+  <form action="" method="post" id="form2">
       <fieldset class="col1">
-        <div class="estudios">
         <legend>Estudios</legend>
+        <div class="estudios">
         <button type="button" name="button" id="button-accordion">Más +</button>
         <div class="accordion hidden">
           <p id="form-field">Estudio I</p>
@@ -186,17 +189,20 @@
         <!--fine estudio extra-->
         </div>
 
-        <button type="button" name="button" id="paragraph-button-study">Añadir nuevo estudio</button><br><br>
+        <button type="button" name="button" id="paragraph-button-study">Añadir nuevo estudio</button><br><br><br>
 
         <!--<input type="submit" name="" value="Añadir">-->
+        <button type="reset" name="button" id="reset">Reset</button> <br><br>
         <button type="button" name="button" id="button2">Añadir</button>
         </div>
         </div>
       </fieldset>
+    </form>
 
+  <form action="" method="post" id="form3">
       <fieldset class="col1">
-        <div class="experiencia-laboral">
         <legend>Experiencia Laboral</legend>
+        <div class="experiencia-laboral">
         <button type="button" name="button" id="button-accordion">Más +</button>
           <div class="accordion hidden">
             <p id="form-field">Experiencia laboral I</p>
@@ -275,13 +281,19 @@
         </div>
 
         <!--<input type="submit" name="" value="Añadir"> -->
+        <button type="reset" name="button" id="reset">Reset</button> <br><br><br>
         <button type="button" name="button" id="paragraph-button-work">Añadir nueva experiencia laboral</button><br><br>
+
+
 
         <button type="button" name="button" id="button3">Añadir</button>
         </div>
       </div>
       </fieldset>
+    </form>
 
+
+<form action="" method="post" id="form4">
       <fieldset class="col1">
         <legend>Idiomas</legend>
         <button type="button" name="button" id="button-accordion">Más +</button>
@@ -347,12 +359,14 @@
             </div>
         </div>
 
-
+<button type="reset" name="button" id="reset">Reset</button> <br><br>
         <!--<input type="submit" name="" value="Añadir"> -->
         <button type="button" name="button" id="button4">Añadir</button>
       </div>
       </fieldset>
+    </form>
 
+<form action="" method="post" id="form5">
       <fieldset class="col1">
         <legend>Skills</legend>
         <button type="button" name="button" id="button-accordion">Más +</button>
@@ -416,6 +430,8 @@
       </select>
     </div>
     </div>
+
+    <button type="reset" name="button" id="reset">Reset</button> <br><br>
 
         <!--<input type="submit" name="" value="Añadir"> -->
         <button type="button" name="button" id="button5">Añadir</button>

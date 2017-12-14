@@ -135,7 +135,7 @@ function toAddStudy () {
     if(extraStudy.classList.contains('hidden')){
       masButtonStudy.innerHTML = 'Añadir nuevo estudio';
     } else {
-      masButtonStudy.innerHTML = 'Borrar';
+      masButtonStudy.innerHTML = 'Borrar nuevo estudio';
 
       studyTitleExtra.innerHTML = '';
       instituteNameExtra.innerHTML = '';
@@ -210,7 +210,7 @@ function showIntoCV2() {
       if(extraWork.classList.contains('hidden')){
         masButtonWork.innerHTML = 'Añadir nueva experiencia laboral';
       } else {
-        masButtonWork.innerHTML = 'Borrar';
+        masButtonWork.innerHTML = 'Borrar nueva experiencia laboral';
 
         workTypeExtra.innerHTML = '';
         companyNameExtra.innerHTML = '';
