@@ -107,10 +107,11 @@
       </fieldset>
     </form>
 
-  <form action="" method="post" id="form2">
+
       <fieldset class="col1">
         <legend>Estudios</legend>
         <div class="estudios">
+          <form action="" method="post" id="form2">
         <button type="button" name="button" id="button-accordion">Más +</button>
         <div class="accordion hidden">
           <p id="form-field">Estudio I</p>
@@ -145,7 +146,9 @@
           </div>
 
         <label for="descripcion" class="">Descripción</label> <!--He quitado la class hidden porque el placeholder in textarea no arranca -->
-        <textarea id="descripcion" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea>
+        <textarea id="descripcion" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea> <br>
+          <button type="reset" name="button" id="reset">Reset</button> <br><br>
+      </form>
         <!--<p id="paragraph-button-study">Más + </p> -->
 
 
@@ -154,6 +157,7 @@
         <div class="estudio-extra hidden">
         <hr>
         <p id="form-field">Estudio II</p>
+        <form action="" method="post" id="form2_bis">
         <label for="titulo" class="hidden">Titulo</label>
         <input type="text" name="title" id="titulo" value="" placeholder="Titulo">
         <label for="instituto" class="hidden">Escuela o Universidad</label>
@@ -186,23 +190,26 @@
 
         <label for="descripcion" class="">Descripción</label> <!--He quitado la class hidden porque el placeholder in textarea no arranca -->
         <textarea id="description-extra" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea>
+        <button type="reset" name="button" id="reset">Reset</button> <br><br><br>
         <!--fine estudio extra-->
         </div>
 
         <button type="button" name="button" id="paragraph-button-study">Añadir nuevo estudio</button><br><br><br>
 
         <!--<input type="submit" name="" value="Añadir">-->
-        <button type="reset" name="button" id="reset">Reset</button> <br><br>
+
         <button type="button" name="button" id="button2">Añadir</button>
         </div>
+      </form>
         </div>
       </fieldset>
     </form>
 
-  <form action="" method="post" id="form3">
+
       <fieldset class="col1">
         <legend>Experiencia Laboral</legend>
         <div class="experiencia-laboral">
+          <form action="" method="post" id="form3">
         <button type="button" name="button" id="button-accordion">Más +</button>
           <div class="accordion hidden">
             <p id="form-field">Experiencia laboral I</p>
@@ -238,6 +245,8 @@
 
         <label for="descripcion" class="hidden">Descripción</label>
         <textarea name="name" rows="8" cols="80"></textarea>
+        <button type="reset" name="button" id="reset">Reset</button> <br><br><br>
+      </form>
 
         <!--<p id="paragraph-button-work">Más + </p> -->
 
@@ -245,6 +254,7 @@
         <div class="work-extra hidden">
         <hr>
         <p id="form-field">Experiencia laboral II</p>
+        <form action="" method="post" id="form3_bis">
         <label for="work-type" class="hidden">Cargo</label>
         <input type="text" name="cargo" id="work-type" value="" placeholder="Cargo">
         <label for="company" class="hidden">Compañía</label>
@@ -277,11 +287,13 @@
 
         <label for="descripcion" class="hidden">Descripción</label>
         <textarea name="name" rows="8" cols="80"></textarea>
+        <button type="reset" name="button" id="reset">Reset</button> <br><br><br>
+      </form>
         <!--fine estudio extra-->
         </div>
 
         <!--<input type="submit" name="" value="Añadir"> -->
-        <button type="reset" name="button" id="reset">Reset</button> <br><br><br>
+
         <button type="button" name="button" id="paragraph-button-work">Añadir nueva experiencia laboral</button><br><br>
 
 
