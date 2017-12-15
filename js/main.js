@@ -356,50 +356,50 @@ function showIntoCV5() {
 
 //ACCORDIONES
 var accordion = document.querySelectorAll('.accordion');
-var accordionButton = document.querySelectorAll('#button-accordion');
+var accordionButton = document.querySelectorAll('.button-accordion');
 
 function showPersonalData(){
   accordion[0].classList.toggle('hidden');
   if(accordion[0].classList.contains('hidden')){
-    accordionButton[0].innerHTML = 'Más +';
+    accordionButton[0].innerHTML = '+';
   } else{
-    accordionButton[0].innerHTML = 'Menos -';
+    accordionButton[0].innerHTML = '-';
   }
 }
 
 function showStudyData(){
   accordion[1].classList.toggle('hidden');
   if(accordion[1].classList.contains('hidden')){
-    accordionButton[1].innerHTML = 'Más +';
+    accordionButton[1].innerHTML = '+';
   } else{
-    accordionButton[1].innerHTML = 'Menos -';
+    accordionButton[1].innerHTML = '-';
   }
 }
 
 function showWorkData(){
   accordion[2].classList.toggle('hidden');
   if(accordion[2].classList.contains('hidden')){
-    accordionButton[2].innerHTML = 'Más +';
+    accordionButton[2].innerHTML = '+';
   } else{
-    accordionButton[2].innerHTML = 'Menos -';
+    accordionButton[2].innerHTML = '-';
   }
 }
 
 function showLanguages(){
   accordion[3].classList.toggle('hidden');
   if(accordion[3].classList.contains('hidden')){
-    accordionButton[3].innerHTML = 'Más +';
+    accordionButton[3].innerHTML = '+';
   } else{
-    accordionButton[3].innerHTML = 'Menos -';
+    accordionButton[3].innerHTML = '-';
   }
 }
 
 function showSkills(){
   accordion[4].classList.toggle('hidden');
   if(accordion[4].classList.contains('hidden')){
-    accordionButton[4].innerHTML = 'Más +';
+    accordionButton[4].innerHTML = '+';
   } else{
-    accordionButton[4].innerHTML = 'Menos -';
+    accordionButton[4].innerHTML = '-';
   }
 }
 

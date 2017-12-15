@@ -135,6 +135,7 @@ header ul li {
   background-color: #e66760;
   border-radius: 5px;
   color: #fff;
+  cursor: pointer;
 }
 
 @media all and (min-width: 724px) {
@@ -147,6 +148,7 @@ header ul li {
   .boton-start{
     top: 57%;
     left: 43%;
+    cursor: pointer;
   }
 }
 
@@ -181,6 +183,7 @@ header ul li {
   background-color: #e66760;
   border-radius: 5px;
   color: #fff;
+  cursor: pointer;
 }
 
 @media all and (min-width: 830px){
@@ -215,6 +218,7 @@ header ul li {
   }
   .boton-start-second{
     display: none;
+    cursor: pointer;
   }
 }
 
@@ -291,25 +295,52 @@ legend {
   color: #fff;
   font-weight: bold;
   font-size: 15px;
+  cursor: pointer;
 }
 
-#button-accordion{
-  width: 40%;
-  margin-left: 30%;
+.button-print{
+  background: #0099ff;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-accordion{
+  width: 15%;
+  margin-left: 43%;
+  cursor: pointer;
+  border: 3px solid #0099ff;
+  border-radius: 30%;
+}
+
+.button-accordion:hover{
+  background: #0099ff;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 #paragraph-button-work{
   float: right;
+  cursor: pointer;
 }
 
 #paragraph-button-study{
   float: right;
+  cursor: pointer;
 }
 
 #reset{
   float: right;
   width: 30%;
   background: #e66760;
+  cursor: pointer;
+}
+
+#bookmark{
+  color: white;
 }
 
 /*Footer*/

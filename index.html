@@ -19,7 +19,7 @@
       <ul>
         <li><a href="#"><img class="icon" src="images/search_file.png" alt=""></a>
         <li><a href="#start"><img class="icon" src="images/writing-icon.png" alt=""></a>
-        <li><a href="#"><img class="icon-hamburguer" src="images/Hamburger_icon.png" alt=""></a></li>
+        <li><a href="#bookmark"><img class="icon-hamburguer" src="images/Hamburger_icon.png" alt=""></a></li>
       </ul>
     </div>
   </header>
@@ -29,7 +29,7 @@
   <section class="cabecera">
     <img class="img-cabecera" src="images/cabecera-cv.jpg" alt="imagen escritorio con curriculum">
     <img class="img-cabecera-desktop" src="images/cabecera-cv-desktop.jpg" alt="">
-    <a href="" class="boton-start">Crea tu CV</a>
+    <a href="#bookmark" class="boton-start">Crea tu CV</a>
   </section>
 
   <section class="steps-section">
@@ -38,30 +38,20 @@
       <div class="step">
         <h3>Rápido</h3>
         <img src="images/fast.png" alt="">
-        <p>
-          Lorem quisquam quidem fuga nulla, minima, eligendi.
-        </p>
       </div>
       <div class="step">
         <h3>Fácil de usar</h3>
         <img src="images/easyuse.png" alt="">
-        <p>
-          Lorem quisquam quidem fuga nulla, minima, eligendi.
-        </p>
       </div>
       <div class="step">
         <h3>Profesional</h3>
         <img src="images/professional.png" alt="">
-        <p>
-          Lorem quisquam quidem fuga nulla, minima, eligendi.
-        </p>
+
       </div>
       <div class="step">
         <h3>Comparte, Descarga, Imprime</h3>
         <img src="images/share.png" alt="">
-        <p>
-          Lorem quisquam quidem fuga nulla, minima, eligendi.
-        </p>
+        <p  id="bookmark"></p>
       </div>
     </div>
   </section>
@@ -73,7 +63,7 @@
     <form action="" method="post" id="form1">
       <fieldset class="col1">
         <legend>Datos personales</legend>
-        <button type="button" name="button" id="button-accordion">Más +</button>
+        <button type="button" name="button" class="button-accordion">+</button>
         <div class="accordion hidden">
         <div class="datos-personales">
         <label for="firstname" class="hidden">Nombre</label>
@@ -115,7 +105,7 @@
         <legend>Estudios</legend>
         <div class="estudios">
           <form action="" method="post" id="form2">
-        <button type="button" name="button" id="button-accordion">Más +</button>
+        <button type="button" name="button" class="button-accordion">+</button>
         <div class="accordion hidden">
           <p id="form-field">Estudio I</p>
         <label for="titulo" class="hidden">Titulo</label>
@@ -213,7 +203,7 @@
         <legend>Experiencia Laboral</legend>
         <div class="experiencia-laboral">
           <form action="" method="post" id="form3">
-        <button type="button" name="button" id="button-accordion">Más +</button>
+        <button type="button" name="button" class="button-accordion">+</button>
           <div class="accordion hidden">
             <p id="form-field">Experiencia laboral I</p>
         <label for="work-type" class="hidden">Cargo</label>
@@ -311,7 +301,7 @@
 <form action="" method="post" id="form4">
       <fieldset class="col1">
         <legend>Idiomas</legend>
-        <button type="button" name="button" id="button-accordion">Más +</button>
+        <button type="button" name="button" class="button-accordion">+</button>
           <div class="accordion hidden">
         <div class="form-container">
             <div class="form-container-items">
@@ -388,7 +378,7 @@
 <form action="" method="post" id="form5">
       <fieldset class="col1">
         <legend>Skills</legend>
-        <button type="button" name="button" id="button-accordion">Más +</button>
+        <button type="button" name="button" class="button-accordion">+</button>
           <div class="accordion hidden">
           <div class="form-container">
             <div class="form-container-items">
@@ -471,13 +461,13 @@
       <aside class="resume-left">
               <img class="profile-picture margin">
               <div class="personal-info-mvl margin">
-                <h2 class="title" id="CV0">Federica Estevez García</h2>
-                <h2 class="title-medium" id="CV0">Front-End Developer</h3>
+                <h2 class="title" id="CV0">Tus nombres y apellidos</h2>
+                <h2 class="title-medium" id="CV0">Tu profesion</h3>
               </div>
               <div class="extract-info">
                 <h3>Sobre mí</h3>
                 <p id="description-personal-cv">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nesciunt. Odio ad eius ipsa facere optio error debitis suscipit sequi aut officiis, laboriosam ipsam aliquid alias, iusto adipisci consequuntur explicabo.
+                  Tu description personal
                 </p>
                 <p id="fecha-nacimiento">Fecha nacimiento</p>
               </div>
@@ -487,15 +477,16 @@
                     <h4>Contacto</h4>
                     <div class="phone-info">
                       <img src="" alt="">
-                      <p id="CV1">+34 620367998</p>
+
+                      <p id="CV1"></p>
                     </div>
                     <div class="email-info">
                       <img src="" alt="">
-                      <p id="CV1">ejemplo@mail.com</p>
+                      <p id="CV1"></p>
                     </div>
                     <div class="location-info">
                       <img src="" alt="">
-                      <p id="CV1">Madrid (España)</p>
+                      <p id="CV1"></p>
                     </div>
                   </div>
 
@@ -503,11 +494,9 @@
                     <!--<h4>Social</h4>-->
                     <!--<p id="social-logo">Linkedin Logo</p>-->
                     <p id="social-enlace"></p>
-                    <!--<p>Linkedin:<a href="https://github.com/Adalab/clarke-s2-varwomen/tree/js-adds">Icono Linkedin</a></p>
-                    <p>GitHub: @ejemplo</p>-->
-                    <!--<p id="social-logo">GitHub Logo</p> -->
+
                     <p id="social-enlace"></p>
-                    <!--<p id="social-logo">Twitter Logo</p>-->
+
                     <p id="social-enlace"></p>
                   </div>
               </div>
@@ -515,8 +504,8 @@
 
       <div class="resume-right">
               <div class="personal-info-desktop margin">
-                <h2 class="title" id="CV1">Federica Estevez García</h2>
-                <h3 class="title-medium" id="CV1">Front-End Developer</h3>
+                <h2 class="title" id="CV1">Tus nombres y apellidos</h2>
+                <h3 class="title-medium" id="CV1">Tu profesion</h3>
               </div>
 
               <div class="work-info margin">
@@ -527,12 +516,12 @@
                   <div class="where-info">
                       <h5 id="company-name-CV">Nombre de la empresa</h5>
                       <div class="date-info">
-                        <p id="start-work-date">Nov 14</p>
-                        <p id="end-work-date">June 15</p>
+                        <p id="start-work-date">Fecha inicio</p>
+                        <p id="end-work-date">Fecha fin</p>
                       </div>
                   </div>
                   <p id="work-description">
-                    Descripcion del puesto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus, veritatis praesentium minima voluptatem dignissimos autem libero, expedita facere. Incidunt, animi, debitis.
+                    Descripcion del puesto.
                   </p>
 
                   <!--estudios exta en cv-->
@@ -541,73 +530,48 @@
                     <div class="where-info">
                         <h5 id="company-name-CV-extra">Nombre de la empresa</h5>
                         <div class="date-info">
-                          <p id="start-work-date-extra">Nov 14</p>
-                          <p id="end-work-date-extra">June 15</p>
+                          <p id="start-work-date-extra">Fecha inicio</p>
+                          <p id="end-work-date-extra">Fecha fin</p>
                         </div>
                     </div>
                     <p id="work-description-extra">
-                      Descripcion del puesto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus, veritatis praesentium minima voluptatem dignissimos autem libero, expedita facere. Incidunt, animi, debitis.
+                      Descripcion del puesto.
                     </p>
 
                 </div>
 
-                <!--<div class="option">
-                  <h4>Puesto o Cargo</h4>
-                  <div class="where-info">
-                      <h5>Nombre de la empresa</h5>
-                      <div class="date-info">
-                        <p>May 16</p>
-                        <p>July 17</p>
-                      </div>
-                  </div>
-                  <p>
-                    Descripcion del puesto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus, veritatis praesentium minima voluptatem dignissimos autem libero, expedita facere. Incidunt, animi, debitis.
-                  </p>
-              </div> -->
 
 
               <div class="background-info margin">
                 <h3>Estudios</h3>
 
-                <!--<div class="option">
-                  <h4>Estudios realizados</h4>
-                  <div class="where-info">
-                    <h5>Nombre de la escuela</h5>
-                    <div class="date-info">
-                      <p>Sept 08</p>
-                      <p>July 13</p>
-                    </div>
-                  </div>
-                  <p>
-                    Descripcion breve. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus.
-                  </p>
-                </div> -->
+
 
                 <div class="option">
                     <h4 id="study-title">Estudios realizados</h4>
                     <div class="where-info">
-                      <h5 id="school">Nombre de la escuela</h5>
+                      <h5 id="school">Nombre del Institudo/Universidad</h5>
                       <div class="date-info">
-                        <p id="start-study-date">March 16</p>
-                        <p id="end-study-date">Sept 16</p>
+                        <p id="start-study-date">Fecha inicio</p>
+                        <p id="end-study-date">Fecha fin</p>
                       </div>
                     </div>
                   <p id="study-description">
-                    Descripcion breve. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus.
+                    Descripcion del estudio realizado
                   </p>
 
                   <!--estudios exta en cv-->
                   <div class="estudio-extra-cv hidden">
                   <h4 id="study-title-extra">Estudios realizados</h4>
                   <div class="where-info">
-                    <h5 id="school-extra">Nombre de la escuela</h5>
+                    <h5 id="school-extra">Nombre del Institudo/Universidad</h5>
                     <div class="date-info">
-                      <p id="start-study-date-extra">March 16</p>
-                      <p id="end-study-date-extra">Sept 16</p>
+                      <p id="start-study-date-extra">Fecha inicio</p>
+                      <p id="end-study-date-extra">Fecha fin</p>
                     </div>
                   </div>
                 <p id="study-description-extra">
-                  Descripcion breve. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae, alias iure voluptatum adipisci quae sint sed natus.
+                  Descripcion del estudio realizado.
                 </p>
                 </div>
               </div>
@@ -657,14 +621,7 @@
 
               </div>
 
-            <!--  <div class="options-content-items">
-                <h4>Hobbies</h4>
-                <div>
-                  <img src="" alt="">
-                  <img src="" alt="">
-                  <img src="" alt="">
-                </div>
-            </div> -->
+
       </div>
     </div>
       </div>
