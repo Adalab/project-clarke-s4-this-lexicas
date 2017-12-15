@@ -70,6 +70,8 @@ for(var i = 0 ; i < añosSelect.length ; i = i+1) {
 
 
 
+
+
 //Datos personales
 var userInputPersonales1 = document.querySelectorAll('.datos-personales input'); //formulario
 var dataCV1 = document.querySelectorAll('#CV1'); //CV, nombre y profesion
@@ -85,7 +87,7 @@ function showIntoCV1() {
   dataCV1[4].innerHTML = userInputPersonales1[1].value;
   dataCV0[0].innerHTML = userInputPersonales1[0].value;
   dataCV0[1].innerHTML = userInputPersonales1[1].value;
-  dataFecha.innerHTML = userInputPersonales1[2].value;
+  dataFecha.innerHTML = dataFecha.innerHTML + userInputPersonales1[2].value;
   dataCV1[0].innerHTML = userInputPersonales1[3].value;
   dataCV1[1].innerHTML = userInputPersonales1[5].value;
   dataCV1[2].innerHTML = userInputPersonales1[6].value + ' ' + userInputPersonales1[7].value + ', ' + userInputPersonales1[8].value;
@@ -166,8 +168,8 @@ function toAddStudy () {
        description[1].value = ''
       select3.selectedIndex = meses[0];
       select4.selectedIndex = meses[0];
-      selectYears3.selectedIndex = startingYear;
-      selectYears4.selectedIndex = startingYear;
+      selectYears3.selectedIndex = 1950;
+      selectYears4.selectedIndex = 1950;
     }
 }
 
@@ -192,6 +194,7 @@ function showIntoCV2() {
 
 
   //EXPERIENCIA LABORAL:
+  var workHidden = document.querySelector('.experiencia-laboral-oculta')
   var userInputWork = document.querySelectorAll('.experiencia-laboral input');
   var workDates = document.querySelectorAll('.experiencia-laboral select');
   var descriptionWork = document.querySelectorAll('.experiencia-laboral textarea');
@@ -242,8 +245,8 @@ function showIntoCV2() {
           select7.selectedIndex = meses[0];
           select8.selectedIndex = meses[0];
           descriptionWork[1].value = '';
-          selectYears7.selectedIndex = startingYear;
-          selectYears8.selectedIndex = startingYear;
+          selectYears7.selectedIndex = 1950;
+          selectYears8.selectedIndex = 1950;
       }
       }
 
@@ -378,6 +381,7 @@ function showStudyData(){
 
 function showWorkData(){
   accordion[2].classList.toggle('hidden');
+  workHidden.classList.toggle('hidden');
   if(accordion[2].classList.contains('hidden')){
     accordionButton[2].innerHTML = '+';
   } else{

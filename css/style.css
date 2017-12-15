@@ -283,6 +283,9 @@ legend {
    width: 45%;
  }
 
+#margin-reduced{
+  margin-bottom: -6%;
+}
 
 #form-field{
   color: #fff;
