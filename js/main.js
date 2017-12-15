@@ -87,19 +87,19 @@ function showIntoCV1() {
   dataCV0[1].innerHTML = userInputPersonales1[1].value;
   dataFecha.innerHTML = userInputPersonales1[2].value;
   dataCV1[0].innerHTML = userInputPersonales1[3].value;
-  dataCV1[1].innerHTML = userInputPersonales1[4].value;
-  dataCV1[2].innerHTML = userInputPersonales1[5].value + ' ' + userInputPersonales1[6].value + ', ' + userInputPersonales1[7].value;
+  dataCV1[1].innerHTML = userInputPersonales1[5].value;
+  dataCV1[2].innerHTML = userInputPersonales1[6].value + ' ' + userInputPersonales1[7].value + ', ' + userInputPersonales1[8].value;
   descriptionPersonalCV.innerHTML = descriptionPersonal.value;
-  if(userInputPersonales1[8].value !== '') {
-    dataSocial[0].innerHTML =  'Linkedin: ' + userInputPersonales1[8].value;
+  if(userInputPersonales1[9].value !== '') {
+    dataSocial[0].innerHTML =  'Linkedin: ' + userInputPersonales1[9].value;
   } else {
     dataSocial[0].innerHTML =  '';
-  } if(userInputPersonales1[9].value !== '') {
-    dataSocial[1].innerHTML =  'Twitter: ' + userInputPersonales1[9].value;
+  } if(userInputPersonales1[10].value !== '') {
+    dataSocial[1].innerHTML =  'Twitter: ' + userInputPersonales1[10].value;
   } else {
     dataSocial[1].innerHTML =  '';
-  } if(userInputPersonales1[10].value !== '') {
-    dataSocial[2].innerHTML =  'GitHub: ' + userInputPersonales1[10].value;
+  } if(userInputPersonales1[11].value !== '') {
+    dataSocial[2].innerHTML =  'GitHub: ' + userInputPersonales1[11].value;
   } else {
     dataSocial[2].innerHTML =  '';
   }
