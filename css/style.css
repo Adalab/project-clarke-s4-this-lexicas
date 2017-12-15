@@ -84,14 +84,6 @@ header ul li {
 }
 
 
-.icon {
-  display: none;
-}
-
-.icon-hamburguer {
-  display: inline;
-  width: 44px;
-}
 
 @media all and (min-width: 724px){
   header {
@@ -101,14 +93,6 @@ header ul li {
     width: 200px;
   }
 
-  .icon {
-    display: inline;
-    width: 49px;
-  }
-
-  .icon-hamburguer {
-    display: none;
-  }
 }
 
 /* -- Estilos cabecera -- */
@@ -220,6 +204,31 @@ header ul li {
     display: none;
     cursor: pointer;
   }
+}
+
+/*Foto*/
+.insert-photo {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.button-photo{
+  padding: 10px 10px;
+  background-color: #e66760;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px;
+}
+
+.photo-button {
+  width: 28%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-width: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 
@@ -418,6 +427,11 @@ footer {
     top: 85%;
     left: 85%;
   }
+
+  .photo-button {
+    width: 18%;
+  }
+
 }
 
 @media all and (min-width: 1024px){
@@ -425,4 +439,9 @@ footer {
     top: 83%;
     left: 92%;
   }
+
+  .photo-button {
+    width: 28%;
+  }
+
 }

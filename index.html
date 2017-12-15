@@ -14,15 +14,8 @@
 
   <!-- Navegador -->
   <header>
-    <img src="images/logoCv.png" alt="" class="logo">
-    <div class="menu">
-      <ul>
-        <li><a href="#"><img class="icon" src="images/search_file.png" alt=""></a>
-        <li><a href="#start"><img class="icon" src="images/writing-icon.png" alt=""></a>
-        <li><a href="#bookmark"><img class="icon-hamburguer" src="images/Hamburger_icon.png" alt=""></a></li>
-      </ul>
-    </div>
-  </header>
+      <img src="images/logoCv.png" alt="" class="logo">
+        </header>
 
 <main>
   <!-- Cabecera inicio -->
@@ -75,8 +68,6 @@
         <label for="tel" class="hidden">Teléfono Móvil</label>
         <input id="tel" type="tel" name="tel" value="" placeholder="Teléfono Móvil">
         <label for="mail" class="hidden">Email</label>
-        <label for="photo">Foto</label>
-        <input id="photo" type="file" placeholder="Foto">
         <input id="mail" type="mail" name="mail" value="" placeholder="Email">
         <label for="postalcode" class="hidden">Código Postal</label>
         <input id="postalcode" type="text" name="postalcode" value="" placeholder="Código Postal">
@@ -451,184 +442,173 @@
       </div>
       </fieldset>
     </form>
+    <div class="insert-photo">
+      <label class="button-photo" for="photo">Foto</label>
+      <input class="photo-button" id="photo" type="file" placeholder="Foto">
+    </div>
   </section>
 
 
 
-  <!-- Resume -->
+  <!-- CV -->
   <div id="printCv" class="resume-container" onload="window.print();window.close()">
-    <section class="resume">
-      <aside class="resume-left">
-              <img class="profile-picture margin">
-              <div class="personal-info-mvl margin">
-                <h2 class="title" id="CV0">Tus nombres y apellidos</h2>
-                <h2 class="title-medium" id="CV0">Tu profesion</h3>
-              </div>
-              <div class="extract-info">
-                <h3>Sobre mí</h3>
-                <p id="description-personal-cv">
-                  Tu description personal
-                </p>
-                <p id="fecha-nacimiento">Fecha nacimiento: </p>
-              </div>
+       <section class="resume">
+         <aside class="resume-left">
+           <img class="profile-picture margin">
 
-              <div class="contact-section">
-                  <div class="contact-info">
-                    <h4>Contacto</h4>
-                    <div class="phone-info">
-                      <img src="" alt="">
+           <div class="personal-info-mvl margin">
+             <h2 class="title" id="CV0">Nombre</h2>
+             <h2 class="title-medium" id="CV0">Profesión</h3>
+             </div>
+             <div class="extract-info">
+               <h3>Sobre mí</h3>
+               <p id="description-personal-cv">
+               </p>
+               <p id="fecha-nacimiento">Fecha nacimiento</p>
+             </div>
 
-                      <p id="CV1"></p>
-                    </div>
-                    <div class="email-info">
-                      <img src="" alt="">
-                      <p id="CV1"></p>
-                    </div>
-                    <div class="location-info">
-                      <img src="" alt="">
-                      <p id="CV1"></p>
-                    </div>
-                  </div>
+             <div class="contact-section">
+               <div class="contact-info">
+                 <h4>Contacto</h4>
+                 <div class="phone-info">
+                   <img src="" alt="">
+                   <p id="CV1"></p>
+                 </div>
+                 <div class="email-info">
+                   <img src="" alt="">
+                   <p id="CV1"></p>
+                 </div>
+                 <div class="location-info">
+                   <img src="" alt="">
+                   <p id="CV1"></p>
+                 </div>
+               </div>
 
-                  <div class="social-media">
-                    <!--<h4>Social</h4>-->
-                    <!--<p id="social-logo">Linkedin Logo</p>-->
-                    <p id="social-enlace"></p>
+               <div class="social-media">
+                 <!--<h4>Social</h4>-->
+                 <!--<p id="social-logo">Linkedin Logo</p>-->
+                 <p id="social-enlace"></p>
+                 <!--<p>Linkedin:<a href="https://github.com/Adalab/clarke-s2-varwomen/tree/js-adds">Icono Linkedin</a></p>
+                 <p>GitHub: @ejemplo</p>-->
+                 <!--<p id="social-logo">GitHub Logo</p> -->
+                 <p id="social-enlace"></p>
+                 <!--<p id="social-logo">Twitter Logo</p>-->
+                 <p id="social-enlace"></p>
+               </div>
+             </div>
+           </aside>
 
-                    <p id="social-enlace"></p>
+           <div class="resume-right">
+             <div class="personal-info-desktop margin">
+               <h2 class="title" id="CV1"></h2>
+               <h3 class="title-medium" id="CV1"></h3>
+             </div>
 
-                    <p id="social-enlace"></p>
-                  </div>
-              </div>
-      </aside>
+             <div class="work-info margin">
+               <h3>Experiencia laboral</h3>
 
-      <div class="resume-right">
-              <div class="personal-info-desktop margin">
-                <h2 class="title" id="CV1">Tus nombres y apellidos</h2>
-                <h3 class="title-medium" id="CV1">Tu profesion</h3>
-              </div>
+               <div class="option">
+                 <h4 id="work-type-CV">Puesto o Cargo</h4>
+                 <div class="where-info">
+                   <h5 id="company-name-CV"></h5>
+                   <div class="date-info">
+                     <p id="start-work-date"></p>
+                     <p id="end-work-date"></p>
+                   </div>
+                 </div>
+                 <p id="work-description">
+                 </p>
 
-              <div class="work-info margin">
+                 <!--estudios exta en cv-->
+                 <div class="work-extra-cv hidden">
+                   <h4 id="work-type-CV-extra">Puesto o Cargo</h4>
+                   <div class="where-info">
+                     <h5 id="company-name-CV-extra"></h5>
+                     <div class="date-info">
+                       <p id="start-work-date-extra"></p>
+                       <p id="end-work-date-extra"></p>
+                     </div>
+                   </div>
+                   <p id="work-description-extra">
+                   </p>
+                 </div>
 
+                 <div class="background-info margin">
+                   <h3>Estudios</h3>
+                   <div class="option">
+                     <h4 id="study-title">Estudios realizados</h4>
+                     <div class="where-info">
+                       <h5 id="school"></h5>
+                       <div class="date-info">
+                         <p id="start-study-date"></p>
+                         <p id="end-study-date"></p>
+                       </div>
+                     </div>
+                     <p id="study-description">
+                     </p>
 
+                     <!--estudios exta en cv-->
+                     <div class="estudio-extra-cv hidden">
+                       <h4 id="study-title-extra"></h4>
+                       <div class="where-info">
+                         <h5 id="school-extra"></h5>
+                         <div class="date-info">
+                           <p id="start-study-date-extra"></p>
+                           <p id="end-study-date-extra"></p>
+                         </div>
+                       </div>
+                       <p id="study-description-extra">
+                       </p>
+                     </div>
+                   </div>
 
-                <div class="option">
-                  <div class="experiencia-laboral-oculta hidden">
-                  <h3>Experiencia laboral</h3>
-                  <h4 id="work-type-CV">Puesto o Cargo</h4>
-                  <div class="where-info">
-                      <h5 id="company-name-CV">Nombre de la empresa</h5>
-                      <div class="date-info">
-                        <p id="start-work-date">Fecha inicio</p>
-                        <p id="end-work-date">Fecha fin</p>
-                      </div>
-                  </div>
-                  <p id="work-description">
-                    Descripcion del puesto.
-                  </p>
+                   <div class="options-content">
+                     <div class="options-content-items">
+                       <h4>Idiomas</h4>
+                       <div class="options-content">
+                         <div class="options-content-items">
+                           <p id="primero-idioma-into-CV"></p>
+                           <p id="idioma-extra1-into-CV"></p>
+                           <p id="idioma-extra2-into-CV"></p>
+                           <p id="idioma-extra3-into-CV"></p>
+                           <!--  <p>Italiano</p> -->
+                           <!--<p>Ruso</p> -->
+                         </div>
+                         <div class="options-content-items">
+                           <p id="nivel-primero-idioma-into-CV"></p>
+                           <p id="nivel-idioma-extra1-into-CV"></p>
+                           <p id="nivel-idioma-extra2-into-CV"></p>
+                           <p id="nivel-idioma-extra3-into-CV"></p>
+                           <!--<p>Fluent</p>-->
+                           <!--<p>Beginner</p> -->
+                         </div>
+                       </div>
+                     </div>
 
-                  <!--estudios exta en cv-->
-                  <div class="work-extra-cv hidden">
-                    <h4 id="work-type-CV-extra">Puesto o Cargo</h4>
-                    <div class="where-info">
-                        <h5 id="company-name-CV-extra">Nombre de la empresa</h5>
-                        <div class="date-info">
-                          <p id="start-work-date-extra">Fecha inicio</p>
-                          <p id="end-work-date-extra">Fecha fin</p>
-                        </div>
-                    </div>
-                    <p id="work-description-extra">
-                      Descripcion del puesto.
-                    </p>
-
-                </div>
-                </div>
-
-
-
-              <div class="background-info margin">
-                <h3 id="margin-reduced">Estudios</h3>
-                <div class="option">
-                    <h4 id="study-title">Estudios realizados</h4>
-                    <div class="where-info">
-                      <h5 id="school">Nombre del Institudo/Universidad</h5>
-                      <div class="date-info">
-                        <p id="start-study-date">Fecha inicio</p>
-                        <p id="end-study-date">Fecha fin</p>
-                      </div>
-                    </div>
-                  <p id="study-description">
-                    Descripcion del estudio realizado
-                  </p>
-
-                  <!--estudios exta en cv-->
-                  <div class="estudio-extra-cv hidden">
-                  <h4 id="study-title-extra">Estudios realizados</h4>
-                  <div class="where-info">
-                    <h5 id="school-extra">Nombre del Institudo/Universidad</h5>
-                    <div class="date-info">
-                      <p id="start-study-date-extra">Fecha inicio</p>
-                      <p id="end-study-date-extra">Fecha fin</p>
-                    </div>
-                  </div>
-                <p id="study-description-extra">
-                  Descripcion del estudio realizado.
-                </p>
-                </div>
-              </div>
-
-              <div class="options-content">
-                  <div class="options-content-items">
-                    <h4>Idiomas</h4>
-                    <div class="options-content">
-                      <div class="options-content-items">
-                        <p id="primero-idioma-into-CV"></p>
-                        <p id="idioma-extra1-into-CV"></p>
-                        <p id="idioma-extra2-into-CV"></p>
-                        <p id="idioma-extra3-into-CV"></p>
-                      <!--  <p>Italiano</p> -->
-                        <!--<p>Ruso</p> -->
-                      </div>
-                      <div class="options-content-items">
-                        <p id="nivel-primero-idioma-into-CV"></p>
-                        <p id="nivel-idioma-extra1-into-CV"></p>
-                        <p id="nivel-idioma-extra2-into-CV"></p>
-                        <p id="nivel-idioma-extra3-into-CV"></p>
-                        <!--<p>Fluent</p>-->
-                        <!--<p>Beginner</p> -->
-                      </div>
-                    </div>
-
-
-                  </div>
-
-                  <div class="options-content-items">
-                    <h4>Skills</h4>
-                    <div class="options-content">
-                      <div class="options-content-items">
-                        <p id="skill1-cv"></p>
-                        <p id="skill2-cv"></p>
-                        <p id="skill3-cv"></p>
-                        <p id="skill4-cv"></p>
-                      </div>
-                      <div class="options-content-items">
-                        <p id="skill1-level-cv"></p>
-                        <p id="skill2-level-cv"></p>
-                        <p id="skill3-level-cv"></p>
-                        <P id="skill4-level-cv"></P>
-                      </div>
-                    </div>
-                  </div>
-
-              </div>
-
-
-      </div>
-    </div>
-      </div>
-    </section>
-    <input class="button-print" type="button" onclick="printDiv('printCv')" value="Imprimir"/>
-</section>
+                     <div class="options-content-items">
+                       <h4>Skills</h4>
+                       <div class="options-content">
+                         <div class="options-content-items">
+                           <p id="skill1-cv"></p>
+                           <p id="skill2-cv"></p>
+                           <p id="skill3-cv"></p>
+                           <p id="skill4-cv"></p>
+                         </div>
+                         <div class="options-content-items">
+                           <p id="skill1-level-cv"></p>
+                           <p id="skill2-level-cv"></p>
+                           <p id="skill3-level-cv"></p>
+                           <P id="skill4-level-cv"></P>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </section>
+           <input class="button-print" type="button" onclick="printDiv('printCv')" value="Imprimir"/>
+         </section>
 
 <div class="button-up"><a href="#top"><img src="images/arrow.png" alt="Back to the top"></a></div>
 
