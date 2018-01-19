@@ -97,18 +97,13 @@ header ul li {
 
 /* -- Estilos cabecera -- */
 
-.cabecera {
+.hero {
+  background-image: url('../images/hero-image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   position: relative;
-}
-
-.img-cabecera {
-  display: block;
-  width: 100%;
-}
-
-.img-cabecera-desktop{
-  display: none;
-  width: 100%;
 }
 
 .boton-start {
@@ -123,12 +118,6 @@ header ul li {
 }
 
 @media all and (min-width: 724px) {
-  .img-cabecera{
-    display: none;
-  }
-  .img-cabecera-desktop{
-    display: block;
-  }
   .boton-start{
     top: 57%;
     left: 43%;
@@ -137,23 +126,23 @@ header ul li {
 }
 
 /* -- Estilos steps section -- */
-.steps-section{
+.intro-section {
   background: #fff;
   text-align: center;
   margin: 0;
   padding: 60px 0 90px 0;
 }
 
-.steps-section h2 {
+.intro-section h2 {
   padding-top: 40px;
   margin: 0;
 }
 
-.step {
+.quality {
   padding: 40px 24px;
 }
 
-.steps img {
+.container-qualities img {
   height: 100px;
   width: auto;
   display: block;
@@ -171,35 +160,40 @@ header ul li {
 }
 
 @media all and (min-width: 830px){
-  .steps {
+  .intro-section {
+    padding: 50px 40px;
+  }
+
+  .container-qualities {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .step{
+
+  .quality {
     width: 50%;
     padding: 0 50px;
     margin: 70px 0;
   }
-  .steps-section {
-    padding: 50px 40px;
-  }
 }
 
 @media all and (min-width: 1200px){
-  .steps {
+  .container-qualities {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .step{
+
+  .quality {
     width: 25%;
     margin: 70px 0;
     padding: 0 50px;
   }
-  .steps-section {
+
+  .intro-section {
     padding: 50px 40px;
   }
+
   .boton-start-second{
     display: none;
     cursor: pointer;
