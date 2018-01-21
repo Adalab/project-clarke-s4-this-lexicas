@@ -20,6 +20,7 @@ a{
     text-decoration: none;
 }
 
+
 .margin {
   margin: 60px 0;
 }
@@ -146,8 +147,7 @@ header ul li {
   height: 100px;
   width: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 .boton-start-second {
@@ -235,8 +235,7 @@ margin-bottom: 20px;
  display: flex;
  flex-direction: column;
  width: 80%;
- margin-left: auto;
- margin-right: auto;
+
 }
 
 input, textarea, select {

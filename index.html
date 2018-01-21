@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/_typography.css">
   <link rel="stylesheet" href="css/_variables.css">
+  <link rel="stylesheet" href="css/_mixins.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cv.css">
   <title>Create your CV</title>
@@ -33,34 +34,34 @@
 
       <div class="quality">
         <h3>Rápido</h3>
-        <img src="images/fast.png" alt="">
+        <img class= "m-auto" src="images/fast.png" alt="">
       </div>
 
       <div class="quality">
         <h3>Fácil de usar</h3>
-        <img src="images/easyuse.png" alt="">
+        <img class= "m-auto" src="images/easyuse.png" alt="">
       </div>
 
       <div class="quality">
         <h3>Profesional</h3>
-        <img src="images/professional.png" alt="">
+        <img class= "m-auto" src="images/professional.png" alt="">
       </div>
 
       <div class="quality">
         <h3>Comparte, Descarga, Imprime</h3>
-        <img src="images/share.png" alt="">
+        <img class= "m-auto" src="images/share.png" alt="">
         <p  id="bookmark"></p>
       </div>
 
     </div>
   </section>
 
-  <main>
+  <main class="p-top-lg p-bottom-lg m-auto">
     <section class="principal-content">
       <!-- Formulario -->
       <section class="form">
         <form action="" method="post" id="form1">
-          <fieldset class="col1">
+          <fieldset class="col1 m-auto">
             <legend>Datos personales</legend>
             <button type="button" name="button" class="button-accordion">+</button>
             <div class="accordion hidden">
@@ -98,7 +99,7 @@
         </form>
 
 
-        <fieldset class="col1">
+        <fieldset class="col1 m-auto">
           <legend>Estudios</legend>
           <div class="estudios">
             <form action="" method="post" id="form2">
@@ -196,7 +197,7 @@
       </form>
 
 
-      <fieldset class="col1">
+      <fieldset class="col1 m-auto">
         <legend>Experiencia Laboral</legend>
         <div class="experiencia-laboral">
           <form action="" method="post" id="form3">
@@ -296,7 +297,7 @@
 
 
     <form action="" method="post" id="form4">
-      <fieldset class="col1">
+      <fieldset class="col1 m-auto">
         <legend>Idiomas</legend>
         <button type="button" name="button" class="button-accordion">+</button>
         <div class="accordion hidden">
@@ -373,7 +374,7 @@
     </form>
 
     <form action="" method="post" id="form5">
-      <fieldset class="col1">
+      <fieldset class="col1 m-auto">
         <legend>Skills</legend>
         <button type="button" name="button" class="button-accordion">+</button>
         <div class="accordion hidden">
@@ -457,7 +458,7 @@
 
 
   <!-- CV -->
-  <div id="printCv" class="resume-container" onload="window.print();window.close()">
+  <div id="printCv" class="resume-container m-auto" onload="window.print();window.close()">
     <section class="resume">
       <aside class="resume-left">
         <img class="profile-picture margin">
