@@ -98,7 +98,7 @@ header ul li {
 /* -- Estilos cabecera -- */
 
 .hero {
-  background-image: url('../images/hero-image.jpg');
+  background-image: url('/images/hero-image.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -438,4 +438,176 @@ footer {
     width: 28%;
   }
 
+}
+
+
+.resume-container {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.resume-right h3 {
+  border-bottom: 2px solid #000;
+  background-color: inherit;
+  color: #000;
+}
+
+.resume-right h3.title-medium {
+  border: none;
+}
+
+.resume-right h4 {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #e66760;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-section {
+  display: flex;
+}
+
+.contact-section p {
+  font-size: 13px;
+  margin: 5px 0;
+  margin-right: 10px;
+}
+
+.contact-info, .social-media {
+  width: 50%;
+}
+
+.option {
+  margin: 50px 0;
+}
+
+.where-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.date-info p {
+  font-size: 13px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+h5 {
+  font-size: 13px;
+  margin: 0;
+}
+
+.options-content {
+  display: flex;
+}
+
+.options-content-items {
+  font-size: 13px;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.personal-info-desktop {
+  display: none;
+}
+
+.extract-info p{
+  margin: 70px 0;
+}
+
+@media all and (min-width: 1024px), print {
+  .principal-content{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .form{
+    width: 40%;
+  }
+  .resume-container{
+    width: 60%;
+    padding: 50px 30px;
+    font-size: 14px;
+  }
+  .resume{
+    display: flex;
+    padding: 0;
+    width: 100%;
+  }
+  .resume-left{
+    padding: 24px;
+    width: 30%;
+    background-color: rgb(128,128,128);
+    color: #fff;
+  }
+  .resume-right{
+    padding: 0 24px;
+    width: 70%;
+  }
+
+  .profile-picture {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    margin: 30px auto;
+  }
+
+  .personal-info-desktop {
+    display: block;
+    padding: 10px 0;
+  }
+  .personal-info-mvl {
+    display: none;
+  }
+  .contact-section{
+    display: block;
+  }
+  .title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+  }
+  .title-medium{
+    text-align: center;
+    font-size: 16px;
+  }
+  .contact-section {
+    display: block;
+  }
+  .contact-info, .social-media {
+    margin: 60px 0;
+  }
+}
+
+@media print {
+  .button-print {
+    display: none;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+  }
 }

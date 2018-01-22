@@ -1,0 +1,22 @@
+@import 'styles/core/functions';
+@import 'styles/core/mixins';
+@import 'styles/core/variables';
+
+@import 'styles/layout/header';
+@import 'styles/layout/footer';
+@import 'styles/layout/grid';
+@import 'styles/layout/introduction';
+@import 'styles/layout/main';
+
+@import 'styles/components/buttons';
+@import 'styles/components/forms';
+@import 'styles/components/hero';
+@import 'styles/components/typography';
+
+
+@import 'styles/pages/home';
+
+
+* {
+  box-sizing: border-box;
+}

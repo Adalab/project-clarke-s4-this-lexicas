@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,13 +19,632 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+
+    <!-- LINKS HEREDADOS -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+
+
+    <title>Create your CV</title>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+
+      <header>
+        <img src="/images/logoCv.png" alt="" class="logo">
+      </header>
+
+
+      <section class="hero">
+        <button type="button" name="button">
+          <a href="#bookmark" class="boton-start">Crea tu CV</a>
+        </button>
+      </section>
+
+
+      <section class="intro-section">
+
+        <h2>Build the perfect resume, get hired</h2>
+
+        <div class="container-qualities">
+
+          <div class="quality">
+            <h3>Rápido</h3>
+            <img src="/images/fast.png" alt="">
+          </div>
+
+          <div class="quality">
+            <h3>Fácil de usar</h3>
+            <img src="/images/easyuse.png" alt="">
+          </div>
+
+          <div class="quality">
+            <h3>Profesional</h3>
+            <img src="/images/professional.png" alt="">
+          </div>
+
+          <div class="quality">
+            <h3>Comparte, Descarga, Imprime</h3>
+            <img src="/images/share.png" alt="">
+            <p  id="bookmark"></p>
+          </div>
+
+        </div>
+      </section>
+
+      <main>
+        <section class="principal-content">
+          <!-- Formulario -->
+          <section class="form">
+            <form action="" method="post" id="form1">
+              <fieldset class="col1">
+                <legend>Datos personales</legend>
+                <button type="button" name="button" class="button-accordion">+</button>
+                <div class="accordion hidden">
+                  <div class="datos-personales">
+                    <label for="firstname" class="hidden">Nombre</label>
+                    <input id="firstname"type="text" name="firstname" value="" placeholder="Nombre">
+                    <label for="job" class="hidden">Apellido</label>
+                    <input id="job" type="text" name="lastname" value="" placeholder="Profesión">
+                    <label for="date" class="">Fecha de nacimiento</label>
+                    <input id="date" type="date" name="date" value="" placeholder="Fecha de nacimiento">
+                    <label for="tel" class="hidden">Teléfono Móvil</label>
+                    <input id="tel" type="tel" name="tel" value="" placeholder="Teléfono Móvil">
+                    <label for="mail" class="hidden">Email</label>
+                    <input id="mail" type="mail" name="mail" value="" placeholder="Email">
+                    <label for="postalcode" class="hidden">Código Postal</label>
+                    <input id="postalcode" type="text" name="postalcode" value="" placeholder="Código Postal">
+                    <label for="city" class="hidden">Ciudad</label>
+                    <input id="city" type="text" name="city" value="" placeholder="Ciudad">
+                    <label for="pais" class="hidden">Ciudad</label>
+                    <input id="pais" type="text" name="country" value="" placeholder="País">
+                    <label for="ln" class="hidden">Enlace Linkedin</label>
+                    <input id="ln" type="text" name="enlaceLinkedin" value="" placeholder="Tu cuenta Linkedin, ej. @AnaG">
+                    <label for="gh" class="hidden">Enlace Twitter</label>
+                    <input id="gh" type="text" name="enlaceGitHub" value="" placeholder="Tu cuenta Twitter, ej. @Belen23">
+                    <label for="tw" class="hidden">Enlace GitHub</label>
+                    <input id="tw" type="text" name="enlaceTwitter" value="" placeholder="Tu cuenta GitHub, ej. @SaraPeir">
+                    <label for="descripcion" class="" >Personal descripción</label>
+                    <textarea name="name" rows="8" cols="80" id="description-personal"></textarea>
+                  </div>
+
+                  <button type="reset" name="button" id="reset">Reset</button> <br><br>
+                  <button type="button" name="button" id="button1">Añadir</button>
+                </div>
+              </fieldset>
+            </form>
+
+
+            <fieldset class="col1">
+              <legend>Estudios</legend>
+              <div class="estudios">
+                <form action="" method="post" id="form2">
+                  <button type="button" name="button" class="button-accordion">+</button>
+                  <div class="accordion hidden">
+                    <p id="form-field">Estudio I</p>
+                    <label for="titulo" class="hidden">Titulo</label>
+                    <input type="text" name="title" id="titulo" value="" placeholder="Titulo">
+                    <label for="instituto" class="hidden">Escuela o Universidad</label>
+                    <input type="text" name="institute" id="instituto" value="" placeholder="Escuela o Universidad">
+                    <label for="instituto-ciudad" class="hidden">Ciudad</label>
+                    <input type="text" name="city" id="instituto-ciudad" value="" placeholder="Ciudad">
+                    <label for="institudo-pais" class="hidden">Ciudad</label>
+                    <input type="text" name="pais" id="instituto-pais" value="" placeholder="País">
+
+                    <div class="form-container">
+                      <div class="form-container-items">
+                        <label for="start">Fecha inicio</label> <br>
+                        <select class="months" name="" id="select-1">
+
+                        </select>
+                        <select class="years" name="" id="select-años-1">
+
+                        </select>
+                      </div>
+                      <div class="form-container-items">
+                        <label for="end">Fecha fin</label> <br>
+                        <select class="months" name="" id="select-2">
+
+                        </select>
+                        <select class="years" name="" id="select-años-2">
+
+                        </select>
+                      </div>
+                    </div>
+
+                    <label for="descripcion" class="">Descripción</label> <!--He quitado la class hidden porque el placeholder in textarea no arranca -->
+                    <textarea id="descripcion" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea> <br>
+                    <button type="reset" name="button" id="reset">Reset</button> <br><br>
+                  </form>
+
+
+
+
+                  <!--estudio extra-->
+                  <div class="estudio-extra hidden">
+                    <hr>
+                    <p id="form-field">Estudio II</p>
+                    <form action="" method="post" id="form2_bis">
+                      <label for="titulo" class="hidden">Titulo</label>
+                      <input type="text" name="title" id="titulo" value="" placeholder="Titulo">
+                      <label for="instituto" class="hidden">Escuela o Universidad</label>
+                      <input type="text" name="institute" id="instituto" value="" placeholder="Escuela o Universidad">
+                      <label for="instituto-ciudad" class="hidden">Ciudad</label>
+                      <input type="text" name="city" id="instituto-ciudad" value="" placeholder="Ciudad">
+                      <label for="institudo-pais" class="hidden">Ciudad</label>
+                      <input type="text" name="pais" id="instituto-pais" value="" placeholder="País">
+                      <!--  fechas inicio y fin-->
+                      <div class="form-container">
+                        <div class="form-container-items">
+                          <label for="start">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
+                          <select class="months" name="" id="select-3">
+
+                          </select>
+                          <select class="years" name="" id="select-años-3">
+
+                          </select>
+                        </div>
+                        <div class="form-container-items">
+                          <label for="end">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
+                          <select class="months" name="" id="select-4">
+
+                          </select>
+                          <select class="years" name="" id="select-años-4">
+
+                          </select>
+                        </div>
+                      </div>
+
+                      <label for="descripcion" class="">Descripción</label> <!--He quitado la class hidden porque el placeholder in textarea no arranca -->
+                      <textarea id="description-extra" name="text" rows="8" cols="43" placeholder="Descripción"> </textarea>
+                      <button type="reset" name="button" id="reset">Reset</button> <br><br><br>
+                      <!--fine estudio extra-->
+                    </div>
+
+                    <button type="button" name="button" id="paragraph-button-study">Añadir nuevo estudio</button><br><br><br>
+
+                    <!--<input type="submit" name="" value="Añadir">-->
+
+                    <button type="button" name="button" id="button2">Añadir</button>
+                  </div>
+                </form>
+              </div>
+            </fieldset>
+          </form>
+
+
+          <fieldset class="col1">
+            <legend>Experiencia Laboral</legend>
+            <div class="experiencia-laboral">
+              <form action="" method="post" id="form3">
+                <button type="button" name="button" class="button-accordion">+</button>
+                <div class="accordion hidden">
+                  <p id="form-field">Experiencia laboral I</p>
+                  <label for="work-type" class="hidden">Cargo</label>
+                  <input type="text" name="cargo" id="work-type" value="" placeholder="Cargo">
+                  <label for="company" class="hidden">Compañía</label>
+                  <input type="text" name="company" id="company" value="" placeholder="Compañía">
+                  <label for="city" class="hidden">Ciudad</label>
+                  <input type="text" name="city" id="city" value="" placeholder="Ciudad">
+                  <label for="city" class="hidden">País</label>
+                  <input type="text" name="country" id="country" value="" placeholder="País">
+                  <!--fechas inicio y fin-->
+                  <div class="form-container">
+                    <div class="form-container-items">
+                      <label for="start">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
+                      <select class="months" name="" id="select-5">
+
+                      </select>
+                      <select class="years" name="" id="select-años-5">
+
+                      </select>
+                    </div>
+                    <div class="form-container-items">
+                      <label for="end">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
+                      <select class="months" name="" id="select-6">
+
+                      </select>
+                      <select class="years" name="" id="select-años-6">
+
+                      </select>
+                    </div>
+                  </div>
+
+                  <label for="descripcion" class="hidden">Descripción</label>
+                  <textarea name="name" rows="8" cols="80"></textarea>
+                  <button type="reset" name="button" id="reset">Reset</button> <br><br><br>
+                </form>
+
+                <!--<p id="paragraph-button-work">Más + </p> -->
+
+                <!--experiencia laboral extra-->
+                <div class="work-extra hidden">
+                  <hr>
+                  <p id="form-field">Experiencia laboral II</p>
+                  <form action="" method="post" id="form3_bis">
+                    <label for="work-type" class="hidden">Cargo</label>
+                    <input type="text" name="cargo" id="work-type" value="" placeholder="Cargo">
+                    <label for="company" class="hidden">Compañía</label>
+                    <input type="text" name="company" id="company" value="" placeholder="Compañía">
+                    <label for="city" class="hidden">Ciudad</label>
+                    <input type="text" name="city" id="city" value="" placeholder="Ciudad">
+                    <label for="city" class="hidden">País</label>
+                    <input type="text" name="country" id="country" value="" placeholder="País">
+                    <!--fechas inicio y fin-->
+                    <div class="form-container">
+                      <div class="form-container-items">
+                        <label for="start">Fecha inicio</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
+                        <select class="months" name="" id="select-7">
+
+                        </select>
+                        <select class="years" name="" id="select-años-7">
+
+                        </select>
+                      </div>
+                      <div class="form-container-items">
+                        <label for="end">Fecha fin</label> <br><!--Modifica Sara: desde class="hidden" a class="" -->
+                        <select class="months" name="" id="select-8">
+
+                        </select>
+                        <select class="years" name="" id="select-años-8">
+
+                        </select>
+                      </div>
+                    </div>
+
+                    <label for="descripcion" class="hidden">Descripción</label>
+                    <textarea name="name" rows="8" cols="80"></textarea>
+                    <button type="reset" name="button" id="reset">Reset</button> <br><br><br>
+                  </form>
+                  <!--fine estudio extra-->
+                </div>
+
+                <!--<input type="submit" name="" value="Añadir"> -->
+
+                <button type="button" name="button" id="paragraph-button-work">Añadir nueva experiencia laboral</button><br><br>
+
+
+
+                <button type="button" name="button" id="button3">Añadir</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+
+        <form action="" method="post" id="form4">
+          <fieldset class="col1">
+            <legend>Idiomas</legend>
+            <button type="button" name="button" class="button-accordion">+</button>
+            <div class="accordion hidden">
+              <div class="form-container">
+                <div class="form-container-items">
+                  <label for="language" class="hidden">Idioma</label>
+                  <input type="text" name="language" id="first-language" value="" placeholder="Idioma">
+                </div>
+                <div class="form-container-items">
+                  <select name="nivel" class="" id="nivel-first-language">
+                    <option value=""></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Conversational">Conversational</option>
+                    <option value="Fluent">Fluent</option>
+                    <option value="Native">Native</option>
+                  </select>
+                </div>
+              </div>
+              <!--<p id="paragraph-button-languages">Más + </p> -->
+              <br>
+              <div class="form-container">
+                <div class="form-container-items">
+                  <label for="language" class="hidden">Idioma</label>
+                  <input type="text" name="language" id="extra1-language" value="" placeholder="Idioma">
+                </div>
+                <div class="form-container-items">
+                  <select name="nivel" class="" id="nivel-extra1-language">
+                    <option value=""></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Conversational">Conversational</option>
+                    <option value="Fluent">Fluent</option>
+                    <option value="Native">Native</option>
+                  </select>
+                </div>
+              </div>
+              <br>
+              <div class="form-container">
+                <div class="form-container-items">
+                  <label for="language" class="hidden">Idioma</label>
+                  <input type="text" name="language" id="extra2-language" value="" placeholder="Idioma">
+                </div>
+                <div class="form-container-items">
+                  <select name="nivel" class="" id="nivel-extra2-language">
+                    <option value=""></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Conversational">Conversational</option>
+                    <option value="Fluent">Fluent</option>
+                    <option value="Native">Native</option>
+                  </select>
+                </div>
+              </div>
+              <br>
+              <div class="form-container">
+                <div class="form-container-items">
+                  <label for="language" class="hidden">Idioma</label>
+                  <input type="text" name="language" id="extra3-language" value="" placeholder="Idioma">
+                </div>
+                <div class="form-container-items">
+                  <select name="nivel" class="" id="nivel-extra3-language">
+                    <option value=""></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Conversational">Conversational</option>
+                    <option value="Fluent">Fluent</option>
+                    <option value="Native">Native</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="reset" name="button" id="reset">Reset</button> <br><br>
+              <!--<input type="submit" name="" value="Añadir"> -->
+              <button type="button" name="button" id="button4">Añadir</button>
+            </div>
+          </fieldset>
+        </form>
+
+        <form action="" method="post" id="form5">
+          <fieldset class="col1">
+            <legend>Skills</legend>
+            <button type="button" name="button" class="button-accordion">+</button>
+            <div class="accordion hidden">
+              <div class="form-container">
+                <div class="form-container-items">
+                  <label for="skills" class="hidden">Skill</label>
+                  <input type="text" name="skill" id="skill1" value="" placeholder="Skill">
+                </div>
+                <div class="form-container-items">
+                  <select name="nivel" class="" id="nivel-skill1">
+                    <option value=""></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Conversational">Elementary</option>
+                    <option value="Fluent">Intermediate</option>
+                    <option value="Native">Advanced</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-container">
+                <div class="form-container-items">
+                  <label for="skills" class="hidden">Skill</label>
+                  <input type="text" name="skill" id="skill2" value="" placeholder="Skill">
+                </div>
+                <div class="form-container-items">
+                  <select name="nivel" class="" id="nivel-skill2">
+                    <option value=""></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Conversational">Elementary</option>
+                    <option value="Fluent">Intermediate</option>
+                    <option value="Native">Advanced</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-container">
+                <div class="form-container-items">
+                  <label for="skills" class="hidden">Skill</label>
+                  <input type="text" name="skill" id="skill3" value="" placeholder="Skill">
+                </div>
+                <div class="form-container-items">
+                  <select name="nivel" class="" id="nivel-skill3">
+                    <option value=""></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Conversational">Elementary</option>
+                    <option value="Fluent">Intermediate</option>
+                    <option value="Native">Advanced</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-container">
+                <div class="form-container-items">
+                  <label for="skills" class="hidden">Skill</label>
+                  <input type="text" name="skill" id="skill4" value="" placeholder="Skill">
+                </div>
+                <div class="form-container-items">
+                  <select name="nivel" class="" id="nivel-skill4">
+                    <option value=""></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Conversational">Elementary</option>
+                    <option value="Fluent">Intermediate</option>
+                    <option value="Native">Advanced</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="reset" name="button" id="reset">Reset</button> <br><br>
+
+              <!--<input type="submit" name="" value="Añadir"> -->
+              <button type="button" name="button" id="button5">Añadir</button>
+            </div>
+          </fieldset>
+        </form>
+        <div class="insert-photo">
+          <label class="button-photo" for="photo">Foto</label>
+          <input class="photo-button" id="photo" type="file" placeholder="Foto">
+        </div>
+      </section>
+
+
+
+      <!-- CV -->
+      <div id="printCv" class="resume-container" onload="window.print();window.close()">
+        <section class="resume">
+          <aside class="resume-left">
+            <img class="profile-picture margin">
+
+            <div class="personal-info-mvl margin">
+              <h2 class="title" id="CV0">Nombre</h2>
+              <h2 class="title-medium" id="CV0">Profesion</h3>
+              </div>
+              <div class="extract-info">
+                <h3>Sobre mí</h3>
+                <p id="description-personal-cv">
+                </p>
+                <p id="fecha-nacimiento">Fecha nacimiento</p>
+              </div>
+
+              <div class="contact-section">
+                <div class="contact-info">
+                  <h4>Contacto</h4>
+                  <div class="phone-info">
+                    <img src="" alt="">
+                    <p id="CV1"></p>
+                  </div>
+                  <div class="email-info">
+                    <img src="" alt="">
+                    <p id="CV1"></p>
+                  </div>
+                  <div class="location-info">
+                    <img src="" alt="">
+                    <p id="CV1"></p>
+                  </div>
+                </div>
+
+                <div class="social-media">
+                  <!--<h4>Social</h4>-->
+                  <!--<p id="social-logo">Linkedin Logo</p>-->
+                  <p id="social-enlace"></p>
+                  <!--<p>Linkedin:<a href="https://github.com/Adalab/clarke-s2-varwomen/tree/js-adds">Icono Linkedin</a></p>
+                  <p>GitHub: @ejemplo</p>-->
+                  <!--<p id="social-logo">GitHub Logo</p> -->
+                  <p id="social-enlace"></p>
+                  <!--<p id="social-logo">Twitter Logo</p>-->
+                  <p id="social-enlace"></p>
+                </div>
+              </div>
+            </aside>
+
+            <div class="resume-right">
+              <div class="personal-info-desktop margin">
+                <h2 class="title" id="CV1">Nombre y apellidos</h2>
+                <h3 class="title-medium" id="CV1">Profesion</h3>
+              </div>
+
+              <div class="work-info margin">
+                <h3>Experiencia laboral</h3>
+
+                <div class="option">
+                  <h4 id="work-type-CV">Puesto o Cargo</h4>
+                  <div class="where-info">
+                    <h5 id="company-name-CV"></h5>
+                    <div class="date-info">
+                      <p id="start-work-date"></p>
+                      <p id="end-work-date"></p>
+                    </div>
+                  </div>
+                  <p id="work-description">
+                  </p>
+
+                  <!--estudios exta en cv-->
+                  <div class="work-extra-cv hidden">
+                    <h4 id="work-type-CV-extra">Puesto o Cargo</h4>
+                    <div class="where-info">
+                      <h5 id="company-name-CV-extra"></h5>
+                      <div class="date-info">
+                        <p id="start-work-date-extra"></p>
+                        <p id="end-work-date-extra"></p>
+                      </div>
+                    </div>
+                    <p id="work-description-extra">
+                    </p>
+                  </div>
+
+                  <div class="background-info margin">
+                    <h3>Estudios</h3>
+                    <div class="option">
+                      <h4 id="study-title">Estudios realizados</h4>
+                      <div class="where-info">
+                        <h5 id="school"></h5>
+                        <div class="date-info">
+                          <p id="start-study-date"></p>
+                          <p id="end-study-date"></p>
+                        </div>
+                      </div>
+                      <p id="study-description">
+                      </p>
+
+                      <!--estudios exta en cv-->
+                      <div class="estudio-extra-cv hidden">
+                        <h4 id="study-title-extra"></h4>
+                        <div class="where-info">
+                          <h5 id="school-extra"></h5>
+                          <div class="date-info">
+                            <p id="start-study-date-extra"></p>
+                            <p id="end-study-date-extra"></p>
+                          </div>
+                        </div>
+                        <p id="study-description-extra">
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="options-content">
+                      <div class="options-content-items">
+                        <h4>Idiomas</h4>
+                        <div class="options-content">
+                          <div class="options-content-items">
+                            <p id="primero-idioma-into-CV"></p>
+                            <p id="idioma-extra1-into-CV"></p>
+                            <p id="idioma-extra2-into-CV"></p>
+                            <p id="idioma-extra3-into-CV"></p>
+                            <!--  <p>Italiano</p> -->
+                            <!--<p>Ruso</p> -->
+                          </div>
+                          <div class="options-content-items">
+                            <p id="nivel-primero-idioma-into-CV"></p>
+                            <p id="nivel-idioma-extra1-into-CV"></p>
+                            <p id="nivel-idioma-extra2-into-CV"></p>
+                            <p id="nivel-idioma-extra3-into-CV"></p>
+                            <!--<p>Fluent</p>-->
+                            <!--<p>Beginner</p> -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="options-content-items">
+                        <h4>Skills</h4>
+                        <div class="options-content">
+                          <div class="options-content-items">
+                            <p id="skill1-cv"></p>
+                            <p id="skill2-cv"></p>
+                            <p id="skill3-cv"></p>
+                            <p id="skill4-cv"></p>
+                          </div>
+                          <div class="options-content-items">
+                            <p id="skill1-level-cv"></p>
+                            <p id="skill2-level-cv"></p>
+                            <p id="skill3-level-cv"></p>
+                            <P id="skill4-level-cv"></P>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <input class="button-print" type="button" onclick="printDiv('printCv')" value="Imprimir"/>
+          </section>
+
+          <div class="button-up"><a href="#top"><img src="/images/arrow.png" alt="Back to the top"></a></div>
+
+        </main>
+
+        <footer>
+          <div class="footer-container">
+            <div class="footer-items">VarWomen 	&copy; 2017  <img class="logo" src="/images/logoCv.png" alt=""> </div>
+            <div class="footer-items"><a href="http://politicadecookies.com/" target="_blank">Politica de cookies</a></div>
+          </div>
+        </footer>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -36,5 +655,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
   </body>
 </html>
