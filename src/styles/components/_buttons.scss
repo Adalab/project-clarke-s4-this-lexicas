@@ -1,0 +1,115 @@
+.boton-start {
+  position: absolute;
+  top: 57%;
+  left: 30%;
+  padding: 10px 30px;
+  background-color: #e66760;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+
+  @media all and (min-width: 724px) {
+      top: 57%;
+      left: 43%;
+      cursor: pointer;
+  }
+}
+
+.boton-start-second {
+  padding: 10px 80px;
+  margin-top: 40px;
+  background-color: #e66760;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+
+  @media all and (min-width: 1200px){
+      display: none;
+      cursor: pointer;
+  }
+}
+
+.button-photo {
+  padding: 10px 10px;
+  background-color: #e66760;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px;
+}
+
+.photo-button {
+  width: 28%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-width: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  @media all and (min-width: 724px){
+      width: 18%;
+  }
+
+  @media all and (min-width: 1024px){
+      width: 28%;
+  }
+}
+
+.button-up {
+  position: fixed;
+  left: 80%;
+  top: 75%;
+  display: block;
+
+  @media all and (min-width: 724px){
+      top: 85%;
+      left: 85%;
+  }
+
+  @media all and (min-width: 1024px){
+      top: 83%;
+      left: 92%;
+  }
+}
+
+.button-up img {
+  width: 50px;
+  opacity: 0.5;
+}
+
+.button-up img:hover {
+  opacity: 1;
+}
+
+#button1, #button2, #button3, #button4, #button5 {
+  background: #0099ff;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button-print{
+  background: #0099ff;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-accordion {
+  width: 15%;
+  margin-left: 43%;
+  cursor: pointer;
+  border: 3px solid #0099ff;
+  border-radius: 30%;
+}
+
+.button-accordion:hover {
+  background: #0099ff;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

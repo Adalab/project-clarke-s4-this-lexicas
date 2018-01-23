@@ -1,0 +1,157 @@
+.insert-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.resume-container {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media all and (min-width: 1024px), print {
+    width: 60%;
+    padding: 50px 30px;
+    font-size: 14px;
+  }
+}
+
+.resume {
+  padding: 20px;
+  background-color: #fff;
+
+  @media all and (min-width: 1024px), print {
+    display: flex;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.resume-left {
+  @media all and (min-width: 1024px), print {
+    padding: 24px;
+    width: 30%;
+    background-color: rgb(128,128,128);
+    color: #fff;
+  }
+}
+
+.resume-right {
+  @media all and (min-width: 1024px), print {
+    padding: 0 24px;
+    width: 70%;
+  }
+}
+
+.resume-right h3 {
+  border-bottom: 2px solid #000;
+  background-color: inherit;
+  color: #000;
+}
+
+.resume-right h3.title-medium {
+  border: none;
+}
+
+.resume-right h4 {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #e66760;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media all and (min-width: 1024px), print {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    margin: 30px auto;
+  }
+}
+
+.contact-section {
+  display: flex;
+
+  @media all and (min-width: 1024px), print {
+    display: block;
+  }
+}
+
+.contact-section p {
+  font-size: 13px;
+  margin: 5px 0;
+  margin-right: 10px;
+}
+
+.contact-info, .social-media {
+  width: 50%;
+
+  @media all and (min-width: 1024px), print {
+    margin: 60px 0;
+  }
+}
+
+.option {
+  margin: 50px 0;
+}
+
+.where-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.date-info p {
+  font-size: 13px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+h5 {
+  font-size: 13px;
+  margin: 0;
+}
+
+.options-content {
+  display: flex;
+}
+
+.options-content-items {
+  font-size: 13px;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.personal-info-mvl {
+  @media all and (min-width: 1024px), print {
+    display: none;
+  }
+}
+
+.personal-info-desktop {
+  display: none;
+
+  @media all and (min-width: 1024px), print {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+.extract-info p{
+  margin: 70px 0;
+}
