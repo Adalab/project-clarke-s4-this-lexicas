@@ -1,0 +1,47 @@
+.intro-section {
+  background: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 60px 0 90px 0;
+
+  @media all and (min-width: 830px){
+      padding: 50px 40px;
+  }
+}
+
+.intro-section h2 {
+  padding-top: 40px;
+  margin: 0;
+}
+
+.container-qualities {
+  @media all and (min-width: 830px){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+}
+
+.container-qualities img {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quality {
+  padding: 40px 24px;
+
+  @media all and (min-width: 830px){
+      width: 50%;
+      padding: 0 50px;
+      margin: 70px 0;
+  }
+
+  @media all and (min-width: 1200px){
+      width: 25%;
+      margin: 70px 0;
+      padding: 0 50px;
+  }
+}
