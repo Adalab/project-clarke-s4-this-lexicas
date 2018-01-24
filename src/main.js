@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 function legacyCode() {
 
@@ -40,6 +41,53 @@ function legacyCode() {
   for(var i = 0 ; i < mesesSelect.length ; i = i+1) {
     mesesSelect[i].innerHTML = optionsMeses;   //voy a extender a los 2 select con class monthsStudy
   }
+=======
+//Imprimir CV
+
+function legacyCode() {
+
+
+
+  function printDiv(printCv) {
+       var contenido = document.getElementById(printCv).innerHTML;
+       var contenidoOriginal = document.body.innerHTML;
+       document.body.innerHTML = contenido;
+       window.print();
+       document.body.innerHTML = contenidoOriginal;
+  }
+
+  //Foto
+
+  var input = document.querySelector('input[type="file"]');
+  var img = document.querySelector('.profile-picture');
+  input.onchange = function (event) {
+    var files = input.files;
+    if (files && files.length > 0) {
+        showImage(files[0], img);
+    }
+
+    function showImage(image, imgTag) {
+      var fr = new FileReader();
+      fr.onload = function () {
+        imgTag.src = fr.result;
+      }
+      fr.readAsDataURL(image);
+    }
+  }
+
+
+  //Variables fechas - meses
+  var mesesSelect = document.querySelectorAll('.months'); //es el select, que son 2 porque ho 2 select con class months, por esto tengo que tratarlos como si fueran un array
+  var meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+  var optionsMeses = ""; //puesto por dentro del array, el bucle procesaba todo dandome solo diciembre
+
+  for (var i = 0; i < meses.length; i = i+1) {
+    optionsMeses = optionsMeses + '<option>' + meses[i] + '\n' + '</option>'; //en mesesSelect yo pongo el intero array
+  }
+  for(var i = 0 ; i < mesesSelect.length ; i = i+1) {
+    mesesSelect[i].innerHTML = optionsMeses;   //voy a extender a los 2 select con class monthsStudy
+  }
+>>>>>>> 21a344284442a4ee6c791b64a57b652a685fe145
 
   var select3 = document.querySelector('#select-3');
   var select4 = document.querySelector('#select-4');
@@ -116,7 +164,10 @@ function legacyCode() {
   //   document.querySelector('.datos-personales').reset();
   // }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 21a344284442a4ee6c791b64a57b652a685fe145
 
 
   //ESTUDIOS:
@@ -129,9 +180,24 @@ function legacyCode() {
   var studyEndingDate = document.querySelector('#end-study-date');  //parrafo donde va escrita la fecha de fin de estudios
   var studyDescription = document.querySelector('#study-description');
 
+  //ESTUDIOS:
+  var userInputStudy = document.querySelectorAll('.estudios input');
+  var studyDates = document.querySelectorAll('.estudios select');
+  var description = document.querySelectorAll('.estudios textarea');
+  var studyTitle = document.querySelector('#study-title');
+  var instituteName = document.querySelector('#school');
+  var studyStartingDate = document.querySelector('#start-study-date');  //parrafo donde va escrita la fecha de inicio de estudios
+  var studyEndingDate = document.querySelector('#end-study-date');  //parrafo donde va escrita la fecha de fin de estudios
+  var studyDescription = document.querySelector('#study-description');
+
+<<<<<<< HEAD
+  //estudios extra
+
+=======
 
   //estudios extra
 
+>>>>>>> 21a344284442a4ee6c791b64a57b652a685fe145
   var userInputStudyExtra = document.querySelectorAll('.estudios input');
   var studyDatesExtra = document.querySelectorAll('.estudios select');
   //var descriptionExtra = document.querySelector('#description-extra');
@@ -418,8 +484,6 @@ function legacyCode() {
   // 1. poner en dataSOcial0-2 los iconos de los social;
   //2. poner obligatorios todos los campos
   //3. Hobby? Iconos o parrafos?
-
-
 }
 
 export default legacyCode;

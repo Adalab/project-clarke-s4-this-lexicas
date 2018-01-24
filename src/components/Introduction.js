@@ -22,7 +22,7 @@ class Introduction extends Component {
       <div className="quality">
       <h3>Comparte, Descarga, Imprime</h3>
       <img src="/images/share.png" alt="" />
-      <p id="bookmark" />
+      <p id="bookmark" ></p>
       </div>
       </div>
       </section>
