@@ -365,9 +365,6 @@ h5 {
   margin: 70px 0; }
 
 .boton-start {
-  position: absolute;
-  top: 57%;
-  left: 30%;
   padding: 10px 30px;
   background-color: #e66760;
   border-radius: 5px;
@@ -375,8 +372,6 @@ h5 {
   cursor: pointer; }
   @media all and (min-width: 724px) {
     .boton-start {
-      top: 57%;
-      left: 43%;
       cursor: pointer; } }
 
 .boton-start-second {
@@ -550,7 +545,10 @@ legend {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /* -- Estilos generales -- */
 *, *:before, *:after {
