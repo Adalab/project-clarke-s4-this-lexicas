@@ -19,7 +19,7 @@
 
 .resume {
   padding: 20px;
-  background-color: #fff;
+  background-color: $color-light;
 
   @media all and (min-width: 1024px), print {
     display: flex;
@@ -33,7 +33,7 @@
     padding: 24px;
     width: 30%;
     background-color: rgb(128,128,128);
-    color: #fff;
+    color: $color-light;
   }
 }
 
@@ -45,9 +45,9 @@
 }
 
 .resume-right h3 {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid $color-dark;
   background-color: inherit;
-  color: #000;
+  color: $color-dark;
 }
 
 .resume-right h3.title-medium {
@@ -58,15 +58,15 @@
   display: block;
   padding: 10px;
   margin: 10px 0;
-  background-color: #ccc;
-  color: #fff;
+  background-color: $color-midtone-light;
+  color: $color-light;
 }
 
 .profile-picture {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  background-color: #e66760;
+  background-color: $color-primary;
   display: block;
   margin-left: auto;
   margin-right: auto;

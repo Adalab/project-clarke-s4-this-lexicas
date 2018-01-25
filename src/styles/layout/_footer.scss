@@ -1,6 +1,6 @@
 footer {
   min-height: 20%;
-  background-color: #e66760;
+  background-color: $color-primary;
 }
 
 .footer-container {
@@ -21,27 +21,27 @@ footer {
 
 .footer-items:nth-child(1) {
   order: 1;
-  color: #fff;
+  color: $color-light;
 }
 
 .footer-items:nth-child(2) {
   order: 2;
   margin-left: 3vw;
-  color: #fff;
+  color: $color-light;
 }
 
 .footer-items a:link {
-  color: #fff;
+  color: $color-light;
   text-decoration: none;
 }
 
 .footer-items a:visited {
-  color: #fff;
+  color: $color-light;
   text-decoration: none;
 }
 
 .footer-items a:hover {
-  color: #fff;
+  color: $color-light;
   text-decoration: none;
   font-weight: bold;
 }
