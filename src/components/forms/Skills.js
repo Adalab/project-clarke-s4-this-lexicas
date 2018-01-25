@@ -11,7 +11,7 @@ class Skills extends Component {
 <form  method="post" id="form5">
 <fieldset className="col1">
 <legend>Skills</legend>
-<button type="button" name="button" className="button-accordion">+</button>
+<button type="button" name="button" className="button-accordion" data-id= '4'>+</button>
 <div className="accordion hidden">
 <div className="form-container">
 <div className="form-container-items">

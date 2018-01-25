@@ -7,7 +7,7 @@ class PersonalData extends Component {
       <form  method="post" id="form1">
       <fieldset className="col1">
       <legend>Datos personales</legend>
-      <button type="button" name="button" className="button-accordion">+</button>
+      <button type="button" name="button" className="button-accordion" data-id= '0'>+</button>
       <div className="accordion hidden">
       <div className="datos-personales">
       <label htmlFor="firstname" className="hidden">Nombre</label>

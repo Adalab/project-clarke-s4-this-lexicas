@@ -9,7 +9,7 @@ class ProfessionalExp extends Component {
         <legend>Experiencia Laboral</legend>
         <div className="experiencia-laboral">
           <form  method="post" id="form3">
-            <button type="button" name="button" className="button-accordion">+</button>
+            <button type="button" name="button" className="button-accordion" data-id= '2'>+</button>
             <div className="accordion hidden">
               <p id="form-field">Experiencia laboral I</p>
               <label htmlFor="work-type" className="hidden">Cargo</label>

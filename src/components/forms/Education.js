@@ -9,7 +9,7 @@ class Education extends Component {
       <legend>Estudios</legend>
       <div className="estudios">
       <form  method="post" id="form2">
-      <button type="button" name="button" className="button-accordion">+</button>
+      <button type="button" name="button" className="button-accordion" data-id= '1'>+</button>
       <div className="accordion hidden">
       <p id="form-field">Estudio I</p>
       <label htmlFor="titulo" className="hidden">Titulo</label>
