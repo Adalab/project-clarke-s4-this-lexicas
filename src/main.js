@@ -349,22 +349,22 @@ function legacyCode() {
   }
 
   //ACCORDIONES
-  var accordion = document.querySelectorAll('.accordion');
-  var accordionButton = document.querySelectorAll('.button-accordion');
-
-  function acordeon(event){
-     var newFieldId = event.currentTarget.getAttribute('data-id');
-    accordion[newFieldId].classList.toggle('hidden');
-    if(accordion[newFieldId].classList.contains('hidden')){
-      accordionButton[newFieldId].innerHTML = '+';
-    } else{
-      accordionButton[newFieldId].innerHTML = '-';
-    }
-  }
-
-for (var i = 0; i < accordionButton.length; i++) {
-    accordionButton[i].addEventListener('click',acordeon);
-}
+//   var accordion = document.querySelectorAll('.accordion');
+//   var accordionButton = document.querySelectorAll('.button-accordion');
+//
+//   function acordeon(event){
+//      var newFieldId = event.currentTarget.getAttribute('data-id');
+//     accordion[newFieldId].classList.toggle('hidden');
+//     if(accordion[newFieldId].classList.contains('hidden')){
+//       accordionButton[newFieldId].innerHTML = '+';
+//     } else{
+//       accordionButton[newFieldId].innerHTML = '-';
+//     }
+//   }
+//
+// for (var i = 0; i < accordionButton.length; i++) {
+//     accordionButton[i].addEventListener('click',acordeon);
+// }
 
   //Notas:
   // 1. poner en dataSOcial0-2 los iconos de los social;

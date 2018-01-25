@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Fieldset from '../Fieldset';
 
 class PersonalData extends Component {
   render() {
     return (
-      <form  method="post" id="form1">
-      <fieldset className="col1">
-      <legend>Datos personales</legend>
-      <button type="button" name="button" className="button-accordion" data-id= '0'>+</button>
-      <div className="accordion hidden">
-      <div className="datos-personales">
+      <Fieldset  formNumber={1} legend="Datos Personales" innerClassname="datos-personales">
       <label htmlFor="firstname" className="hidden">Nombre</label>
       <input id="firstname" type="text" name="firstname" defaultValue placeholder="Nombre" />
       <label htmlFor="job" className="hidden">Apellido</label>
@@ -34,12 +30,7 @@ class PersonalData extends Component {
       <input id="tw" type="text" name="enlaceTwitter" defaultValue placeholder="Tu cuenta GitHub, ej. @SaraPeir" />
       <label htmlFor="descripcion" >Personal descripción</label>
       <textarea name="name" rows={8} cols={80} id="description-personal" defaultValue={""} />
-      </div>
-      <button type="reset" name="button" id="reset">Reset</button> <br /><br />
-      <button type="button" name="button" id="button1">Añadir</button>
-      </div>
-      </fieldset>
-      </form>
+      </Fieldset>
 
     );
   }

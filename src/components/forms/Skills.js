@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Skills extends Component {
+
   render() {
+
     return (
-
-
-
-
 <form  method="post" id="form5">
 <fieldset className="col1">
 <legend>Skills</legend>
