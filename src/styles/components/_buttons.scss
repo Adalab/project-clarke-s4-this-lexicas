@@ -1,7 +1,5 @@
 .boton-start {
-  position: absolute;
-  top: 57%;
-  left: 30%;
+
   padding: 10px 30px;
   background-color: #e66760;
   border-radius: 5px;
@@ -9,8 +7,6 @@
   cursor: pointer;
 
   @media all and (min-width: 724px) {
-      top: 57%;
-      left: 43%;
       cursor: pointer;
   }
 }
