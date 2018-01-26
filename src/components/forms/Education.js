@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Fieldset from '../Fieldset';
+
 
 class Education extends Component {
   render() {
     return (
+
 
       <fieldset className="col1">
       <legend>Estudios</legend>
       <div className="estudios">
       <form  method="post" id="form2">
       <button type="button" name="button" className="button-accordion" data-id= '1'>+</button>
-      <div className="accordion hidden">
+      <div className="accordion ">
       <p id="form-field">Estudio I</p>
       <label htmlFor="titulo" className="hidden">Titulo</label>
       <input type="text" name="title" id="titulo" defaultValue placeholder="Titulo" />

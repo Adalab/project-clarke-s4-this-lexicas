@@ -6,7 +6,7 @@ import SkillComponent from './SkillComponent';
 class Skills extends Component {
   render() {
     return (
-      <Fieldset  formNumber={5} legend="Skills" innerClassname="form-container">
+      <Fieldset  formNumber={5} legend="Skills" innerClassname="">
       <SkillComponent />
       <SkillComponent />
       <SkillComponent />
