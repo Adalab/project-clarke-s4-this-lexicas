@@ -8,13 +8,12 @@ class ProfessionalExp extends Component {
 
             <Fieldset  formNumber={3} legend="Experiencia Laboral" innerClassname="experiencia-laboral">
               <p id="form-field">Experiencia laboral I</p>
-              <label htmlFor="work-type" className="hidden">Cargo</label>
               <input type="text" name="cargo" id="work-type"  placeholder="Cargo" />
-              <label htmlFor="company" className="hidden">Compañía</label>
+
               <input type="text" name="company" id="company"  placeholder="Compañía" />
-              <label htmlFor="city" className="hidden">Ciudad</label>
+
               <input type="text" name="city" id="city"  placeholder="Ciudad" />
-              <label htmlFor="city" className="hidden">País</label>
+
               <input type="text" name="country" id="country" placeholder="País" />
               <div className="form-container">
                 <div className="form-container-items">
@@ -32,7 +31,7 @@ class ProfessionalExp extends Component {
                   </select>
                 </div>
               </div>
-              <label htmlFor="descripcion" className="hidden">Descripción</label>
+              <label htmlFor="descripcion">Descripción</label>
               <textarea name="name" rows={8} cols={80} placeholder={""} />
 
 

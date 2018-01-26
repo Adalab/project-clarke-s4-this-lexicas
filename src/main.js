@@ -332,7 +332,7 @@ function legacyCode() {
   var Skill4CVLevel = document.querySelector('#skill4-level-cv');
 
   var button5 = document.querySelector('#button5');
-  button5.addEventListener('click',showIntoCV5);
+  //button5.addEventListener('click',showIntoCV5);
 
   function showIntoCV5() {
     Skill1CV.innerHTML = userInputSkill1.value;
