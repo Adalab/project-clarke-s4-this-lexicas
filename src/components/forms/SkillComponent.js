@@ -10,7 +10,6 @@ class SkillComponent extends Component {
       </div>
       <div className="form-container-items">
       <select name="nivel" id="nivel-skill1">
-      <option value />
       <option selected disabled value="Seleccionar nivel">Seleccionar nivel</option>
       <option value="Beginner">Beginner</option>
       <option value="Conversational">Elementary</option>
