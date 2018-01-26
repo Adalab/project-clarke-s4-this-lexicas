@@ -507,13 +507,13 @@ legend {
   text-align: center;
   font-weight: bold; }
 
-.form-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px; }
 
 .form-container-items {
-  width: 45%; }
+  width: 100%; }
 
 #margin-reduced {
   margin-bottom: -6%; }
