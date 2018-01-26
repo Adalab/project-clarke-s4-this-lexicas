@@ -214,7 +214,7 @@ function legacyCode() {
     var extraWork = document.querySelector ('.work-extra'); //div con la cosas que tienen que aparecer/desaparecer
     var extraWorkCV = document.querySelector ('.work-extra-cv');
     var masButtonWork = document.querySelector('#paragraph-button-work');
-    masButtonWork.addEventListener('click', toAddWork);
+    //masButtonWork.addEventListener('click', toAddWork);
 
     function toAddWork () {
       extraWork.classList.toggle('hidden');
@@ -244,7 +244,7 @@ function legacyCode() {
 
     //Evento per inviare al CV
     var button3 = document.querySelector('#button3');
-    button3.addEventListener('click',showIntoCV3);
+    //button3.addEventListener('click',showIntoCV3);
 
     function showIntoCV3() {
       workType.innerHTML = userInputWork[0].value;
