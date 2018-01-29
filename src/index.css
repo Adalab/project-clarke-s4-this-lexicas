@@ -130,16 +130,15 @@ header {
   position: fixed;
   background: #e66760;
   width: 100%;
-  height: 100px;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
   color: #fff; }
-  @media all and (min-width: 724px) {
+  @media all and (min-width: 1024px) {
     header {
-      padding: 20px 40px; } }
+      padding: 30px 30px; } }
 
 header ul {
   display: flex;

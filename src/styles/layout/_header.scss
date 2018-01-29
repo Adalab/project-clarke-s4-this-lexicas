@@ -2,7 +2,6 @@ header {
   position: fixed;
   background: $color-primary;
   width: 100%;
-  height: 100px;
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -10,8 +9,8 @@ header {
   padding: 20px 20px;
   color: $color-light;
 
-  @media all and (min-width: 724px) {
-      padding: 20px 40px;
+  @media all and (min-width: 1024px) {
+      padding: 30px 30px;
   }
 }
 
