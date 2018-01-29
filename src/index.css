@@ -128,7 +128,7 @@
 /*Tipografias*/
 header {
   position: fixed;
-  background: #e66760;
+  background: #b1d1c4;
   width: 100%;
   z-index: 1;
   display: flex;
@@ -161,7 +161,7 @@ header ul li {
 
 footer {
   min-height: 20%;
-  background-color: #e66760; }
+  background-color: #b1d1c4; }
 
 .footer-container {
   display: flex;
@@ -292,7 +292,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  background-color: #e66760;
+  background-color: #b1d1c4;
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -368,7 +368,7 @@ h5 {
   top: 57%;
   left: 30%;
   padding: 10px 30px;
-  background-color: #e66760;
+  background-color: #b1d1c4;
   border-radius: 5px;
   color: #fff;
   cursor: pointer; }
@@ -381,7 +381,7 @@ h5 {
 .boton-start-second {
   padding: 10px 80px;
   margin-top: 40px;
-  background-color: #e66760;
+  background-color: #b1d1c4;
   border-radius: 5px;
   color: #fff;
   cursor: pointer; }
@@ -392,7 +392,7 @@ h5 {
 
 .button-photo {
   padding: 10px 10px;
-  background-color: #e66760;
+  background-color: #b1d1c4;
   border-radius: 5px;
   color: #fff;
   margin: 10px; }
@@ -434,7 +434,7 @@ h5 {
   opacity: 1; }
 
 #button1, #button2, #button3, #button4, #button5 {
-  background: #0099ff;
+  background: #7f9596;
   width: 100%;
   color: #fff;
   font-weight: bold;
@@ -442,11 +442,15 @@ h5 {
   cursor: pointer; }
 
 .button-print {
-  background: #0099ff;
-  border: 3px solid white;
-  color: white;
+  background-color: #b1d1c4;
+  border: 2px solid white;
+  color: #515d6b;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background-color ease-in-out 0.5s; }
+  .button-print:hover {
+    background-color: #7f9596;
+    color: #fff; }
 
 .button-accordion {
   -moz-appearance: inherit;
@@ -462,16 +466,16 @@ h5 {
   margin-right: auto;
   cursor: pointer;
   background: #fff;
-  color: #e66760;
+  color: #515d6b;
   border-radius: 5px;
   -webkit-border-image: none;
   -o-border-image: none;
   border-image: none;
   border: 2px solid #fff;
-  transition: color ease-in-out 0.7s, background-color ease-in-out 0.7s, font-weight ease-in-out 0.7s; }
+  transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s, font-weight ease-in-out 0.5s; }
   .button-accordion:hover {
     color: #fff;
-    background-color: #0099ff;
+    background-color: #515d6b;
     font-weight: bold; }
 
 .hidden {
@@ -516,7 +520,7 @@ fieldset {
 legend {
   width: 90%;
   height: 2.5em;
-  background: #e66760;
+  background: #b1d1c4;
   color: #fff;
   font-size: 18px;
   line-height: 2.5em;
@@ -549,7 +553,7 @@ legend {
 #reset {
   float: right;
   width: 30%;
-  background: #e66760;
+  background: #b1d1c4;
   cursor: pointer; }
 
 #bookmark {
