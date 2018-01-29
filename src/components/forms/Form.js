@@ -14,12 +14,8 @@ class Form extends Component {
   render() {
     return (
       <section className="form">
-      <PersonalData />
-      <Education />
-      <ProfessionalExp />
-      <Language />
-      <Skills />
 
+      <Skills data={this.props.data} updateState={this.props.updateState}/>
 
       <div className="insert-photo">
       <label className="button-photo" htmlFor="photo">Foto</label>
@@ -29,6 +25,11 @@ class Form extends Component {
     );
   }
 }
+
+// <PersonalData />
+// <Education />
+// <ProfessionalExp />
+// <Language />
 
 
 

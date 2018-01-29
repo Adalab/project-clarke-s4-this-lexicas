@@ -102,7 +102,7 @@ function legacyCode() {
   }
 
   var button1 = document.querySelector('#button1');
-  button1.addEventListener('click',showIntoCV1);
+//  button1.addEventListener('click',showIntoCV1);
 
   // var buttonReset = document.querySelector('#button-reset');
   // buttonReset.addEventListener('click', zero);
@@ -138,7 +138,7 @@ function legacyCode() {
   var extraStudy = document.querySelector ('.estudio-extra'); //div con la cosas que tienen que aparecer/desaparecer
   var extraStudyCV = document.querySelector ('.estudio-extra-cv');
   var masButtonStudy = document.querySelector('#paragraph-button-study');
-  masButtonStudy.addEventListener('click', toAddStudy);
+  //masButtonStudy.addEventListener('click', toAddStudy);
 
   function toAddStudy () {
     extraStudy.classList.toggle('hidden');
@@ -166,7 +166,7 @@ function legacyCode() {
 
   //Evento per inviare al CV
   var button2 = document.querySelector('#button2');
-  button2.addEventListener('click',showIntoCV2);
+  //button2.addEventListener('click',showIntoCV2);
 
   function showIntoCV2() {
     studyTitle.innerHTML = userInputStudy[0].value;

@@ -135,7 +135,7 @@ class Cv extends Component {
       <p id="skill1-level-cv" ></p>
       <p id="skill2-level-cv" ></p>
       <p id="skill3-level-cv" ></p>
-      <p id="skill4-level-cv" ></p>
+      <p id="skill4-level-cv" >{this.props.data.value}</p>
       </div>
       </div>
       </div>
