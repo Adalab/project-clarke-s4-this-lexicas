@@ -9,9 +9,9 @@
   cursor: pointer;
 
   @media all and (min-width: 724px) {
-      top: 57%;
-      left: 43%;
-      cursor: pointer;
+    top: 57%;
+    left: 43%;
+    cursor: pointer;
   }
 }
 
@@ -24,8 +24,8 @@
   cursor: pointer;
 
   @media all and (min-width: 1200px){
-      display: none;
-      cursor: pointer;
+    display: none;
+    cursor: pointer;
   }
 }
 
@@ -47,11 +47,11 @@
   border-radius: 5px;
 
   @media all and (min-width: 724px){
-      width: 18%;
+    width: 18%;
   }
 
   @media all and (min-width: 1024px){
-      width: 28%;
+    width: 28%;
   }
 }
 
@@ -62,13 +62,13 @@
   display: block;
 
   @media all and (min-width: 724px){
-      top: 85%;
-      left: 85%;
+    top: 85%;
+    left: 85%;
   }
 
   @media all and (min-width: 1024px){
-      top: 83%;
-      left: 92%;
+    top: 83%;
+    left: 92%;
   }
 }
 
@@ -99,17 +99,29 @@
 }
 
 .button-accordion {
-  width: 15%;
-  margin-left: 43%;
+  -moz-appearance: inherit;
+  -o-appearance: inherit;
+  -ms-appearance: inherit;
+  appearance: inherit;
+  -webkit-appearance: inherit;
+  width: 90%;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
-  border: 3px solid $color-secundary;
-  border-radius: 30%;
-}
-
-.button-accordion:hover {
-  background: $color-secundary;
-  border: 3px solid white;
-  color: white;
+  background: $color-light;
+  color: $color-primary;
+  border-radius: 5px;
+  -webkit-border-image: none;
+  -o-border-image: none;
+  border-image: none;
+  border: 2px solid $color-light;
+  transition: color ease-in-out 0.7s, background-color ease-in-out 0.7s, font-weight ease-in-out 0.7s;
+  &:hover {
+  color: $color-light;
+  background-color: $color-secundary;
   font-weight: bold;
-  cursor: pointer;
+}
 }
