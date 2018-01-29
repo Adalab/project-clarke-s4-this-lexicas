@@ -372,7 +372,7 @@ h5 {
       cursor: pointer; } }
 
 .button-photo {
-  width: 40%;
+  width: 80%;
   padding: 10px 10px;
   background-color: #b1d1c4;
   border-radius: 5px;
@@ -387,21 +387,7 @@ h5 {
     background-color: #7f9596; }
 
 .photo-button {
-  width: 40%;
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #fff;
-  color: #515d6b;
-  font-weight: bold;
-  border-width: 0;
-  border-radius: 5px;
-  cursor: pointer; }
-  @media all and (min-width: 724px) {
-    .photo-button {
-      width: 18%; } }
-  @media all and (min-width: 1024px) {
-    .photo-button {
-      width: 28%; } }
+  display: none; }
 
 #reset, #paragraph-button-study {
   float: right;

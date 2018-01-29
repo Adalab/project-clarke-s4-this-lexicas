@@ -31,7 +31,7 @@
 }
 
 .button-photo {
-  width: 40%;
+  width: 80%;
   padding: 10px 10px;
   background-color: $color-primary;
   border-radius: 5px;
@@ -48,23 +48,7 @@
 }
 
 .photo-button {
-  width: 40%;
-  padding: 10px;
-  margin: 10px 0;
-  background-color: $color-light;
-  color: $color-midtone-dark;
-  font-weight: bold;
-  border-width: 0;
-  border-radius: 5px;
-  cursor: pointer;
-
-  @media all and (min-width: 724px){
-    width: 18%;
-  }
-
-  @media all and (min-width: 1024px){
-    width: 28%;
-  }
+  display: none;
 }
 
 #reset, #paragraph-button-study {
