@@ -350,7 +350,11 @@ h5 {
   background-color: #b1d1c4;
   border-radius: 5px;
   color: #515d6b;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s; }
+  .boton-start:hover {
+    background-color: #7f9596;
+    color: #fff; }
   @media all and (min-width: 724px) {
     .boton-start {
       cursor: pointer; } }
@@ -373,9 +377,14 @@ h5 {
   background-color: #b1d1c4;
   border-radius: 5px;
   color: #515d6b;
+  cursor: pointer;
   margin: 10px;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s; }
+  .button-photo:hover {
+    color: #fff;
+    background-color: #7f9596; }
 
 .photo-button {
   width: 40%;
@@ -385,13 +394,28 @@ h5 {
   color: #515d6b;
   font-weight: bold;
   border-width: 0;
-  border-radius: 5px; }
+  border-radius: 5px;
+  cursor: pointer; }
   @media all and (min-width: 724px) {
     .photo-button {
       width: 18%; } }
   @media all and (min-width: 1024px) {
     .photo-button {
       width: 28%; } }
+
+#reset, #paragraph-button-study {
+  float: right;
+  font-weight: bold;
+  border: none;
+  padding: 10px 30px;
+  background-color: #b1d1c4;
+  border-radius: 5px;
+  color: #515d6b;
+  cursor: pointer;
+  transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s; }
+  #reset:hover, #paragraph-button-study:hover {
+    background-color: #7f9596;
+    color: #fff; }
 
 #button1, #button2, #button3, #button4, #button5 {
   background: #7f9596;
@@ -409,7 +433,8 @@ h5 {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color ease-in-out 0.5s; }
+  transition: background-color ease-in-out 0.5s;
+  border: none; }
   .button-print:hover {
     background-color: #7f9596;
     color: #fff; }
@@ -506,16 +531,6 @@ legend {
 
 #paragraph-button-work {
   float: right;
-  cursor: pointer; }
-
-#paragraph-button-study {
-  float: right;
-  cursor: pointer; }
-
-#reset {
-  float: right;
-  width: 30%;
-  background: #b1d1c4;
   cursor: pointer; }
 
 #bookmark {

@@ -5,6 +5,11 @@
   border-radius: 5px;
   color: $color-midtone-dark;
   cursor: pointer;
+  transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s;
+  &:hover {
+    background-color: $color-secundary;
+    color: $color-light;
+  }
 
   @media all and (min-width: 724px) {
       cursor: pointer;
@@ -31,9 +36,15 @@
   background-color: $color-primary;
   border-radius: 5px;
   color: $color-midtone-dark;
+  cursor: pointer;
   margin: 10px;
   text-align: center;
   font-weight: bold;
+  transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s;
+  &:hover {
+    color: $color-light;
+    background-color: $color-secundary;
+  }
 }
 
 .photo-button {
@@ -45,6 +56,7 @@
   font-weight: bold;
   border-width: 0;
   border-radius: 5px;
+  cursor: pointer;
 
   @media all and (min-width: 724px){
     width: 18%;
@@ -55,6 +67,22 @@
   }
 }
 
+#reset, #paragraph-button-study {
+  float: right;
+  font-weight: bold;
+  border: none;
+  padding: 10px 30px;
+  background-color: $color-primary;
+  border-radius: 5px;
+  color: $color-midtone-dark;
+  cursor: pointer;
+  transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s;
+  &:hover {
+    background-color: $color-secundary;
+    color: $color-light;
+  }
+
+}
 
 #button1, #button2, #button3, #button4, #button5 {
   background: $color-secundary;
@@ -74,6 +102,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color ease-in-out 0.5s;
+  border: none;
   &:hover {
     background-color: $color-secundary;
     color: $color-light;
