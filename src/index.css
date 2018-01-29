@@ -165,12 +165,10 @@ footer {
 
 .footer-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-top: 2%;
-  padding-bottom: 5%; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .footer-items {
   font-size: 14px;
