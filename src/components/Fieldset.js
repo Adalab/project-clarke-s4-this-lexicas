@@ -22,7 +22,7 @@ class Fieldset extends Component {
         <fieldset className="col1">
           <legend>{this.props.legend}</legend>
           <button type="button" name="button" className="button-accordion" onClick={this.handleClick}>
-            {this.state.collapsed ? "+" : "-"}
+            {this.state.collapsed ? "Editar" : "Cerrar"}
           </button>
           <div className={`${className} accordion`}>
             <div className={this.props.innerClassname}>
