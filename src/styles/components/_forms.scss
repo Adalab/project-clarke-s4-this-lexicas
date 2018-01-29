@@ -19,9 +19,9 @@
 input, textarea, select {
   padding: 10px;
   margin: 10px 0;
-  background-color: #fff;
+  background-color: $color-light;
   border-width: 0;
-  border: 1px solid #ccc;
+  border: 1px solid $color-midtone-light;
   border-radius: 5px;
   width: 100%;
   -webkit-appearance: none;
@@ -31,14 +31,14 @@ input, textarea, select {
 
 label {
   font-size: 13px;
-  color: #fff;
+  color: $color-light;
 }
 
 input[type=submit]{
   background-color: #09f;
   border-radius: 5px;
   font-size: 16px;
-  color: #fff;
+  color: $color-light;
 }
 
 fieldset {
@@ -48,8 +48,8 @@ fieldset {
 legend {
   width: 90%;
   height: 2.5em;
-  background: #e66760;
-  color: #fff;
+  background: $color-primary;
+  color: $color-midtone-dark;
   font-size: 18px;
   line-height: 2.5em;
   text-align: center;
@@ -73,7 +73,7 @@ legend {
 }
 
 #form-field{
-  color: #fff;
+  color: $color-light;
   font-weight: bold;
 }
 
@@ -90,7 +90,7 @@ legend {
 #reset{
   float: right;
   width: 30%;
-  background: #e66760;
+  background: $color-primary;
   cursor: pointer;
 }
 

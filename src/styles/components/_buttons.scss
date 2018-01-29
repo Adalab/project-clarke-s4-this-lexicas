@@ -1,9 +1,9 @@
 .boton-start {
 
   padding: 10px 30px;
-  background-color: #e66760;
+  background-color: $color-primary;
   border-radius: 5px;
-  color: #fff;
+  color: $color-light;
   cursor: pointer;
 
   @media all and (min-width: 724px) {
@@ -14,22 +14,22 @@
 .boton-start-second {
   padding: 10px 80px;
   margin-top: 40px;
-  background-color: #e66760;
+  background-color: $color-primary;
   border-radius: 5px;
-  color: #fff;
+  color: $color-light;
   cursor: pointer;
 
   @media all and (min-width: 1200px){
-      display: none;
-      cursor: pointer;
+    display: none;
+    cursor: pointer;
   }
 }
 
 .button-photo {
   padding: 10px 10px;
-  background-color: #e66760;
+  background-color: $color-primary;
   border-radius: 5px;
-  color: #fff;
+  color: $color-light;
   margin: 10px;
 }
 
@@ -37,75 +37,67 @@
   width: 28%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #fff;
+  background-color: $color-light;
   border-width: 0;
-  border: 1px solid #ccc;
+  border: 1px solid $color-midtone-light;
   border-radius: 5px;
 
   @media all and (min-width: 724px){
-      width: 18%;
+    width: 18%;
   }
 
   @media all and (min-width: 1024px){
-      width: 28%;
+    width: 28%;
   }
 }
 
-.button-up {
-  position: fixed;
-  left: 80%;
-  top: 75%;
-  display: block;
-
-  @media all and (min-width: 724px){
-      top: 85%;
-      left: 85%;
-  }
-
-  @media all and (min-width: 1024px){
-      top: 83%;
-      left: 92%;
-  }
-}
-
-.button-up img {
-  width: 50px;
-  opacity: 0.5;
-}
-
-.button-up img:hover {
-  opacity: 1;
-}
 
 #button1, #button2, #button3, #button4, #button5 {
-  background: #0099ff;
+  background: $color-secundary;
   width: 100%;
-  color: #fff;
+  color: $color-light;
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
 }
 
 .button-print{
-  background: #0099ff;
-  border: 3px solid white;
-  color: white;
+  background-color: $color-primary;
+  border: 2px solid white;
+  color: $color-midtone-dark;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color ease-in-out 0.5s;
+  &:hover {
+    background-color: $color-secundary;
+    color: $color-light;
+  }
 }
 
 .button-accordion {
-  width: 15%;
-  margin-left: 43%;
+  -moz-appearance: inherit;
+  -o-appearance: inherit;
+  -ms-appearance: inherit;
+  appearance: inherit;
+  -webkit-appearance: inherit;
+  width: 90%;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
-  border: 3px solid #0099ff;
-  border-radius: 30%;
-}
-
-.button-accordion:hover {
-  background: #0099ff;
-  border: 3px solid white;
-  color: white;
+  background: $color-light;
+  color: $color-midtone-dark;
+  border-radius: 5px;
+  -webkit-border-image: none;
+  -o-border-image: none;
+  border-image: none;
+  border: 2px solid $color-light;
+  transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s, font-weight ease-in-out 0.5s;
+  &:hover {
+  color: $color-light;
+  background-color: $color-midtone-dark;
   font-weight: bold;
-  cursor: pointer;
+}
 }

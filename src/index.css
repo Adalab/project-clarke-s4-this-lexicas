@@ -124,20 +124,21 @@
 .p-left-xl {
   padding-top: 80px; }
 
+/*Colores*/
+/*Tipografias*/
 header {
   position: fixed;
-  background: #e66760;
+  background: #b1d1c4;
   width: 100%;
-  height: 100px;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
   color: #fff; }
-  @media all and (min-width: 724px) {
+  @media all and (min-width: 1024px) {
     header {
-      padding: 20px 40px; } }
+      padding: 30px 30px; } }
 
 header ul {
   display: flex;
@@ -160,16 +161,14 @@ header ul li {
 
 footer {
   min-height: 20%;
-  background-color: #e66760; }
+  background-color: #b1d1c4; }
 
 .footer-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-top: 2%;
-  padding-bottom: 5%; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .footer-items {
   font-size: 14px;
@@ -293,7 +292,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  background-color: #e66760;
+  background-color: #b1d1c4;
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -366,7 +365,7 @@ h5 {
 
 .boton-start {
   padding: 10px 30px;
-  background-color: #e66760;
+  background-color: #b1d1c4;
   border-radius: 5px;
   color: #fff;
   cursor: pointer; }
@@ -377,7 +376,7 @@ h5 {
 .boton-start-second {
   padding: 10px 80px;
   margin-top: 40px;
-  background-color: #e66760;
+  background-color: #b1d1c4;
   border-radius: 5px;
   color: #fff;
   cursor: pointer; }
@@ -388,7 +387,7 @@ h5 {
 
 .button-photo {
   padding: 10px 10px;
-  background-color: #e66760;
+  background-color: #b1d1c4;
   border-radius: 5px;
   color: #fff;
   margin: 10px; }
@@ -408,29 +407,8 @@ h5 {
     .photo-button {
       width: 28%; } }
 
-.button-up {
-  position: fixed;
-  left: 80%;
-  top: 75%;
-  display: block; }
-  @media all and (min-width: 724px) {
-    .button-up {
-      top: 85%;
-      left: 85%; } }
-  @media all and (min-width: 1024px) {
-    .button-up {
-      top: 83%;
-      left: 92%; } }
-
-.button-up img {
-  width: 50px;
-  opacity: 0.5; }
-
-.button-up img:hover {
-  opacity: 1; }
-
 #button1, #button2, #button3, #button4, #button5 {
-  background: #0099ff;
+  background: #7f9596;
   width: 100%;
   color: #fff;
   font-weight: bold;
@@ -438,25 +416,41 @@ h5 {
   cursor: pointer; }
 
 .button-print {
-  background: #0099ff;
-  border: 3px solid white;
-  color: white;
+  background-color: #b1d1c4;
+  border: 2px solid white;
+  color: #515d6b;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background-color ease-in-out 0.5s; }
+  .button-print:hover {
+    background-color: #7f9596;
+    color: #fff; }
 
 .button-accordion {
-  width: 15%;
-  margin-left: 43%;
+  -moz-appearance: inherit;
+  -o-appearance: inherit;
+  -ms-appearance: inherit;
+  appearance: inherit;
+  -webkit-appearance: inherit;
+  width: 90%;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
-  border: 3px solid #0099ff;
-  border-radius: 30%; }
-
-.button-accordion:hover {
-  background: #0099ff;
-  border: 3px solid white;
-  color: white;
-  font-weight: bold;
-  cursor: pointer; }
+  background: #fff;
+  color: #515d6b;
+  border-radius: 5px;
+  -webkit-border-image: none;
+  -o-border-image: none;
+  border-image: none;
+  border: 2px solid #fff;
+  transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s, font-weight ease-in-out 0.5s; }
+  .button-accordion:hover {
+    color: #fff;
+    background-color: #515d6b;
+    font-weight: bold; }
 
 .hidden {
   display: none; }
@@ -500,8 +494,8 @@ fieldset {
 legend {
   width: 90%;
   height: 2.5em;
-  background: #e66760;
-  color: #fff;
+  background: #b1d1c4;
+  color: #515d6b;
   font-size: 18px;
   line-height: 2.5em;
   text-align: center;
@@ -533,7 +527,7 @@ legend {
 #reset {
   float: right;
   width: 30%;
-  background: #e66760;
+  background: #b1d1c4;
   cursor: pointer; }
 
 #bookmark {
@@ -550,6 +544,19 @@ legend {
   align-items: flex-end;
   justify-content: center;
   padding-bottom: 80px; }
+
+/*Variables para alinear o mayusculas*/
+.uppercase {
+  text-transform: uppercase; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
 
 /* -- Estilos generales -- */
 *, *:before, *:after {
