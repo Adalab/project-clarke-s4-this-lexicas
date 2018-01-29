@@ -547,8 +547,9 @@ legend {
   height: 100vh;
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 80px; }
 
 /* -- Estilos generales -- */
 *, *:before, *:after {
