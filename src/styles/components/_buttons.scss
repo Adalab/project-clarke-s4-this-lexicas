@@ -3,7 +3,7 @@
   padding: 10px 30px;
   background-color: $color-primary;
   border-radius: 5px;
-  color: $color-light;
+  color: $color-midtone-dark;
   cursor: pointer;
 
   @media all and (min-width: 724px) {
@@ -26,20 +26,24 @@
 }
 
 .button-photo {
+  width: 40%;
   padding: 10px 10px;
   background-color: $color-primary;
   border-radius: 5px;
-  color: $color-light;
+  color: $color-midtone-dark;
   margin: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .photo-button {
-  width: 28%;
+  width: 40%;
   padding: 10px;
   margin: 10px 0;
   background-color: $color-light;
+  color: $color-midtone-dark;
+  font-weight: bold;
   border-width: 0;
-  border: 1px solid $color-midtone-light;
   border-radius: 5px;
 
   @media all and (min-width: 724px){
@@ -62,10 +66,12 @@
 }
 
 .button-print{
+  text-decoration: none;
+  padding: 10px 30px;
   background-color: $color-primary;
-  border: 2px solid white;
   color: $color-midtone-dark;
   font-weight: bold;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color ease-in-out 0.5s;
   &:hover {
