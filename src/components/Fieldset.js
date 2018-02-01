@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Reset from './forms/Reset'
-import PropTypes from 'prop-types';
+
 
 class Fieldset extends Component {
   constructor(props){

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+
 import Fieldset from '../Fieldset';
 
 
@@ -31,7 +31,7 @@ class Education extends Component {
       </div>
       </div>
       <label htmlFor="descripcion" >Descripción</label>
-      <textarea id="descripcion" name="text" rows={8} cols={43} placeholder="Descripción" /> 
+      <textarea id="descripcion" name="text" rows={8} cols={43} placeholder="Descripción" />
 
       </Fieldset>
 

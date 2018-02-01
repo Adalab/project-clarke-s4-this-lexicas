@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Introduction from './components/Introduction';
@@ -21,7 +21,10 @@ class App extends Component {
   }
 
   updateState(event) {
-    this.setState({[event.target.id]: event.target.value});
+    this.setState({
+      value: event.target.value,
+
+    });
   }
 
   render() {
@@ -32,7 +35,7 @@ class App extends Component {
       <Introduction />
       <Main>
         <Form data={this.state} updateState={this.updateState}/>
-        <Cv data={this.state} />
+        <Cv data={this.state.value} />
       </Main>
       <Footer />
       </div>
