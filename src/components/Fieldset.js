@@ -29,7 +29,7 @@ class Fieldset extends Component {
             <div className={this.props.innerClassname}>
               {this.props.children}
             </div>
-            <button type="reset" name="button" id="reset">Reset</button> <br /><br />
+          <Reset />
           </div>
         </fieldset>
       </form>

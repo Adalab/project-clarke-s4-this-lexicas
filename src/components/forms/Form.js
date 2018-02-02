@@ -18,7 +18,7 @@ class Form extends Component {
       <Education />
       <ProfessionalExp />
       <Language data={this.props.data} updateState={this.props.updateState} />
-      <Skills data={this.props.data} updateState={this.props.updateState}/>
+      <Skills id= {this.props.id} data={this.props.data} updateState={this.props.updateState}/>
       <div className="insert-photo">
       <label className="button-photo" htmlFor="photo">Foto</label>
       <input className="photo-button" id="photo" type="file" placeholder="Foto" />
