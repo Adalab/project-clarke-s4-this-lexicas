@@ -4,12 +4,25 @@ import Fieldset from '../Fieldset';
 
 
 class Education extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value : true
+    }
+    this.handleClickReset = this.handleClickReset.bind(this);
+  }
+
+  handleClickReset() {
+    this.setState({
+      value: !this.state.value,
+    });
+  }
+
   render() {
     return (
 
       <Fieldset  formNumber={2} legend="Estudios" innerClassname="estudios">
 
-      <p id="form-field">Estudio I</p>
       <input type="text" name="title" id="titulo"  placeholder="Titulo" />
       <input type="text" name="institute" id="instituto"  placeholder="Escuela o Universidad" />
       <input type="text" name="city" id="instituto-ciudad"  placeholder="Ciudad" />
@@ -32,6 +45,8 @@ class Education extends Component {
       </div>
       <label htmlFor="descripcion" >Descripción</label>
       <textarea id="descripcion" name="text" rows={8} cols={43} placeholder="Descripción" />
+      <button onClick={this.handleClickReset}  type="reset" name="button" id="reset">Reset</button> <br /><br />
+
 
       </Fieldset>
 

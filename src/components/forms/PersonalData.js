@@ -3,6 +3,20 @@ import React, { Component } from 'react';
 import Fieldset from '../Fieldset';
 
 class PersonalData extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value : true
+    }
+    this.handleClickReset = this.handleClickReset.bind(this);
+  }
+
+  handleClickReset() {
+    this.setState({
+      value: !this.state.value,
+    });
+  }
+
   render() {
     return (
       <Fieldset  formNumber={1} legend="Datos Personales" innerClassname="datos-personales">
@@ -20,6 +34,8 @@ class PersonalData extends Component {
       <input id="tw" type="text" name="enlaceTwitter" placeholder="Tu cuenta GitHub, ej. @SaraPeir" />
       <label htmlFor="descripcion" >Personal descripción</label>
       <textarea name="name" rows={8} cols={80} id="description-personal" defaultValue={""} />
+      <button onClick={this.handleClickReset}  type="reset" name="button" id="reset">Reset</button> <br /><br />
+
       </Fieldset>
 
     );
