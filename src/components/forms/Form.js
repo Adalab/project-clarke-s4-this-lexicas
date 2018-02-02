@@ -10,11 +10,15 @@ import Language from './Language'
 
 class Form extends Component {
 
+  getData = (type, data) => {
+    this.props.getData(type, data)
+  };
+
 
   render() {
     return (
       <section className="form">
-      <PersonalData />
+      <PersonalData getData={this.getData}/>
       <Education />
       <ProfessionalExp />
       <Language data={this.props.data} updateState={this.props.updateState} />

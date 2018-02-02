@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 class Cv extends Component {
   render() {
+    console.log(this.props.personalData.fullname);
     return (
       <div id="printCv" className="resume-container" onLoad={() => { window.print();window.close()}}>
 
@@ -11,37 +12,37 @@ class Cv extends Component {
       <aside className="resume-left">
       <img className="profile-picture margin" alt="Imagen de perfil"/>
       <div className="personal-info-mvl margin">
-      <h2 className="title" id="CV0">Nombre</h2>
+      <h2 className="title" id="CV0"></h2>
       <h2 className="title-medium" id="CV0">Profesion</h2>
       </div>
       <div className="extract-info">
       <h3>Sobre mí</h3>
       <p id="description-personal-cv">
+      {this.props.personalData.personalDescription}
       </p>
-      <p id="fecha-nacimiento">Fecha nacimiento</p>
       </div>
       <div className="contact-section">
       <div className="contact-info">
       <h4>Contacto</h4>
       <div className="phone-info">
       <img src="" alt="" />
-      <p id="CV1" ></p>
+      <p id="CV1" >{this.props.personalData.tel}</p>
       </div>
       <div className="email-info">
       <img src="" alt="" />
-      <p id="CV1" ></p>
+      <p id="CV1" >{this.props.personalData.mail}</p>
       </div>
       <div className="location-info">
       <img src="" alt="" />
-      <p id="CV1" ></p>
+      <p id="CV1" >{this.props.personalData.city}, {this.props.personalData.country}</p>
       </div>
       </div>
       <div className="social-media">
-      <p id="social-enlace" ></p>
+      <p id="social-enlace" >{this.props.personalData.enlaceLinkedin}</p>
       {/*<p>Linkedin:<a href="https://github.com/Adalab/clarke-s2-varwomen/tree/js-adds">Icono Linkedin</a></p>
       <p>GitHub: @ejemplo</p>*/}
-      <p id="social-enlace" ></p>
-      <p id="social-enlace" ></p>
+      <p id="social-enlace" >{this.props.personalData.enlaceGitHub}</p>
+      <p id="social-enlace" >{this.props.personalData.enlaceTwitter}</p>
       </div>
       </div>
       </aside>
@@ -50,8 +51,8 @@ class Cv extends Component {
       <div className="resume-right">
 
       <div className="personal-info-desktop margin">
-      <h2 className="title" id="CV1">Nombre y apellidos</h2>
-      <h3 className="title-medium" id="CV1">Profesion</h3>
+      <h2 className="title" id="CV1">{this.props.personalData.fullname}</h2>
+      <h3 className="title-medium" id="CV1">{this.props.personalData.profession}</h3>
       </div>
 
       <div className="work-info margin">
