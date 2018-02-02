@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+
 import PersonalData from './PersonalData';
 import Education from './Education';
 import ProfessionalExp from './ProfessionalExp';
@@ -17,10 +17,8 @@ class Form extends Component {
       <PersonalData />
       <Education />
       <ProfessionalExp />
-      <Language />
-      <Skills />
-
-
+      <Language data={this.props.data} updateState={this.props.updateState} />
+      <Skills id= {this.props.id} data={this.props.data} updateState={this.props.updateState}/>
       <div className="insert-photo">
       <label className="button-photo" htmlFor="photo">Foto</label>
       <input className="photo-button" id="photo" type="file" placeholder="Foto" />
@@ -29,6 +27,11 @@ class Form extends Component {
     );
   }
 }
+
+// <PersonalData />
+// <Education />
+// <ProfessionalExp />
+// <Language />
 
 
 

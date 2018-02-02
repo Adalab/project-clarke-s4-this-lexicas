@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+
 
 class Cv extends Component {
   render() {
@@ -109,7 +109,7 @@ class Cv extends Component {
       <h4>Idiomas</h4>
       <div className="options-content">
       <div className="options-content-items">
-      <p id="primero-idioma-into-CV" ></p>
+      <p id="primero-idioma-into-CV" >{this.props.data}</p>
       <p id="idioma-extra1-into-CV" ></p>
       <p id="idioma-extra2-into-CV" ></p>
       <p id="idioma-extra3-into-CV" ></p>
@@ -132,7 +132,7 @@ class Cv extends Component {
       <p id="skill4-cv" ></p>
       </div>
       <div className="options-content-items">
-      <p id="skill1-level-cv" ></p>
+      <p id="skill1-level-cv" >{this.props.data}</p>
       <p id="skill2-level-cv" ></p>
       <p id="skill3-level-cv" ></p>
       <p id="skill4-level-cv" ></p>
@@ -145,7 +145,7 @@ class Cv extends Component {
       </div>
       </div>
       </section>
-      <input className="button-print" type="button" onClick="printDiv('printCv')" defaultValue="Imprimir" />
+    {/*  <input className="button-print" type="button" onClick="printDiv('printCv')" defaultValue="Imprimir" />*/}
       </div>
 
 
