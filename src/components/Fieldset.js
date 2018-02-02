@@ -6,14 +6,17 @@ class Fieldset extends Component {
   constructor(props){
     super(props)
     this.state = {
-      collapsed : true
+      collapsed : true,
     }
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
-      this.setState({collapsed : !this.state.collapsed});
+      this.setState({
+        collapsed : !this.state.collapsed,
+      });
   }
+
 
   render(){
     const className = this.state.collapsed ? 'hidden' : '';
@@ -29,7 +32,6 @@ class Fieldset extends Component {
             <div className={this.props.innerClassname}>
               {this.props.children}
             </div>
-          <Reset />
           </div>
         </fieldset>
       </form>
