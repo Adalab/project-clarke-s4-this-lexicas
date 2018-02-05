@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 class Cv extends Component {
   render() {
-    console.log(this.props.personalData.fullname);
     return (
       <div id="printCv" className="resume-container" onLoad={() => { window.print();window.close()}}>
 
@@ -12,8 +11,8 @@ class Cv extends Component {
         <aside className="resume-left">
           <img className="profile-picture margin" alt=""/>
           <div className="personal-info-mvl margin">
-            <h2 className="title" id="CV0"></h2>
-            <h2 className="title-medium" id="CV0">Profesion</h2>
+            <h2 className="title" id="CV0">{this.props.personalData.fullname}</h2>
+            <h2 className="title-medium" id="CV0">{this.props.personalData.profession}</h2>
           </div>
           <div className="extract-info">
             <h3>Sobre mí</h3>
@@ -23,15 +22,15 @@ class Cv extends Component {
             <div className="contact-info">
               <h4>Contacto</h4>
               <div className="phone-info">
-                <img src="" alt="" />
+
                 <p id="CV1" >{this.props.personalData.tel}</p>
               </div>
               <div className="email-info">
-                <img src="" alt="" />
+
                 <p id="CV1" >{this.props.personalData.mail}</p>
               </div>
               <div className="location-info">
-                <img src="" alt="" />
+
                 <p id="CV1" >{this.props.personalData.city}, {this.props.personalData.country}</p>
               </div>
             </div>
@@ -116,7 +115,6 @@ class Cv extends Component {
           </div>
         </div>
       </section>
-        {/*  <input className="button-print" type="button" onClick="printDiv('printCv')" defaultValue="Imprimir" />*/}
       </div>
 
 
