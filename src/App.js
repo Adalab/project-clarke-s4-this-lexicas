@@ -26,18 +26,60 @@ class App extends Component {
         enlaceTwitter : 'Enlace a Twitter',
         personalDescription : 'Breve descripción personal'
       },
-      value: ''
-    };
+      education : {
+        title : 'Estudios realizados',
+        institute : 'Escuela',
+        city : 'Ciudad',
+        country : 'País',
+        startMonth : '',
+        startYear : 'Inicio',
+        endMonth : 'Fin',
+        endYear : '',
+        textEducation : 'Descripción educación'
+      },
 
-    // this.updateState = this.updateState.bind(this);
+      professionalExp : {
+        cargo : 'Puesto o Cargo',
+        company : 'Empresa',
+        professionalStartMonth: '',
+        professionalStartYear: 'Inicio',
+        professionalEndMonth: '',
+        professionalEndYear: 'Fin',
+        professionalText : 'Descripción del puesto'
+        },
+
+      language : {
+        '1' : {
+          languageSkill: 'Idioma',
+          level: 'Nivel'
+        },
+        '2' : {
+          languageSkill: '',
+          level: ''
+        },
+        '3' : {
+          languageSkill: '',
+          level: ''
+        }
+      },
+
+      skills : {
+        '1' : {
+          languageSkill: 'Habilidad',
+          level: 'Nivel'
+        },
+        '2' : {
+          languageSkill: '',
+          level: ''
+        },
+        '3' : {
+          languageSkill: '',
+          level: ''
+        }
+      },
+    };
   }
 
-  // updateState(event) {
-  //   this.setState({
-  //     value: event.target.value,
-  //
-  //   });
-  // }
 
   getData = (type, data) => {
     this.setState({[type]: Object.assign({}, this.state[type], data)})
@@ -51,8 +93,8 @@ class App extends Component {
       <Hero />
       <Introduction />
       <Main>
-        <Form getData={this.getData} data={this.state} updateState={this.updateState}/>
-        <Cv data={this.state.value}  personalData={this.state.personalData}/>
+        <Form getData={this.getData} data={this.state}/>
+        <Cv personalData={this.state.personalData} education={this.state.education} professionalExp={this.state.professionalExp} language={this.state.language} skills={this.state.skills}/>
       </Main>
       <Footer />
       </div>

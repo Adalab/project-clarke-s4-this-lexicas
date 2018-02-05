@@ -2,20 +2,35 @@ import React, { Component } from 'react';
 
 
 class LangSkillsComponent extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      languageSkill: '',
+      level: '',
+    }
+  }
+
+  handleChange = (event) => {
+    const newValues = Object.assign({}, this.props.data[this.props.position], {[event.target.name]: event.target.value});
+    const newState = Object.assign({}, this.props.data, {[this.props.position]: newValues});
+    
+    this.props.getData(this.props.cvComponent, newState);
+  }
 
   render() {
     return (
-      <form className="wrapper">
+      <div className="wrapper">
 
-      <input type="text" id={this.props.id} onChange={this.props.updateState} value={this.props.data[this.props.id]}  placeholder={this.props.placeholder}  />
+      <input type="text" id={this.props.id} onChange={(e) => this.handleChange(e)}  placeholder={this.props.placeholder} name="languageSkill" />
 
-      <select name="nivel" id={this.props.selectId}>
-      <option selected disabled value="Seleccionar nivel">Seleccionar nivel</option>
-      <option value="Beginner">Beginner</option>
-      <option value="Medium">Medium</option>
-      <option value="Advanced">Advanced</option>
+      <select name="level" id={this.props.selectId} onChange={(e) => this.handleChange(e)}>
+      <option value="Seleccionar nivel" name="level-select">Seleccionar nivel</option>
+      <option value="Básico" name="beginner">Básico</option>
+      <option value="Medio" name="medium">Medio</option>
+      <option value="Avanzado" name="advanced">Avanzado</option>
       </select>
-      </form>
+      </div>
     );
   }
 }
