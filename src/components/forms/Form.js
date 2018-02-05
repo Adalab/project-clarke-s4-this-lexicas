@@ -19,10 +19,10 @@ class Form extends Component {
     return (
       <section className="form">
       <PersonalData getData={this.getData}/>
-      <Education />
-      <ProfessionalExp />
-      <Language data={this.props.data} updateState={this.props.updateState} />
-      <Skills id= {this.props.id} data={this.props.data} updateState={this.props.updateState}/>
+      <Education getData={this.getData}/>
+      <ProfessionalExp getData={this.getData}/>
+      <Language getData={this.getData} data={this.props.data.language}/>
+      <Skills id= {this.props.id} getData={this.getData} data={this.props.data.skills}/>
       <div className="insert-photo">
       <label className="button-photo" htmlFor="photo">Foto</label>
       <input className="photo-button" id="photo" type="file" placeholder="Foto" />
@@ -31,13 +31,6 @@ class Form extends Component {
     );
   }
 }
-
-// <PersonalData />
-// <Education />
-// <ProfessionalExp />
-// <Language />
-
-
 
 
 export default Form;

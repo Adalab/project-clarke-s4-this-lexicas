@@ -20,9 +20,7 @@ class PersonalData extends Component {
       enlaceTwitter : '',
       personalDescription : ''
     }
-    // this.handleChange = this.handleChange.bind(this);
   }
-
 
   handleChange = (event) => {
     this.props.getData('personalData', {[event.target.name]: event.target.value});
