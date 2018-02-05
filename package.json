@@ -2,7 +2,7 @@
   "name": "my-react-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "./docs",
   "dependencies": {
     "npm-run-all": "^4.1.2",
     "prop-types": "^15.6.0",
